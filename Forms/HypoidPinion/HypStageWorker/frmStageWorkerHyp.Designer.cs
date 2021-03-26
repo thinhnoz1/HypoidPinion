@@ -1,7 +1,7 @@
 ﻿
-namespace BMS
+namespace Forms.HypoidPinion.HypStageWorker
 {
-	partial class frmStageHyp
+	partial class frmStageWorkerHyp
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,7 +29,7 @@ namespace BMS
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStageHyp));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStageWorkerHyp));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.btnCreate = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -38,8 +38,8 @@ namespace BMS
 			this.btnDel = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-			this.dtgvStage = new DevExpress.XtraGrid.GridControl();
-			this.gvStage = new DevExpress.XtraGrid.Views.Grid.GridView();
+			this.dtgvStageWorker = new DevExpress.XtraGrid.GridControl();
+			this.gvStageWorker = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colStageCode = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colManagerID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -48,8 +48,8 @@ namespace BMS
 			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colDepartmentCode = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.toolStrip1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dtgvStage)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gvStage)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvStageWorker)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvStageWorker)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// toolStrip1
@@ -73,7 +73,7 @@ namespace BMS
 			this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
 			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
 			this.toolStrip1.Size = new System.Drawing.Size(1293, 52);
-			this.toolStrip1.TabIndex = 30;
+			this.toolStrip1.TabIndex = 31;
 			this.toolStrip1.Text = "toolStrip2";
 			// 
 			// btnCreate
@@ -87,7 +87,6 @@ namespace BMS
 			this.btnCreate.Tag = "frmProduct_AddProductH";
 			this.btnCreate.Text = "Tạo công đoạn";
 			this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
 			// 
 			// toolStripSeparator1
 			// 
@@ -105,7 +104,6 @@ namespace BMS
 			this.btnEdit.Tag = "frmProduct_EditProductH";
 			this.btnEdit.Text = "Sửa công đoạn";
 			this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
 			// 
 			// toolStripSeparator7
 			// 
@@ -123,7 +121,6 @@ namespace BMS
 			this.btnDel.Tag = "frmProduct_DeleteProductH";
 			this.btnDel.Text = "Xóa công đoạn";
 			this.btnDel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
 			// 
 			// toolStripSeparator2
 			// 
@@ -142,29 +139,28 @@ namespace BMS
 			this.btnRefresh.Tag = "";
 			this.btnRefresh.Text = "Làm mới";
 			this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
-			// dtgvStage
+			// dtgvStageWorker
 			// 
-			this.dtgvStage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.dtgvStageWorker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.dtgvStage.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-			this.dtgvStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dtgvStage.Location = new System.Drawing.Point(4, 56);
-			this.dtgvStage.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
-			this.dtgvStage.MainView = this.gvStage;
-			this.dtgvStage.Margin = new System.Windows.Forms.Padding(4);
-			this.dtgvStage.Name = "dtgvStage";
-			this.dtgvStage.Size = new System.Drawing.Size(1285, 596);
-			this.dtgvStage.TabIndex = 37;
-			this.dtgvStage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvStage});
+			this.dtgvStageWorker.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+			this.dtgvStageWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtgvStageWorker.Location = new System.Drawing.Point(4, 56);
+			this.dtgvStageWorker.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+			this.dtgvStageWorker.MainView = this.gvStageWorker;
+			this.dtgvStageWorker.Margin = new System.Windows.Forms.Padding(4);
+			this.dtgvStageWorker.Name = "dtgvStageWorker";
+			this.dtgvStageWorker.Size = new System.Drawing.Size(1285, 596);
+			this.dtgvStageWorker.TabIndex = 38;
+			this.dtgvStageWorker.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvStageWorker});
 			// 
-			// gvStage
+			// gvStageWorker
 			// 
-			this.gvStage.ColumnPanelRowHeight = 40;
-			this.gvStage.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+			this.gvStageWorker.ColumnPanelRowHeight = 40;
+			this.gvStageWorker.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID,
             this.colStageCode,
             this.colManagerID,
@@ -172,21 +168,20 @@ namespace BMS
             this.colSTT,
             this.colDepartmentID,
             this.colDepartmentCode});
-			this.gvStage.GridControl = this.dtgvStage;
-			this.gvStage.Name = "gvStage";
-			this.gvStage.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
-			this.gvStage.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
-			this.gvStage.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
-			this.gvStage.OptionsBehavior.AllowIncrementalSearch = true;
-			this.gvStage.OptionsBehavior.Editable = false;
-			this.gvStage.OptionsCustomization.AllowColumnMoving = false;
-			this.gvStage.OptionsCustomization.AllowQuickHideColumns = false;
-			this.gvStage.OptionsFind.AlwaysVisible = true;
-			this.gvStage.OptionsFind.ShowCloseButton = false;
-			this.gvStage.OptionsView.ShowGroupPanel = false;
-			this.gvStage.RowHeight = 25;
-			this.gvStage.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll;
-			this.gvStage.DoubleClick += new System.EventHandler(this.gvStage_DoubleClick);
+			this.gvStageWorker.GridControl = this.dtgvStageWorker;
+			this.gvStageWorker.Name = "gvStageWorker";
+			this.gvStageWorker.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvStageWorker.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvStageWorker.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
+			this.gvStageWorker.OptionsBehavior.AllowIncrementalSearch = true;
+			this.gvStageWorker.OptionsBehavior.Editable = false;
+			this.gvStageWorker.OptionsCustomization.AllowColumnMoving = false;
+			this.gvStageWorker.OptionsCustomization.AllowQuickHideColumns = false;
+			this.gvStageWorker.OptionsFind.AlwaysVisible = true;
+			this.gvStageWorker.OptionsFind.ShowCloseButton = false;
+			this.gvStageWorker.OptionsView.ShowGroupPanel = false;
+			this.gvStageWorker.RowHeight = 25;
+			this.gvStageWorker.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll;
 			// 
 			// colID
 			// 
@@ -308,21 +303,19 @@ namespace BMS
 			this.colDepartmentCode.VisibleIndex = 2;
 			this.colDepartmentCode.Width = 251;
 			// 
-			// frmStageHyp
+			// frmStageWorkerHyp
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1293, 656);
-			this.Controls.Add(this.dtgvStage);
+			this.Controls.Add(this.dtgvStageWorker);
 			this.Controls.Add(this.toolStrip1);
-			this.Name = "frmStageHyp";
-			this.Text = "QUẢN LÝ CÔNG ĐOẠN";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-			this.Load += new System.EventHandler(this.frmStageHyp_Load);
+			this.Name = "frmStageWorkerHyp";
+			this.Text = "frmStageWorkerHyp";
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dtgvStage)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gvStage)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvStageWorker)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvStageWorker)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -337,8 +330,8 @@ namespace BMS
 		private System.Windows.Forms.ToolStripButton btnDel;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 		private System.Windows.Forms.ToolStripButton btnRefresh;
-		private DevExpress.XtraGrid.GridControl dtgvStage;
-		private DevExpress.XtraGrid.Views.Grid.GridView gvStage;
+		private DevExpress.XtraGrid.GridControl dtgvStageWorker;
+		private DevExpress.XtraGrid.Views.Grid.GridView gvStageWorker;
 		private DevExpress.XtraGrid.Columns.GridColumn colID;
 		private DevExpress.XtraGrid.Columns.GridColumn colStageCode;
 		private DevExpress.XtraGrid.Columns.GridColumn colManagerID;

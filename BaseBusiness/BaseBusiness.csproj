@@ -104,6 +104,7 @@
     <Compile Include="BO\EventsLogErrorBO.cs" />
     <Compile Include="BO\FormAndFunctionBO.cs" />
     <Compile Include="BO\FormAndFunctionGroupBO.cs" />
+    <Compile Include="BO\MachineBO.cs" />
     <Compile Include="BO\ManufacturerBO.cs" />
     <Compile Include="BO\MotorHistoryImExBO.cs" />
     <Compile Include="BO\MotorPartListBO.cs" />
@@ -152,6 +153,7 @@
     <Compile Include="Facade\EventsLogFacade.cs" />
     <Compile Include="Facade\FormAndFunctionFacade.cs" />
     <Compile Include="Facade\FormAndFunctionGroupFacade.cs" />
+    <Compile Include="Facade\MachineFacade.cs" />
     <Compile Include="Facade\ManufacturerFacade.cs" />
     <Compile Include="Facade\MotorHistoryImExFacade.cs" />
     <Compile Include="Facade\MotorPartListDetailsFacade.cs" />
@@ -200,6 +202,7 @@
     <Compile Include="Model\EventsLogModel.cs" />
     <Compile Include="Model\FormAndFunctionGroupModel.cs" />
     <Compile Include="Model\FormAndFunctionModel.cs" />
+    <Compile Include="Model\MachineModel.cs" />
     <Compile Include="Model\ManufacturerModel.cs" />
     <Compile Include="Model\MotorHistoryImExModel.cs" />
     <Compile Include="Model\MotorPartListDetailsModel.cs" />

@@ -231,6 +231,36 @@
     <Compile Include="HypoidPinion\HypDepartment\frmDepartmentHyp.Designer.cs">
       <DependentUpon>frmDepartmentHyp.cs</DependentUpon>
     </Compile>
+    <Compile Include="HypoidPinion\HypMachine\frmAddEditMachineHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\HypMachine\frmAddEditMachineHyp.Designer.cs">
+      <DependentUpon>frmAddEditMachineHyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\HypMachine\frmMachineHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\HypMachine\frmMachineHyp.Designer.cs">
+      <DependentUpon>frmMachineHyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\HypStageWorker\frmStageWorkerHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\HypStageWorker\frmStageWorkerHyp.Designer.cs">
+      <DependentUpon>frmStageWorkerHyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\HypStage\frmAddEditStageHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\HypStage\frmAddEditStageHyp.Designer.cs">
+      <DependentUpon>frmAddEditStageHyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\HypStage\frmStageHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\HypStage\frmStageHyp.Designer.cs">
+      <DependentUpon>frmStageHyp.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhoSon\frmAddEditHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -382,6 +412,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HypoidPinion\HypDepartment\frmDepartmentHyp.resx">
       <DependentUpon>frmDepartmentHyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\HypMachine\frmAddEditMachineHyp.resx">
+      <DependentUpon>frmAddEditMachineHyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\HypMachine\frmMachineHyp.resx">
+      <DependentUpon>frmMachineHyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\HypStageWorker\frmStageWorkerHyp.resx">
+      <DependentUpon>frmStageWorkerHyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\HypStage\frmAddEditStageHyp.resx">
+      <DependentUpon>frmAddEditStageHyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\HypStage\frmStageHyp.resx">
+      <DependentUpon>frmStageHyp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhoSon\frmAddEditHistory.resx">
       <DependentUpon>frmAddEditHistory.cs</DependentUpon>
