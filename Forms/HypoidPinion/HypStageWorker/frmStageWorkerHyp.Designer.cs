@@ -83,9 +83,9 @@ namespace Forms.HypoidPinion.HypStageWorker
 			this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
 			this.btnCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnCreate.Name = "btnCreate";
-			this.btnCreate.Size = new System.Drawing.Size(136, 44);
+			this.btnCreate.Size = new System.Drawing.Size(151, 44);
 			this.btnCreate.Tag = "frmProduct_AddProductH";
-			this.btnCreate.Text = "Tạo công đoạn";
+			this.btnCreate.Text = "Thêm công nhân";
 			this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
 			// toolStripSeparator1
@@ -102,7 +102,7 @@ namespace Forms.HypoidPinion.HypStageWorker
 			this.btnEdit.Name = "btnEdit";
 			this.btnEdit.Size = new System.Drawing.Size(137, 44);
 			this.btnEdit.Tag = "frmProduct_EditProductH";
-			this.btnEdit.Text = "Sửa công đoạn";
+			this.btnEdit.Text = "Sửa công nhân";
 			this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
 			// toolStripSeparator7
@@ -119,7 +119,7 @@ namespace Forms.HypoidPinion.HypStageWorker
 			this.btnDel.Name = "btnDel";
 			this.btnDel.Size = new System.Drawing.Size(137, 44);
 			this.btnDel.Tag = "frmProduct_DeleteProductH";
-			this.btnDel.Text = "Xóa công đoạn";
+			this.btnDel.Text = "Xóa công nhân";
 			this.btnDel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			// 
 			// toolStripSeparator2

@@ -207,6 +207,18 @@
     <Compile Include="Common\WeightingStepEnum.cs" />
     <Compile Include="Common\WorkRegionEnum.cs" />
     <Compile Include="Common\WorkRegionStateItem.cs" />
+    <Compile Include="HypoidPinion\frmAreaDepartHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\frmAreaDepartHyp.Designer.cs">
+      <DependentUpon>frmAreaDepartHyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\frmStageMachineHyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\frmStageMachineHyp.Designer.cs">
+      <DependentUpon>frmStageMachineHyp.cs</DependentUpon>
+    </Compile>
     <Compile Include="HypoidPinion\HypArea\frmAddEditAreas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -401,6 +413,12 @@
     <Compile Include="Test\frmTest.Designer.cs">
       <DependentUpon>frmTest.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="HypoidPinion\frmAreaDepartHyp.resx">
+      <DependentUpon>frmAreaDepartHyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\frmStageMachineHyp.resx">
+      <DependentUpon>frmStageMachineHyp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HypoidPinion\HypArea\frmAddEditAreas.resx">
       <DependentUpon>frmAddEditAreas.cs</DependentUpon>
     </EmbeddedResource>

@@ -1530,3 +1530,5 @@ D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Forms\obj\Debug\BMS.frmAddEditStageHy
 D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Forms\obj\Debug\BMS.frmStageHyp.resources
 D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Forms\obj\Debug\BMS.frmAddEditMachineHyp.resources
 D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Forms\obj\Debug\BMS.frmMachineHyp.resources
+D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Forms\obj\Debug\BMS.frmAreaDepartHyp.resources
+D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Forms\obj\Debug\Forms.HypoidPinion.HypStageWorker.frmStageWorkerHyp.resources

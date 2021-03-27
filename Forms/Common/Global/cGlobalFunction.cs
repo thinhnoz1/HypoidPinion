@@ -27,5 +27,7 @@ namespace BMS
 			string sql = string.Format("SELECT ROW_NUMBER() OVER (ORDER BY ID) AS STT {0} FROM {1} ORDER BY {2}", listField, tableName, orderField);
 			return sql;
 		}
+
+		
 	}
 }
