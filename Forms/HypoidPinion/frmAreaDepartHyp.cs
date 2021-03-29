@@ -16,6 +16,7 @@ namespace BMS
 	{
 		#region Variables
 		int prevRow;
+		int prevRow1;
 		bool showAll = false;
 		#endregion
 
@@ -116,7 +117,7 @@ namespace BMS
 		private void btnCreateDep_Click(object sender, EventArgs e)
 		{
 			frmAddEditDepartment frm = new frmAddEditDepartment(cGlobalVariables.Add);
-			if (frm.ShowDialog() == DialogResult.OK)
+			if (frm.ShowDialog() == DialogResult.OK) 
 			{
 				LoadDepartment();
 			}
@@ -126,7 +127,7 @@ namespace BMS
 		{
 			int id = TextUtils.ToInt(gvDepartment.GetFocusedRowCellValue(colIDDep));
 			if (id == 0) return;
-			prevRow = gvDepartment.GetSelectedRows()[0];
+			prevRow1 = gvDepartment.GetSelectedRows()[0];
 			DepartmentModel model = (DepartmentModel)DepartmentBO.Instance.FindByPK(id);
 
 			frmAddEditDepartment frm = new frmAddEditDepartment(cGlobalVariables.Edit);
@@ -134,7 +135,7 @@ namespace BMS
 			if (frm.ShowDialog() == DialogResult.OK)
 			{
 				LoadDepartment();
-				gvDepartment.FocusedRowHandle = prevRow;
+				gvDepartment.FocusedRowHandle = prevRow1;
 			}
 		}
 

@@ -1,5 +1,5 @@
 ﻿
-namespace Forms.HypoidPinion
+namespace BMS
 {
 	partial class frmStageMachineHyp
 	{
@@ -31,20 +31,57 @@ namespace Forms.HypoidPinion
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStageMachineHyp));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-			this.btnCreate = new System.Windows.Forms.ToolStripButton();
+			this.btnCreateStage = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.btnEdit = new System.Windows.Forms.ToolStripButton();
+			this.btnEditStage = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-			this.btnDel = new System.Windows.Forms.ToolStripButton();
+			this.btnDelStage = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnRefresh = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+			this.btnCreateMachine = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.btnEditMachine = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+			this.btnDelMachine = new System.Windows.Forms.ToolStripButton();
+			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+			this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+			this.dtgvStage = new DevExpress.XtraGrid.GridControl();
+			this.gvStage = new DevExpress.XtraGrid.Views.Grid.GridView();
+			this.colIDStage = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colStageCode = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colManagerID = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colManagerCode = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colDepartmentCode = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+			this.dtgvMachine = new DevExpress.XtraGrid.GridControl();
+			this.gvMachine = new DevExpress.XtraGrid.Views.Grid.GridView();
+			this.colIDMac = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colMachineCode = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colSTT = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colStageID = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colStageCodeMac = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.cbShowAll = new System.Windows.Forms.CheckBox();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.btnCancelSearch = new DevExpress.XtraEditors.SimpleButton();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txbSearch = new System.Windows.Forms.TextBox();
+			this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
 			this.toolStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+			this.splitContainer1.Panel1.SuspendLayout();
+			this.splitContainer1.Panel2.SuspendLayout();
+			this.splitContainer1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvStage)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvStage)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvMachine)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvMachine)).BeginInit();
+			this.panel6.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// toolStrip1
@@ -55,19 +92,19 @@ namespace Forms.HypoidPinion
 			this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
 			this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnCreate,
+            this.btnCreateStage,
             this.toolStripSeparator1,
-            this.btnEdit,
+            this.btnEditStage,
             this.toolStripSeparator7,
-            this.btnDel,
+            this.btnDelStage,
             this.toolStripSeparator2,
             this.btnRefresh,
             this.toolStripSeparator3,
-            this.toolStripButton1,
+            this.btnCreateMachine,
             this.toolStripSeparator4,
-            this.toolStripButton2,
+            this.btnEditMachine,
             this.toolStripSeparator5,
-            this.toolStripButton3});
+            this.btnDelMachine});
 			this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
@@ -77,51 +114,54 @@ namespace Forms.HypoidPinion
 			this.toolStrip1.TabIndex = 31;
 			this.toolStrip1.Text = "toolStrip2";
 			// 
-			// btnCreate
+			// btnCreateStage
 			// 
-			this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCreate.ForeColor = System.Drawing.Color.Black;
-			this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
-			this.btnCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.btnCreate.Name = "btnCreate";
-			this.btnCreate.Size = new System.Drawing.Size(136, 44);
-			this.btnCreate.Tag = "frmProduct_AddProductH";
-			this.btnCreate.Text = "Tạo công đoạn";
-			this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnCreateStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCreateStage.ForeColor = System.Drawing.Color.Black;
+			this.btnCreateStage.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateStage.Image")));
+			this.btnCreateStage.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnCreateStage.Name = "btnCreateStage";
+			this.btnCreateStage.Size = new System.Drawing.Size(136, 44);
+			this.btnCreateStage.Tag = "frmProduct_AddProductH";
+			this.btnCreateStage.Text = "Tạo công đoạn";
+			this.btnCreateStage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnCreateStage.Click += new System.EventHandler(this.btnCreateStage_Click);
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
 			// 
-			// btnEdit
+			// btnEditStage
 			// 
-			this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnEdit.ForeColor = System.Drawing.Color.Black;
-			this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-			this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.btnEdit.Name = "btnEdit";
-			this.btnEdit.Size = new System.Drawing.Size(137, 44);
-			this.btnEdit.Tag = "frmProduct_EditProductH";
-			this.btnEdit.Text = "Sửa công đoạn";
-			this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnEditStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEditStage.ForeColor = System.Drawing.Color.Black;
+			this.btnEditStage.Image = ((System.Drawing.Image)(resources.GetObject("btnEditStage.Image")));
+			this.btnEditStage.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnEditStage.Name = "btnEditStage";
+			this.btnEditStage.Size = new System.Drawing.Size(137, 44);
+			this.btnEditStage.Tag = "frmProduct_EditProductH";
+			this.btnEditStage.Text = "Sửa công đoạn";
+			this.btnEditStage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnEditStage.Click += new System.EventHandler(this.btnEditStage_Click);
 			// 
 			// toolStripSeparator7
 			// 
 			this.toolStripSeparator7.Name = "toolStripSeparator7";
 			this.toolStripSeparator7.Size = new System.Drawing.Size(6, 23);
 			// 
-			// btnDel
+			// btnDelStage
 			// 
-			this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnDel.ForeColor = System.Drawing.Color.Black;
-			this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
-			this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.btnDel.Name = "btnDel";
-			this.btnDel.Size = new System.Drawing.Size(137, 44);
-			this.btnDel.Tag = "frmProduct_DeleteProductH";
-			this.btnDel.Text = "Xóa công đoạn";
-			this.btnDel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnDelStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDelStage.ForeColor = System.Drawing.Color.Black;
+			this.btnDelStage.Image = ((System.Drawing.Image)(resources.GetObject("btnDelStage.Image")));
+			this.btnDelStage.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnDelStage.Name = "btnDelStage";
+			this.btnDelStage.Size = new System.Drawing.Size(137, 44);
+			this.btnDelStage.Tag = "frmProduct_DeleteProductH";
+			this.btnDelStage.Text = "Xóa công đoạn";
+			this.btnDelStage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnDelStage.Click += new System.EventHandler(this.btnDelStage_Click);
 			// 
 			// toolStripSeparator2
 			// 
@@ -140,6 +180,7 @@ namespace Forms.HypoidPinion
 			this.btnRefresh.Tag = "";
 			this.btnRefresh.Text = "Làm mới";
 			this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
 			// toolStripSeparator3
 			// 
@@ -147,62 +188,481 @@ namespace Forms.HypoidPinion
 			this.toolStripSeparator3.Name = "toolStripSeparator3";
 			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 40);
 			// 
-			// toolStripButton1
+			// btnCreateMachine
 			// 
-			this.toolStripButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.toolStripButton1.ForeColor = System.Drawing.Color.Black;
-			this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButton1.Name = "toolStripButton1";
-			this.toolStripButton1.Size = new System.Drawing.Size(84, 44);
-			this.toolStripButton1.Tag = "frmProduct_AddProductH";
-			this.toolStripButton1.Text = "Tạo máy";
-			this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnCreateMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCreateMachine.ForeColor = System.Drawing.Color.Black;
+			this.btnCreateMachine.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateMachine.Image")));
+			this.btnCreateMachine.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnCreateMachine.Name = "btnCreateMachine";
+			this.btnCreateMachine.Size = new System.Drawing.Size(84, 44);
+			this.btnCreateMachine.Tag = "frmProduct_AddProductH";
+			this.btnCreateMachine.Text = "Tạo máy";
+			this.btnCreateMachine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnCreateMachine.Click += new System.EventHandler(this.btnCreateMachine_Click);
 			// 
 			// toolStripSeparator4
 			// 
 			this.toolStripSeparator4.Name = "toolStripSeparator4";
 			this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
 			// 
-			// toolStripButton2
+			// btnEditMachine
 			// 
-			this.toolStripButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.toolStripButton2.ForeColor = System.Drawing.Color.Black;
-			this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButton2.Name = "toolStripButton2";
-			this.toolStripButton2.Size = new System.Drawing.Size(85, 44);
-			this.toolStripButton2.Tag = "frmProduct_EditProductH";
-			this.toolStripButton2.Text = "Sửa máy";
-			this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnEditMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEditMachine.ForeColor = System.Drawing.Color.Black;
+			this.btnEditMachine.Image = ((System.Drawing.Image)(resources.GetObject("btnEditMachine.Image")));
+			this.btnEditMachine.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnEditMachine.Name = "btnEditMachine";
+			this.btnEditMachine.Size = new System.Drawing.Size(85, 44);
+			this.btnEditMachine.Tag = "frmProduct_EditProductH";
+			this.btnEditMachine.Text = "Sửa máy";
+			this.btnEditMachine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnEditMachine.Click += new System.EventHandler(this.btnEditMachine_Click);
 			// 
 			// toolStripSeparator5
 			// 
 			this.toolStripSeparator5.Name = "toolStripSeparator5";
 			this.toolStripSeparator5.Size = new System.Drawing.Size(6, 23);
 			// 
-			// toolStripButton3
+			// btnDelMachine
 			// 
-			this.toolStripButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.toolStripButton3.ForeColor = System.Drawing.Color.Black;
-			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButton3.Name = "toolStripButton3";
-			this.toolStripButton3.Size = new System.Drawing.Size(85, 44);
-			this.toolStripButton3.Tag = "frmProduct_DeleteProductH";
-			this.toolStripButton3.Text = "Xóa máy";
-			this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnDelMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDelMachine.ForeColor = System.Drawing.Color.Black;
+			this.btnDelMachine.Image = ((System.Drawing.Image)(resources.GetObject("btnDelMachine.Image")));
+			this.btnDelMachine.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnDelMachine.Name = "btnDelMachine";
+			this.btnDelMachine.Size = new System.Drawing.Size(85, 44);
+			this.btnDelMachine.Tag = "frmProduct_DeleteProductH";
+			this.btnDelMachine.Text = "Xóa máy";
+			this.btnDelMachine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnDelMachine.Click += new System.EventHandler(this.btnDelMachine_Click);
+			// 
+			// gridView1
+			// 
+			this.gridView1.Name = "gridView1";
+			// 
+			// gridView2
+			// 
+			this.gridView2.Name = "gridView2";
+			// 
+			// splitContainer1
+			// 
+			this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.splitContainer1.Location = new System.Drawing.Point(0, 54);
+			this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.splitContainer1.Name = "splitContainer1";
+			// 
+			// splitContainer1.Panel1
+			// 
+			this.splitContainer1.Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.splitContainer1.Panel1.Controls.Add(this.dtgvStage);
+			this.splitContainer1.Panel1.Controls.Add(this.labelControl1);
+			this.splitContainer1.Panel1MinSize = 15;
+			// 
+			// splitContainer1.Panel2
+			// 
+			this.splitContainer1.Panel2.Controls.Add(this.dtgvMachine);
+			this.splitContainer1.Panel2.Controls.Add(this.cbShowAll);
+			this.splitContainer1.Panel2.Controls.Add(this.panel6);
+			this.splitContainer1.Size = new System.Drawing.Size(1403, 684);
+			this.splitContainer1.SplitterDistance = 677;
+			this.splitContainer1.TabIndex = 37;
+			// 
+			// dtgvStage
+			// 
+			this.dtgvStage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.dtgvStage.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+			this.dtgvStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtgvStage.Location = new System.Drawing.Point(-1, 55);
+			this.dtgvStage.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+			this.dtgvStage.MainView = this.gvStage;
+			this.dtgvStage.Margin = new System.Windows.Forms.Padding(4);
+			this.dtgvStage.Name = "dtgvStage";
+			this.dtgvStage.Size = new System.Drawing.Size(672, 623);
+			this.dtgvStage.TabIndex = 38;
+			this.dtgvStage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvStage});
+			// 
+			// gvStage
+			// 
+			this.gvStage.ColumnPanelRowHeight = 40;
+			this.gvStage.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colIDStage,
+            this.colStageCode,
+            this.colManagerID,
+            this.colManagerCode,
+            this.gridColumn1,
+            this.colDepartmentID,
+            this.colDepartmentCode});
+			this.gvStage.GridControl = this.dtgvStage;
+			this.gvStage.Name = "gvStage";
+			this.gvStage.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvStage.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvStage.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
+			this.gvStage.OptionsBehavior.AllowIncrementalSearch = true;
+			this.gvStage.OptionsBehavior.Editable = false;
+			this.gvStage.OptionsCustomization.AllowColumnMoving = false;
+			this.gvStage.OptionsCustomization.AllowQuickHideColumns = false;
+			this.gvStage.OptionsFind.AlwaysVisible = true;
+			this.gvStage.OptionsFind.ShowCloseButton = false;
+			this.gvStage.OptionsView.ShowGroupPanel = false;
+			this.gvStage.RowHeight = 25;
+			this.gvStage.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll;
+			this.gvStage.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gvStage_FocusedRowChanged);
+			this.gvStage.DoubleClick += new System.EventHandler(this.gvStage_DoubleClick);
+			// 
+			// colIDStage
+			// 
+			this.colIDStage.Caption = "ID";
+			this.colIDStage.FieldName = "ID";
+			this.colIDStage.Name = "colIDStage";
+			this.colIDStage.OptionsColumn.AllowEdit = false;
+			// 
+			// colStageCode
+			// 
+			this.colStageCode.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colStageCode.AppearanceCell.Options.UseFont = true;
+			this.colStageCode.AppearanceCell.Options.UseTextOptions = true;
+			this.colStageCode.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colStageCode.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colStageCode.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colStageCode.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colStageCode.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+			this.colStageCode.AppearanceHeader.Options.UseFont = true;
+			this.colStageCode.AppearanceHeader.Options.UseForeColor = true;
+			this.colStageCode.AppearanceHeader.Options.UseTextOptions = true;
+			this.colStageCode.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colStageCode.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colStageCode.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colStageCode.Caption = "MÃ CÔNG ĐOẠN";
+			this.colStageCode.FieldName = "StageCode";
+			this.colStageCode.Name = "colStageCode";
+			this.colStageCode.OptionsColumn.AllowEdit = false;
+			this.colStageCode.Visible = true;
+			this.colStageCode.VisibleIndex = 1;
+			this.colStageCode.Width = 426;
+			// 
+			// colManagerID
+			// 
+			this.colManagerID.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colManagerID.AppearanceCell.Options.UseFont = true;
+			this.colManagerID.AppearanceCell.Options.UseTextOptions = true;
+			this.colManagerID.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colManagerID.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colManagerID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colManagerID.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+			this.colManagerID.AppearanceHeader.Options.UseFont = true;
+			this.colManagerID.AppearanceHeader.Options.UseForeColor = true;
+			this.colManagerID.AppearanceHeader.Options.UseTextOptions = true;
+			this.colManagerID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colManagerID.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colManagerID.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colManagerID.Caption = "Mô tả";
+			this.colManagerID.FieldName = "ManagerID";
+			this.colManagerID.Name = "colManagerID";
+			this.colManagerID.OptionsColumn.AllowEdit = false;
+			this.colManagerID.Width = 338;
+			// 
+			// colManagerCode
+			// 
+			this.colManagerCode.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colManagerCode.AppearanceCell.Options.UseFont = true;
+			this.colManagerCode.AppearanceCell.Options.UseTextOptions = true;
+			this.colManagerCode.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colManagerCode.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colManagerCode.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colManagerCode.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colManagerCode.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+			this.colManagerCode.AppearanceHeader.Options.UseFont = true;
+			this.colManagerCode.AppearanceHeader.Options.UseForeColor = true;
+			this.colManagerCode.AppearanceHeader.Options.UseTextOptions = true;
+			this.colManagerCode.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colManagerCode.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colManagerCode.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colManagerCode.Caption = "NGƯỜI PHỤ TRÁCH";
+			this.colManagerCode.FieldName = "ManagerCode";
+			this.colManagerCode.Name = "colManagerCode";
+			this.colManagerCode.OptionsColumn.AllowEdit = false;
+			this.colManagerCode.Visible = true;
+			this.colManagerCode.VisibleIndex = 3;
+			this.colManagerCode.Width = 439;
+			// 
+			// gridColumn1
+			// 
+			this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn1.AppearanceCell.Options.UseFont = true;
+			this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn1.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+			this.gridColumn1.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn1.AppearanceHeader.Options.UseForeColor = true;
+			this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn1.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn1.Caption = "STT";
+			this.gridColumn1.FieldName = "STT";
+			this.gridColumn1.Name = "gridColumn1";
+			this.gridColumn1.Visible = true;
+			this.gridColumn1.VisibleIndex = 0;
+			this.gridColumn1.Width = 151;
+			// 
+			// colDepartmentID
+			// 
+			this.colDepartmentID.Caption = "gridColumn1";
+			this.colDepartmentID.FieldName = "DepartmentID";
+			this.colDepartmentID.Name = "colDepartmentID";
+			// 
+			// colDepartmentCode
+			// 
+			this.colDepartmentCode.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colDepartmentCode.AppearanceCell.Options.UseFont = true;
+			this.colDepartmentCode.AppearanceCell.Options.UseTextOptions = true;
+			this.colDepartmentCode.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colDepartmentCode.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colDepartmentCode.AppearanceHeader.Options.UseFont = true;
+			this.colDepartmentCode.AppearanceHeader.Options.UseTextOptions = true;
+			this.colDepartmentCode.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colDepartmentCode.Caption = "MÃ BỘ PHẬN";
+			this.colDepartmentCode.FieldName = "DepartmentCode";
+			this.colDepartmentCode.Name = "colDepartmentCode";
+			this.colDepartmentCode.Visible = true;
+			this.colDepartmentCode.VisibleIndex = 2;
+			this.colDepartmentCode.Width = 251;
+			// 
+			// labelControl1
+			// 
+			this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+			this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelControl1.Location = new System.Drawing.Point(243, 16);
+			this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+			this.labelControl1.Name = "labelControl1";
+			this.labelControl1.Size = new System.Drawing.Size(184, 21);
+			this.labelControl1.TabIndex = 19;
+			this.labelControl1.Text = "Danh sách công đoạn";
+			// 
+			// dtgvMachine
+			// 
+			this.dtgvMachine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.dtgvMachine.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+			this.dtgvMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtgvMachine.Location = new System.Drawing.Point(4, 55);
+			this.dtgvMachine.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+			this.dtgvMachine.MainView = this.gvMachine;
+			this.dtgvMachine.Margin = new System.Windows.Forms.Padding(4);
+			this.dtgvMachine.Name = "dtgvMachine";
+			this.dtgvMachine.Size = new System.Drawing.Size(717, 623);
+			this.dtgvMachine.TabIndex = 38;
+			this.dtgvMachine.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvMachine});
+			// 
+			// gvMachine
+			// 
+			this.gvMachine.ColumnPanelRowHeight = 40;
+			this.gvMachine.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colIDMac,
+            this.colMachineCode,
+            this.colSTT,
+            this.colStageID,
+            this.colStageCodeMac});
+			this.gvMachine.GridControl = this.dtgvMachine;
+			this.gvMachine.Name = "gvMachine";
+			this.gvMachine.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvMachine.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvMachine.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
+			this.gvMachine.OptionsBehavior.AllowIncrementalSearch = true;
+			this.gvMachine.OptionsBehavior.Editable = false;
+			this.gvMachine.OptionsCustomization.AllowColumnMoving = false;
+			this.gvMachine.OptionsCustomization.AllowQuickHideColumns = false;
+			this.gvMachine.OptionsFind.AlwaysVisible = true;
+			this.gvMachine.OptionsFind.ShowCloseButton = false;
+			this.gvMachine.OptionsView.ShowGroupPanel = false;
+			this.gvMachine.RowHeight = 25;
+			this.gvMachine.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll;
+			this.gvMachine.DoubleClick += new System.EventHandler(this.gvMachine_DoubleClick);
+			// 
+			// colIDMac
+			// 
+			this.colIDMac.Caption = "ID";
+			this.colIDMac.FieldName = "ID";
+			this.colIDMac.Name = "colIDMac";
+			this.colIDMac.OptionsColumn.AllowEdit = false;
+			// 
+			// colMachineCode
+			// 
+			this.colMachineCode.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colMachineCode.AppearanceCell.Options.UseFont = true;
+			this.colMachineCode.AppearanceCell.Options.UseTextOptions = true;
+			this.colMachineCode.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colMachineCode.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colMachineCode.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colMachineCode.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colMachineCode.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+			this.colMachineCode.AppearanceHeader.Options.UseFont = true;
+			this.colMachineCode.AppearanceHeader.Options.UseForeColor = true;
+			this.colMachineCode.AppearanceHeader.Options.UseTextOptions = true;
+			this.colMachineCode.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colMachineCode.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colMachineCode.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colMachineCode.Caption = "MÃ MÁY";
+			this.colMachineCode.FieldName = "MachineCode";
+			this.colMachineCode.Name = "colMachineCode";
+			this.colMachineCode.OptionsColumn.AllowEdit = false;
+			this.colMachineCode.Visible = true;
+			this.colMachineCode.VisibleIndex = 1;
+			this.colMachineCode.Width = 624;
+			// 
+			// colSTT
+			// 
+			this.colSTT.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colSTT.AppearanceCell.Options.UseFont = true;
+			this.colSTT.AppearanceCell.Options.UseTextOptions = true;
+			this.colSTT.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colSTT.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colSTT.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colSTT.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+			this.colSTT.AppearanceHeader.Options.UseFont = true;
+			this.colSTT.AppearanceHeader.Options.UseForeColor = true;
+			this.colSTT.AppearanceHeader.Options.UseTextOptions = true;
+			this.colSTT.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colSTT.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colSTT.Caption = "STT";
+			this.colSTT.FieldName = "STT";
+			this.colSTT.Name = "colSTT";
+			this.colSTT.Visible = true;
+			this.colSTT.VisibleIndex = 0;
+			this.colSTT.Width = 173;
+			// 
+			// colStageID
+			// 
+			this.colStageID.Caption = "gridColumn1";
+			this.colStageID.FieldName = "StageID";
+			this.colStageID.Name = "colStageID";
+			// 
+			// colStageCodeMac
+			// 
+			this.colStageCodeMac.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colStageCodeMac.AppearanceCell.Options.UseFont = true;
+			this.colStageCodeMac.AppearanceCell.Options.UseTextOptions = true;
+			this.colStageCodeMac.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colStageCodeMac.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colStageCodeMac.AppearanceHeader.Options.UseFont = true;
+			this.colStageCodeMac.AppearanceHeader.Options.UseTextOptions = true;
+			this.colStageCodeMac.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colStageCodeMac.Caption = "MÃ CÔNG ĐOẠN";
+			this.colStageCodeMac.FieldName = "StageCode";
+			this.colStageCodeMac.Name = "colStageCodeMac";
+			this.colStageCodeMac.Visible = true;
+			this.colStageCodeMac.VisibleIndex = 2;
+			this.colStageCodeMac.Width = 470;
+			// 
+			// cbShowAll
+			// 
+			this.cbShowAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.cbShowAll.AutoSize = true;
+			this.cbShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbShowAll.Location = new System.Drawing.Point(594, 18);
+			this.cbShowAll.Name = "cbShowAll";
+			this.cbShowAll.Size = new System.Drawing.Size(119, 22);
+			this.cbShowAll.TabIndex = 36;
+			this.cbShowAll.Text = "Hiển thị tất cả";
+			this.cbShowAll.UseVisualStyleBackColor = true;
+			this.cbShowAll.CheckedChanged += new System.EventHandler(this.cbShowAll_CheckedChanged);
+			// 
+			// panel6
+			// 
+			this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel6.Controls.Add(this.btnCancelSearch);
+			this.panel6.Controls.Add(this.label1);
+			this.panel6.Controls.Add(this.txbSearch);
+			this.panel6.Controls.Add(this.btnSearch);
+			this.panel6.Location = new System.Drawing.Point(4, 7);
+			this.panel6.Margin = new System.Windows.Forms.Padding(4);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(576, 44);
+			this.panel6.TabIndex = 35;
+			// 
+			// btnCancelSearch
+			// 
+			this.btnCancelSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnCancelSearch.Location = new System.Drawing.Point(487, 8);
+			this.btnCancelSearch.Margin = new System.Windows.Forms.Padding(4);
+			this.btnCancelSearch.Name = "btnCancelSearch";
+			this.btnCancelSearch.Size = new System.Drawing.Size(84, 25);
+			this.btnCancelSearch.TabIndex = 28;
+			this.btnCancelSearch.Text = "Hủy";
+			this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(4, 10);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(75, 20);
+			this.label1.TabIndex = 27;
+			this.label1.Text = "Từ khóa";
+			// 
+			// txbSearch
+			// 
+			this.txbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txbSearch.Location = new System.Drawing.Point(86, 6);
+			this.txbSearch.Margin = new System.Windows.Forms.Padding(4);
+			this.txbSearch.Name = "txbSearch";
+			this.txbSearch.Size = new System.Drawing.Size(299, 29);
+			this.txbSearch.TabIndex = 26;
+			this.txbSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSearch_KeyPress);
+			// 
+			// btnSearch
+			// 
+			this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnSearch.Location = new System.Drawing.Point(395, 8);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(84, 25);
+			this.btnSearch.TabIndex = 25;
+			this.btnSearch.Text = "Tìm kiếm";
+			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
 			// 
 			// frmStageMachineHyp
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1403, 741);
+			this.Controls.Add(this.splitContainer1);
 			this.Controls.Add(this.toolStrip1);
 			this.Name = "frmStageMachineHyp";
-			this.Text = "frmStageMachineHyp";
+			this.Text = "QUẢN LÝ MÁY VÀ CÔNG ĐOẠN";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.frmStageMachineHyp_Load);
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+			this.splitContainer1.Panel1.ResumeLayout(false);
+			this.splitContainer1.Panel1.PerformLayout();
+			this.splitContainer1.Panel2.ResumeLayout(false);
+			this.splitContainer1.Panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+			this.splitContainer1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dtgvStage)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvStage)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvMachine)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvMachine)).EndInit();
+			this.panel6.ResumeLayout(false);
+			this.panel6.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -210,18 +670,44 @@ namespace Forms.HypoidPinion
 		#endregion
 
 		private System.Windows.Forms.ToolStrip toolStrip1;
-		private System.Windows.Forms.ToolStripButton btnCreate;
+		private System.Windows.Forms.ToolStripButton btnCreateStage;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-		private System.Windows.Forms.ToolStripButton btnEdit;
+		private System.Windows.Forms.ToolStripButton btnEditStage;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-		private System.Windows.Forms.ToolStripButton btnDel;
+		private System.Windows.Forms.ToolStripButton btnDelStage;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 		private System.Windows.Forms.ToolStripButton btnRefresh;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-		private System.Windows.Forms.ToolStripButton toolStripButton1;
+		private System.Windows.Forms.ToolStripButton btnCreateMachine;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-		private System.Windows.Forms.ToolStripButton toolStripButton2;
+		private System.Windows.Forms.ToolStripButton btnEditMachine;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-		private System.Windows.Forms.ToolStripButton toolStripButton3;
+		private System.Windows.Forms.ToolStripButton btnDelMachine;
+		private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+		private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+		private System.Windows.Forms.SplitContainer splitContainer1;
+		private System.Windows.Forms.CheckBox cbShowAll;
+		private System.Windows.Forms.Panel panel6;
+		private DevExpress.XtraEditors.SimpleButton btnCancelSearch;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox txbSearch;
+		private DevExpress.XtraEditors.SimpleButton btnSearch;
+		private DevExpress.XtraGrid.GridControl dtgvStage;
+		private DevExpress.XtraGrid.Views.Grid.GridView gvStage;
+		private DevExpress.XtraGrid.Columns.GridColumn colIDStage;
+		private DevExpress.XtraGrid.Columns.GridColumn colStageCode;
+		private DevExpress.XtraGrid.Columns.GridColumn colManagerID;
+		private DevExpress.XtraGrid.Columns.GridColumn colManagerCode;
+		private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+		private DevExpress.XtraGrid.Columns.GridColumn colDepartmentID;
+		private DevExpress.XtraGrid.Columns.GridColumn colDepartmentCode;
+		private DevExpress.XtraEditors.LabelControl labelControl1;
+		private DevExpress.XtraGrid.GridControl dtgvMachine;
+		private DevExpress.XtraGrid.Views.Grid.GridView gvMachine;
+		private DevExpress.XtraGrid.Columns.GridColumn colIDMac;
+		private DevExpress.XtraGrid.Columns.GridColumn colMachineCode;
+		private DevExpress.XtraGrid.Columns.GridColumn colSTT;
+		private DevExpress.XtraGrid.Columns.GridColumn colStageID;
+		private DevExpress.XtraGrid.Columns.GridColumn colStageCodeMac;
 	}
 }
