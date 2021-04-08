@@ -1,7 +1,7 @@
 <Tables>
 
 	<Table>
-		<name>Area</name>
+		<name>KnifeProcessedList</name>
 		<column>
 			<name>iD</name>
 			<dataType>int</dataType>
@@ -13,220 +13,24 @@
 			<number>0</number>
 		</column>
 		<column>
-			<name>areaCode</name>
-			<dataType>varchar</dataType>
+			<name>knifeID</name>
+			<dataType>int</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>Area Code</alias>
+			<alias>Knife</alias>
 			<number>1</number>
 		</column>
 		<column>
-			<name>managerID</name>
-			<dataType>int</dataType>
+			<name>knifeCode</name>
+			<dataType>varchar</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>Manager</alias>
+			<alias>Knife Code</alias>
 			<number>2</number>
-		</column>
-		<column>
-			<name>managerCode</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Manager Code</alias>
-			<number>3</number>
-		</column>
-	</Table>
-
-	<Table>
-		<name>Department</name>
-		<column>
-			<name>iD</name>
-			<dataType>int</dataType>
-			<isPK>true</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias></alias>
-			<number>0</number>
-		</column>
-		<column>
-			<name>departmentCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Department Code</alias>
-			<number>1</number>
-		</column>
-		<column>
-			<name>managerID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Manager</alias>
-			<number>2</number>
-		</column>
-		<column>
-			<name>managerCode</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Manager Code</alias>
-			<number>3</number>
-		</column>
-		<column>
-			<name>areaID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Area</alias>
-			<number>4</number>
-		</column>
-		<column>
-			<name>areaCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Area Code</alias>
-			<number>5</number>
-		</column>
-	</Table>
-
-	<Table>
-		<name>Machine</name>
-		<column>
-			<name>iD</name>
-			<dataType>int</dataType>
-			<isPK>true</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias></alias>
-			<number>0</number>
-		</column>
-		<column>
-			<name>machineCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Machine Code</alias>
-			<number>1</number>
-		</column>
-		<column>
-			<name>stageID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Stage</alias>
-			<number>2</number>
-		</column>
-		<column>
-			<name>stageCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Stage Code</alias>
-			<number>3</number>
-		</column>
-	</Table>
-
-	<Table>
-		<name>Stage</name>
-		<column>
-			<name>iD</name>
-			<dataType>int</dataType>
-			<isPK>true</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias></alias>
-			<number>0</number>
-		</column>
-		<column>
-			<name>stageCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Stage Code</alias>
-			<number>1</number>
-		</column>
-		<column>
-			<name>managerID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Manager</alias>
-			<number>2</number>
-		</column>
-		<column>
-			<name>managerCode</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Manager Code</alias>
-			<number>3</number>
-		</column>
-		<column>
-			<name>departmentID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Department</alias>
-			<number>4</number>
-		</column>
-		<column>
-			<name>departmentCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Department Code</alias>
-			<number>5</number>
-		</column>
-	</Table>
-
-	<Table>
-		<name>StageWorker</name>
-		<column>
-			<name>iD</name>
-			<dataType>int</dataType>
-			<isPK>true</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias></alias>
-			<number>0</number>
 		</column>
 		<column>
 			<name>workerID</name>
@@ -236,321 +40,57 @@
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
 			<alias>Worker</alias>
-			<number>1</number>
-		</column>
-		<column>
-			<name>workerCode</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Worker Code</alias>
-			<number>2</number>
-		</column>
-		<column>
-			<name>jobDescription</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Job Description</alias>
 			<number>3</number>
 		</column>
 		<column>
-			<name>stageID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Stage</alias>
-			<number>4</number>
-		</column>
-		<column>
-			<name>stageCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Stage Code</alias>
-			<number>5</number>
-		</column>
-	</Table>
-
-	<Table>
-		<name>Users</name>
-		<column>
-			<name>iD</name>
-			<dataType>int</dataType>
-			<isPK>true</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias></alias>
-			<number>0</number>
-		</column>
-		<column>
-			<name>userCode</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>User Code</alias>
-			<number>1</number>
-		</column>
-		<column>
-			<name>fullName</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Full Name</alias>
-			<number>2</number>
-		</column>
-		<column>
-			<name>birthOfDate</name>
+			<name>dateProcess</name>
 			<dataType>datetime</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>Birth Of Date</alias>
-			<number>3</number>
+			<alias>Date Process</alias>
+			<number>4</number>
 		</column>
 		<column>
-			<name>sex</name>
+			<name>productCode</name>
+			<dataType>varchar</dataType>
+			<isPK>false</isPK>
+			<isFK>false</isFK>
+			<isUnique>false</isUnique>
+			<tableRelate></tableRelate>
+			<alias>Product Code</alias>
+			<number>5</number>
+		</column>
+		<column>
+			<name>machineID</name>
 			<dataType>int</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>Sex</alias>
-			<number>4</number>
-		</column>
-		<column>
-			<name>qualifications</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Qualifications</alias>
-			<number>5</number>
-		</column>
-		<column>
-			<name>bankAccount</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Bank Account</alias>
+			<alias>Machine</alias>
 			<number>6</number>
 		</column>
 		<column>
-			<name>bHYT</name>
-			<dataType>nvarchar</dataType>
+			<name>machineCode</name>
+			<dataType>varchar</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>B H Y T</alias>
+			<alias>Machine Code</alias>
 			<number>7</number>
 		</column>
 		<column>
-			<name>bHXH</name>
-			<dataType>nvarchar</dataType>
+			<name>quantity</name>
+			<dataType>int</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>B H X H</alias>
+			<alias>Quantity</alias>
 			<number>8</number>
-		</column>
-		<column>
-			<name>cMTND</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>C M T N D</alias>
-			<number>9</number>
-		</column>
-		<column>
-			<name>jobDescription</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Job Description</alias>
-			<number>10</number>
-		</column>
-		<column>
-			<name>telephone</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Telephone</alias>
-			<number>11</number>
-		</column>
-		<column>
-			<name>handPhone</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Hand Phone</alias>
-			<number>12</number>
-		</column>
-		<column>
-			<name>homeAddress</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Home Address</alias>
-			<number>13</number>
-		</column>
-		<column>
-			<name>resident</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Resident</alias>
-			<number>14</number>
-		</column>
-		<column>
-			<name>postalCode</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Postal Code</alias>
-			<number>15</number>
-		</column>
-		<column>
-			<name>departmentID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Department</alias>
-			<number>16</number>
-		</column>
-		<column>
-			<name>status</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Status</alias>
-			<number>17</number>
-		</column>
-		<column>
-			<name>email</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Email</alias>
-			<number>18</number>
-		</column>
-		<column>
-			<name>startWorking</name>
-			<dataType>datetime</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Start Working</alias>
-			<number>19</number>
-		</column>
-		<column>
-			<name>position</name>
-			<dataType>nvarchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Position</alias>
-			<number>20</number>
-		</column>
-		<column>
-			<name>imagePath</name>
-			<dataType>ntext</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Image Path</alias>
-			<number>21</number>
-		</column>
-		<column>
-			<name>createdBy</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Created By</alias>
-			<number>22</number>
-		</column>
-		<column>
-			<name>createdDate</name>
-			<dataType>datetime</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Created Date</alias>
-			<number>23</number>
-		</column>
-		<column>
-			<name>updatedBy</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Updated By</alias>
-			<number>24</number>
-		</column>
-		<column>
-			<name>updatedDate</name>
-			<dataType>datetime</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Updated Date</alias>
-			<number>25</number>
-		</column>
-		<column>
-			<name>isAdmin</name>
-			<dataType>bit</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Is Admin</alias>
-			<number>26</number>
 		</column>
 	</Table>
 

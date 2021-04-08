@@ -10,6 +10,8 @@ namespace BMS.Model
 		private string managerCode;
 		private int areaID;
 		private string areaCode;
+		private string departmentName;
+		private string description;
 		public int ID
 		{
 			get { return iD; }
@@ -44,6 +46,18 @@ namespace BMS.Model
 		{
 			get { return areaCode; }
 			set { areaCode = value; }
+		}
+	
+		public string DepartmentName
+		{
+			get { return departmentName; }
+			set { departmentName = value; }
+		}
+	
+		public string Description
+		{
+			get { return description; }
+			set { description = value; }
 		}
 	
 	}

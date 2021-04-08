@@ -44,6 +44,7 @@ namespace BMS
 		void LoadDataToForm() {
 			txbAreaCode.Text = areaModel.AreaCode;
 			cbManager.EditValue = areaModel.ManagerID;
+			txbAreaName.Text = areaModel.AreaName;
 		}
 
 		bool ValidateForm() {
@@ -81,6 +82,7 @@ namespace BMS
 						areaModel.AreaCode = txbAreaCode.Text.Trim();
 						areaModel.ManagerID = TextUtils.ToInt(cbManager.EditValue);
 						areaModel.ManagerCode = cbManager.Text.Trim();
+						areaModel.AreaName = txbAreaName.Text.Trim();
 
 						AreaBO.Instance.Insert(areaModel);
 						return true;
@@ -89,10 +91,11 @@ namespace BMS
 						areaModel.AreaCode = txbAreaCode.Text.Trim();
 						areaModel.ManagerID = TextUtils.ToInt(cbManager.EditValue);
 						areaModel.ManagerCode = cbManager.Text.Trim();
+						areaModel.AreaName = txbAreaName.Text.Trim();
 
 						TextUtils.ExcuteProcedure("spHypUpdateArea",
-									new string[] { "@id" , "@areaCode" , "@managerID" , "@managerCode" },
-									new object[] { areaModel.ID, areaModel.AreaCode, areaModel.ManagerID, areaModel.ManagerCode });
+									new string[] { "@id" , "@areaCode" , "@managerID" , "@managerCode", "@areaName" },
+									new object[] { areaModel.ID, areaModel.AreaCode, areaModel.ManagerID, areaModel.ManagerCode , areaModel.AreaName});
 						return true;
 					}
 				}
@@ -119,6 +122,8 @@ namespace BMS
 			if (SaveData())
 			{
 				areaModel = new AreaModel();
+				this.Text = "THÊM KHU VỰC";
+				_type = cGlobalVariables.Add;
 				LoadDataToForm();
 			}
 		}

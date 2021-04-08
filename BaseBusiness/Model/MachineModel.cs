@@ -8,6 +8,8 @@ namespace BMS.Model
 		private string machineCode;
 		private int stageID;
 		private string stageCode;
+		private string machineName;
+		private string description;
 		public int ID
 		{
 			get { return iD; }
@@ -30,6 +32,18 @@ namespace BMS.Model
 		{
 			get { return stageCode; }
 			set { stageCode = value; }
+		}
+	
+		public string MachineName
+		{
+			get { return machineName; }
+			set { machineName = value; }
+		}
+	
+		public string Description
+		{
+			get { return description; }
+			set { description = value; }
 		}
 	
 	}

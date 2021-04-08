@@ -37,13 +37,15 @@ namespace BMS
 			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnDelStage = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnCreateMachine = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnEditMachine = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnDelMachine = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+			this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+			this.btnShowWorker = new System.Windows.Forms.ToolStripButton();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -56,6 +58,8 @@ namespace BMS
 			this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colDepartmentCode = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colStageName = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.dtgvMachine = new DevExpress.XtraGrid.GridControl();
 			this.gvMachine = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -64,6 +68,8 @@ namespace BMS
 			this.colSTT = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colStageID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colStageCodeMac = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.cbShowAll = new System.Windows.Forms.CheckBox();
 			this.panel6 = new System.Windows.Forms.Panel();
 			this.btnCancelSearch = new DevExpress.XtraEditors.SimpleButton();
@@ -98,19 +104,21 @@ namespace BMS
             this.toolStripSeparator7,
             this.btnDelStage,
             this.toolStripSeparator2,
-            this.btnRefresh,
-            this.toolStripSeparator3,
             this.btnCreateMachine,
             this.toolStripSeparator4,
             this.btnEditMachine,
             this.toolStripSeparator5,
-            this.btnDelMachine});
+            this.btnDelMachine,
+            this.toolStripSeparator3,
+            this.btnRefresh,
+            this.toolStripSeparator6,
+            this.btnShowWorker});
 			this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+			this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
 			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-			this.toolStrip1.Size = new System.Drawing.Size(1403, 52);
+			this.toolStrip1.Size = new System.Drawing.Size(1028, 42);
 			this.toolStrip1.TabIndex = 31;
 			this.toolStrip1.Text = "toolStrip2";
 			// 
@@ -121,7 +129,7 @@ namespace BMS
 			this.btnCreateStage.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateStage.Image")));
 			this.btnCreateStage.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnCreateStage.Name = "btnCreateStage";
-			this.btnCreateStage.Size = new System.Drawing.Size(136, 44);
+			this.btnCreateStage.Size = new System.Drawing.Size(121, 41);
 			this.btnCreateStage.Tag = "frmProduct_AddProductH";
 			this.btnCreateStage.Text = "Tạo công đoạn";
 			this.btnCreateStage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -139,7 +147,7 @@ namespace BMS
 			this.btnEditStage.Image = ((System.Drawing.Image)(resources.GetObject("btnEditStage.Image")));
 			this.btnEditStage.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnEditStage.Name = "btnEditStage";
-			this.btnEditStage.Size = new System.Drawing.Size(137, 44);
+			this.btnEditStage.Size = new System.Drawing.Size(121, 41);
 			this.btnEditStage.Tag = "frmProduct_EditProductH";
 			this.btnEditStage.Text = "Sửa công đoạn";
 			this.btnEditStage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -157,7 +165,7 @@ namespace BMS
 			this.btnDelStage.Image = ((System.Drawing.Image)(resources.GetObject("btnDelStage.Image")));
 			this.btnDelStage.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnDelStage.Name = "btnDelStage";
-			this.btnDelStage.Size = new System.Drawing.Size(137, 44);
+			this.btnDelStage.Size = new System.Drawing.Size(121, 41);
 			this.btnDelStage.Tag = "frmProduct_DeleteProductH";
 			this.btnDelStage.Text = "Xóa công đoạn";
 			this.btnDelStage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -169,25 +177,6 @@ namespace BMS
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
 			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
 			// 
-			// btnRefresh
-			// 
-			this.btnRefresh.AutoSize = false;
-			this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-			this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.btnRefresh.Name = "btnRefresh";
-			this.btnRefresh.Size = new System.Drawing.Size(91, 44);
-			this.btnRefresh.Tag = "";
-			this.btnRefresh.Text = "Làm mới";
-			this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-			// 
-			// toolStripSeparator3
-			// 
-			this.toolStripSeparator3.AutoSize = false;
-			this.toolStripSeparator3.Name = "toolStripSeparator3";
-			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 40);
-			// 
 			// btnCreateMachine
 			// 
 			this.btnCreateMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,7 +184,7 @@ namespace BMS
 			this.btnCreateMachine.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateMachine.Image")));
 			this.btnCreateMachine.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnCreateMachine.Name = "btnCreateMachine";
-			this.btnCreateMachine.Size = new System.Drawing.Size(84, 44);
+			this.btnCreateMachine.Size = new System.Drawing.Size(74, 41);
 			this.btnCreateMachine.Tag = "frmProduct_AddProductH";
 			this.btnCreateMachine.Text = "Tạo máy";
 			this.btnCreateMachine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -213,7 +202,7 @@ namespace BMS
 			this.btnEditMachine.Image = ((System.Drawing.Image)(resources.GetObject("btnEditMachine.Image")));
 			this.btnEditMachine.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnEditMachine.Name = "btnEditMachine";
-			this.btnEditMachine.Size = new System.Drawing.Size(85, 44);
+			this.btnEditMachine.Size = new System.Drawing.Size(74, 41);
 			this.btnEditMachine.Tag = "frmProduct_EditProductH";
 			this.btnEditMachine.Text = "Sửa máy";
 			this.btnEditMachine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -231,11 +220,49 @@ namespace BMS
 			this.btnDelMachine.Image = ((System.Drawing.Image)(resources.GetObject("btnDelMachine.Image")));
 			this.btnDelMachine.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnDelMachine.Name = "btnDelMachine";
-			this.btnDelMachine.Size = new System.Drawing.Size(85, 44);
+			this.btnDelMachine.Size = new System.Drawing.Size(74, 41);
 			this.btnDelMachine.Tag = "frmProduct_DeleteProductH";
 			this.btnDelMachine.Text = "Xóa máy";
 			this.btnDelMachine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btnDelMachine.Click += new System.EventHandler(this.btnDelMachine_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.AutoSize = false;
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 40);
+			// 
+			// btnRefresh
+			// 
+			this.btnRefresh.AutoSize = false;
+			this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+			this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+			this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnRefresh.Name = "btnRefresh";
+			this.btnRefresh.Size = new System.Drawing.Size(91, 44);
+			this.btnRefresh.Tag = "";
+			this.btnRefresh.Text = "Làm mới";
+			this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+			// 
+			// toolStripSeparator6
+			// 
+			this.toolStripSeparator6.AutoSize = false;
+			this.toolStripSeparator6.Name = "toolStripSeparator6";
+			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 40);
+			// 
+			// btnShowWorker
+			// 
+			this.btnShowWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnShowWorker.ForeColor = System.Drawing.Color.Black;
+			this.btnShowWorker.Image = ((System.Drawing.Image)(resources.GetObject("btnShowWorker.Image")));
+			this.btnShowWorker.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnShowWorker.Name = "btnShowWorker";
+			this.btnShowWorker.Size = new System.Drawing.Size(225, 41);
+			this.btnShowWorker.Tag = "frmProduct_AddProductH";
+			this.btnShowWorker.Text = "Quản lý nhân viên công đoạn";
+			this.btnShowWorker.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnShowWorker.Click += new System.EventHandler(this.btnShowWorker_Click);
 			// 
 			// gridView1
 			// 
@@ -251,8 +278,8 @@ namespace BMS
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.splitContainer1.Location = new System.Drawing.Point(0, 54);
-			this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.splitContainer1.Location = new System.Drawing.Point(0, 44);
+			this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
 			this.splitContainer1.Name = "splitContainer1";
 			// 
 			// splitContainer1.Panel1
@@ -267,8 +294,9 @@ namespace BMS
 			this.splitContainer1.Panel2.Controls.Add(this.dtgvMachine);
 			this.splitContainer1.Panel2.Controls.Add(this.cbShowAll);
 			this.splitContainer1.Panel2.Controls.Add(this.panel6);
-			this.splitContainer1.Size = new System.Drawing.Size(1403, 684);
-			this.splitContainer1.SplitterDistance = 677;
+			this.splitContainer1.Size = new System.Drawing.Size(1052, 556);
+			this.splitContainer1.SplitterDistance = 507;
+			this.splitContainer1.SplitterWidth = 3;
 			this.splitContainer1.TabIndex = 37;
 			// 
 			// dtgvStage
@@ -276,14 +304,12 @@ namespace BMS
 			this.dtgvStage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.dtgvStage.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
 			this.dtgvStage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dtgvStage.Location = new System.Drawing.Point(-1, 55);
+			this.dtgvStage.Location = new System.Drawing.Point(-1, 45);
 			this.dtgvStage.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
 			this.dtgvStage.MainView = this.gvStage;
-			this.dtgvStage.Margin = new System.Windows.Forms.Padding(4);
 			this.dtgvStage.Name = "dtgvStage";
-			this.dtgvStage.Size = new System.Drawing.Size(672, 623);
+			this.dtgvStage.Size = new System.Drawing.Size(503, 506);
 			this.dtgvStage.TabIndex = 38;
 			this.dtgvStage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvStage});
@@ -298,7 +324,9 @@ namespace BMS
             this.colManagerCode,
             this.gridColumn1,
             this.colDepartmentID,
-            this.colDepartmentCode});
+            this.colDepartmentCode,
+            this.colStageName,
+            this.colDescription});
 			this.gvStage.GridControl = this.dtgvStage;
 			this.gvStage.Name = "gvStage";
 			this.gvStage.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -344,8 +372,8 @@ namespace BMS
 			this.colStageCode.Name = "colStageCode";
 			this.colStageCode.OptionsColumn.AllowEdit = false;
 			this.colStageCode.Visible = true;
-			this.colStageCode.VisibleIndex = 1;
-			this.colStageCode.Width = 426;
+			this.colStageCode.VisibleIndex = 0;
+			this.colStageCode.Width = 134;
 			// 
 			// colManagerID
 			// 
@@ -389,8 +417,8 @@ namespace BMS
 			this.colManagerCode.Name = "colManagerCode";
 			this.colManagerCode.OptionsColumn.AllowEdit = false;
 			this.colManagerCode.Visible = true;
-			this.colManagerCode.VisibleIndex = 3;
-			this.colManagerCode.Width = 439;
+			this.colManagerCode.VisibleIndex = 2;
+			this.colManagerCode.Width = 131;
 			// 
 			// gridColumn1
 			// 
@@ -409,8 +437,6 @@ namespace BMS
 			this.gridColumn1.Caption = "STT";
 			this.gridColumn1.FieldName = "STT";
 			this.gridColumn1.Name = "gridColumn1";
-			this.gridColumn1.Visible = true;
-			this.gridColumn1.VisibleIndex = 0;
 			this.gridColumn1.Width = 151;
 			// 
 			// colDepartmentID
@@ -433,17 +459,53 @@ namespace BMS
 			this.colDepartmentCode.FieldName = "DepartmentCode";
 			this.colDepartmentCode.Name = "colDepartmentCode";
 			this.colDepartmentCode.Visible = true;
-			this.colDepartmentCode.VisibleIndex = 2;
-			this.colDepartmentCode.Width = 251;
+			this.colDepartmentCode.VisibleIndex = 1;
+			this.colDepartmentCode.Width = 114;
+			// 
+			// colStageName
+			// 
+			this.colStageName.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colStageName.AppearanceCell.Options.UseFont = true;
+			this.colStageName.AppearanceCell.Options.UseTextOptions = true;
+			this.colStageName.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colStageName.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colStageName.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colStageName.AppearanceHeader.Options.UseFont = true;
+			this.colStageName.AppearanceHeader.Options.UseTextOptions = true;
+			this.colStageName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colStageName.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colStageName.Caption = "TÊN CÔNG ĐOẠN";
+			this.colStageName.FieldName = "StageName";
+			this.colStageName.Name = "colStageName";
+			this.colStageName.Visible = true;
+			this.colStageName.VisibleIndex = 3;
+			this.colStageName.Width = 106;
+			// 
+			// colDescription
+			// 
+			this.colDescription.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.colDescription.AppearanceCell.Options.UseFont = true;
+			this.colDescription.AppearanceCell.Options.UseTextOptions = true;
+			this.colDescription.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colDescription.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.colDescription.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.colDescription.AppearanceHeader.Options.UseFont = true;
+			this.colDescription.AppearanceHeader.Options.UseTextOptions = true;
+			this.colDescription.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.colDescription.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.colDescription.Caption = "MÔ TẢ";
+			this.colDescription.FieldName = "Description";
+			this.colDescription.Name = "colDescription";
+			this.colDescription.Visible = true;
+			this.colDescription.VisibleIndex = 4;
 			// 
 			// labelControl1
 			// 
 			this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
 			this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelControl1.Location = new System.Drawing.Point(243, 16);
-			this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+			this.labelControl1.Location = new System.Drawing.Point(181, 13);
 			this.labelControl1.Name = "labelControl1";
-			this.labelControl1.Size = new System.Drawing.Size(184, 21);
+			this.labelControl1.Size = new System.Drawing.Size(148, 17);
 			this.labelControl1.TabIndex = 19;
 			this.labelControl1.Text = "Danh sách công đoạn";
 			// 
@@ -452,14 +514,12 @@ namespace BMS
 			this.dtgvMachine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.dtgvMachine.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
 			this.dtgvMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dtgvMachine.Location = new System.Drawing.Point(4, 55);
+			this.dtgvMachine.Location = new System.Drawing.Point(3, 45);
 			this.dtgvMachine.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
 			this.dtgvMachine.MainView = this.gvMachine;
-			this.dtgvMachine.Margin = new System.Windows.Forms.Padding(4);
 			this.dtgvMachine.Name = "dtgvMachine";
-			this.dtgvMachine.Size = new System.Drawing.Size(717, 623);
+			this.dtgvMachine.Size = new System.Drawing.Size(514, 506);
 			this.dtgvMachine.TabIndex = 38;
 			this.dtgvMachine.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvMachine});
@@ -472,7 +532,9 @@ namespace BMS
             this.colMachineCode,
             this.colSTT,
             this.colStageID,
-            this.colStageCodeMac});
+            this.colStageCodeMac,
+            this.gridColumn2,
+            this.gridColumn3});
 			this.gvMachine.GridControl = this.dtgvMachine;
 			this.gvMachine.Name = "gvMachine";
 			this.gvMachine.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -517,8 +579,8 @@ namespace BMS
 			this.colMachineCode.Name = "colMachineCode";
 			this.colMachineCode.OptionsColumn.AllowEdit = false;
 			this.colMachineCode.Visible = true;
-			this.colMachineCode.VisibleIndex = 1;
-			this.colMachineCode.Width = 624;
+			this.colMachineCode.VisibleIndex = 0;
+			this.colMachineCode.Width = 130;
 			// 
 			// colSTT
 			// 
@@ -537,8 +599,6 @@ namespace BMS
 			this.colSTT.Caption = "STT";
 			this.colSTT.FieldName = "STT";
 			this.colSTT.Name = "colSTT";
-			this.colSTT.Visible = true;
-			this.colSTT.VisibleIndex = 0;
 			this.colSTT.Width = 173;
 			// 
 			// colStageID
@@ -562,16 +622,55 @@ namespace BMS
 			this.colStageCodeMac.Name = "colStageCodeMac";
 			this.colStageCodeMac.Visible = true;
 			this.colStageCodeMac.VisibleIndex = 2;
-			this.colStageCodeMac.Width = 470;
+			this.colStageCodeMac.Width = 152;
+			// 
+			// gridColumn2
+			// 
+			this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn2.AppearanceCell.Options.UseFont = true;
+			this.gridColumn2.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn2.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn2.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn2.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn2.Caption = "TÊN MÁY";
+			this.gridColumn2.FieldName = "MachineName";
+			this.gridColumn2.Name = "gridColumn2";
+			this.gridColumn2.Visible = true;
+			this.gridColumn2.VisibleIndex = 1;
+			this.gridColumn2.Width = 117;
+			// 
+			// gridColumn3
+			// 
+			this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn3.AppearanceCell.Options.UseFont = true;
+			this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn3.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn3.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.gridColumn3.Caption = "MÔ TẢ";
+			this.gridColumn3.FieldName = "Description";
+			this.gridColumn3.Name = "gridColumn3";
+			this.gridColumn3.Visible = true;
+			this.gridColumn3.VisibleIndex = 3;
+			this.gridColumn3.Width = 124;
 			// 
 			// cbShowAll
 			// 
 			this.cbShowAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.cbShowAll.AutoSize = true;
 			this.cbShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cbShowAll.Location = new System.Drawing.Point(594, 18);
+			this.cbShowAll.Location = new System.Drawing.Point(418, 13);
+			this.cbShowAll.Margin = new System.Windows.Forms.Padding(2);
 			this.cbShowAll.Name = "cbShowAll";
-			this.cbShowAll.Size = new System.Drawing.Size(119, 22);
+			this.cbShowAll.Size = new System.Drawing.Size(100, 19);
 			this.cbShowAll.TabIndex = 36;
 			this.cbShowAll.Text = "Hiển thị tất cả";
 			this.cbShowAll.UseVisualStyleBackColor = true;
@@ -585,20 +684,18 @@ namespace BMS
 			this.panel6.Controls.Add(this.label1);
 			this.panel6.Controls.Add(this.txbSearch);
 			this.panel6.Controls.Add(this.btnSearch);
-			this.panel6.Location = new System.Drawing.Point(4, 7);
-			this.panel6.Margin = new System.Windows.Forms.Padding(4);
+			this.panel6.Location = new System.Drawing.Point(3, 6);
 			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(576, 44);
+			this.panel6.Size = new System.Drawing.Size(444, 36);
 			this.panel6.TabIndex = 35;
 			// 
 			// btnCancelSearch
 			// 
 			this.btnCancelSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnCancelSearch.Location = new System.Drawing.Point(487, 8);
-			this.btnCancelSearch.Margin = new System.Windows.Forms.Padding(4);
+			this.btnCancelSearch.Location = new System.Drawing.Point(370, 6);
 			this.btnCancelSearch.Name = "btnCancelSearch";
-			this.btnCancelSearch.Size = new System.Drawing.Size(84, 25);
+			this.btnCancelSearch.Size = new System.Drawing.Size(63, 20);
 			this.btnCancelSearch.TabIndex = 28;
 			this.btnCancelSearch.Text = "Hủy";
 			this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
@@ -607,20 +704,18 @@ namespace BMS
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(4, 10);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(3, 8);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(75, 20);
+			this.label1.Size = new System.Drawing.Size(64, 16);
 			this.label1.TabIndex = 27;
 			this.label1.Text = "Từ khóa";
 			// 
 			// txbSearch
 			// 
 			this.txbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbSearch.Location = new System.Drawing.Point(86, 6);
-			this.txbSearch.Margin = new System.Windows.Forms.Padding(4);
+			this.txbSearch.Location = new System.Drawing.Point(69, 5);
 			this.txbSearch.Name = "txbSearch";
-			this.txbSearch.Size = new System.Drawing.Size(299, 29);
+			this.txbSearch.Size = new System.Drawing.Size(225, 24);
 			this.txbSearch.TabIndex = 26;
 			this.txbSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSearch_KeyPress);
 			// 
@@ -628,21 +723,21 @@ namespace BMS
 			// 
 			this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnSearch.Location = new System.Drawing.Point(395, 8);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+			this.btnSearch.Location = new System.Drawing.Point(302, 6);
 			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(84, 25);
+			this.btnSearch.Size = new System.Drawing.Size(63, 20);
 			this.btnSearch.TabIndex = 25;
 			this.btnSearch.Text = "Tìm kiếm";
 			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
 			// 
 			// frmStageMachineHyp
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1403, 741);
+			this.ClientSize = new System.Drawing.Size(1028, 602);
 			this.Controls.Add(this.splitContainer1);
 			this.Controls.Add(this.toolStrip1);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "frmStageMachineHyp";
 			this.Text = "QUẢN LÝ MÁY VÀ CÔNG ĐOẠN";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -709,5 +804,11 @@ namespace BMS
 		private DevExpress.XtraGrid.Columns.GridColumn colSTT;
 		private DevExpress.XtraGrid.Columns.GridColumn colStageID;
 		private DevExpress.XtraGrid.Columns.GridColumn colStageCodeMac;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+		private System.Windows.Forms.ToolStripButton btnShowWorker;
+		private DevExpress.XtraGrid.Columns.GridColumn colStageName;
+		private DevExpress.XtraGrid.Columns.GridColumn colDescription;
+		private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+		private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
 	}
 }

@@ -108,9 +108,10 @@ namespace BMS
 			this.btnNumberProduct = new DevExpress.XtraBars.BarButtonItem();
 			this.btnNumberProductAltaxx = new DevExpress.XtraBars.BarButtonItem();
 			this.btnConfigShipToAltax = new DevExpress.XtraBars.BarButtonItem();
-			this.btnStockSon = new DevExpress.XtraBars.BarButtonItem();
-			this.btnStockMotor = new DevExpress.XtraBars.BarButtonItem();
+			this.btnHypoidAD = new DevExpress.XtraBars.BarButtonItem();
+			this.btnHypoidSM = new DevExpress.XtraBars.BarButtonItem();
 			this.LargeImageCollection = new DevExpress.Utils.ImageCollection(this.components);
+			this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
 			this.ribbonPageNhanVien = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -128,7 +129,6 @@ namespace BMS
 			this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageTester = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ImageCollection)).BeginInit();
@@ -220,8 +220,8 @@ namespace BMS
             this.btnNumberProduct,
             this.btnNumberProductAltaxx,
             this.btnConfigShipToAltax,
-            this.btnStockSon,
-            this.btnStockMotor});
+            this.btnHypoidAD,
+            this.btnHypoidSM});
 			this.ribbonControl1.LargeImages = this.LargeImageCollection;
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.MaxItemId = 162;
@@ -235,7 +235,7 @@ namespace BMS
             this.ribbonPageHyp,
             this.ribbonPageTester});
 			this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Show;
-			this.ribbonControl1.Size = new System.Drawing.Size(1406, 117);
+			this.ribbonControl1.Size = new System.Drawing.Size(1370, 117);
 			this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
 			// 
 			// ImageCollection
@@ -1058,25 +1058,25 @@ namespace BMS
 			this.btnConfigShipToAltax.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnConfigShipToAltax.LargeGlyph")));
 			this.btnConfigShipToAltax.Name = "btnConfigShipToAltax";
 			// 
-			// btnStockSon
+			// btnHypoidAD
 			// 
-			this.btnStockSon.Caption = "KHO SƠN";
-			this.btnStockSon.Id = 160;
-			this.btnStockSon.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-			this.btnStockSon.ItemAppearance.Normal.Options.UseFont = true;
-			this.btnStockSon.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnStockSon.LargeGlyph")));
-			this.btnStockSon.Name = "btnStockSon";
-			this.btnStockSon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+			this.btnHypoidAD.Caption = "KHU VỰC VÀ BỘ PHẬN";
+			this.btnHypoidAD.Id = 160;
+			this.btnHypoidAD.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+			this.btnHypoidAD.ItemAppearance.Normal.Options.UseFont = true;
+			this.btnHypoidAD.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHypoidAD.LargeGlyph")));
+			this.btnHypoidAD.Name = "btnHypoidAD";
+			this.btnHypoidAD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
 			// 
-			// btnStockMotor
+			// btnHypoidSM
 			// 
-			this.btnStockMotor.Caption = "KHO MOTOR";
-			this.btnStockMotor.Id = 161;
-			this.btnStockMotor.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-			this.btnStockMotor.ItemAppearance.Normal.Options.UseFont = true;
-			this.btnStockMotor.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnStockMotor.LargeGlyph")));
-			this.btnStockMotor.Name = "btnStockMotor";
-			this.btnStockMotor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+			this.btnHypoidSM.Caption = "CÔNG ĐOẠN VÀ MÁY";
+			this.btnHypoidSM.Id = 161;
+			this.btnHypoidSM.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+			this.btnHypoidSM.ItemAppearance.Normal.Options.UseFont = true;
+			this.btnHypoidSM.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHypoidSM.LargeGlyph")));
+			this.btnHypoidSM.Name = "btnHypoidSM";
+			this.btnHypoidSM.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
 			// 
 			// LargeImageCollection
 			// 
@@ -1266,8 +1266,8 @@ namespace BMS
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnConfigShipTo);
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnConfigFormula);
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnNumberProduct);
-			this.ribbonPageGroup5.ItemLinks.Add(this.btnStockSon);
-			this.ribbonPageGroup5.ItemLinks.Add(this.btnStockMotor);
+			this.ribbonPageGroup5.ItemLinks.Add(this.btnHypoidAD);
+			this.ribbonPageGroup5.ItemLinks.Add(this.btnHypoidSM);
 			this.ribbonPageGroup5.Name = "ribbonPageGroup5";
 			this.ribbonPageGroup5.Text = "DANH MỤC";
 			// 
@@ -1313,7 +1313,7 @@ namespace BMS
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1406, 413);
+			this.ClientSize = new System.Drawing.Size(1370, 413);
 			this.Controls.Add(this.ribbonControl1);
 			this.IsMdiContainer = true;
 			this.Margin = new System.Windows.Forms.Padding(2);
@@ -1426,8 +1426,8 @@ namespace BMS
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
 		private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageTester;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-		private DevExpress.XtraBars.BarButtonItem btnStockSon;
-		private DevExpress.XtraBars.BarButtonItem btnStockMotor;
+		private DevExpress.XtraBars.BarButtonItem btnHypoidAD;
+		private DevExpress.XtraBars.BarButtonItem btnHypoidSM;
 		private DevExpress.XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar1;
 		private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
 	}

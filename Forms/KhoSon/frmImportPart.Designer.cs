@@ -145,7 +145,7 @@ namespace BMS
 			this.mnuMenu.Location = new System.Drawing.Point(0, 0);
 			this.mnuMenu.Name = "mnuMenu";
 			this.mnuMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-			this.mnuMenu.Size = new System.Drawing.Size(836, 52);
+			this.mnuMenu.Size = new System.Drawing.Size(627, 42);
 			this.mnuMenu.TabIndex = 2;
 			this.mnuMenu.Text = "toolStrip2";
 			this.mnuMenu.Visible = false;
@@ -156,7 +156,7 @@ namespace BMS
 			this.btnSaveNew.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveNew.Image")));
 			this.btnSaveNew.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnSaveNew.Name = "btnSaveNew";
-			this.btnSaveNew.Size = new System.Drawing.Size(149, 45);
+			this.btnSaveNew.Size = new System.Drawing.Size(113, 40);
 			this.btnSaveNew.Tag = "frmProduct_AddProductH";
 			this.btnSaveNew.Text = "Cất && Thêm mới";
 			this.btnSaveNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -169,10 +169,9 @@ namespace BMS
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Controls.Add(this.menuStrip1);
-			this.panel1.Location = new System.Drawing.Point(16, 15);
-			this.panel1.Margin = new System.Windows.Forms.Padding(4);
+			this.panel1.Location = new System.Drawing.Point(12, 12);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(804, 42);
+			this.panel1.Size = new System.Drawing.Size(603, 34);
 			this.panel1.TabIndex = 216;
 			// 
 			// label1
@@ -180,10 +179,9 @@ namespace BMS
 			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label1.Location = new System.Drawing.Point(236, 2);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(177, 2);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(371, 36);
+			this.label1.Size = new System.Drawing.Size(278, 29);
 			this.label1.TabIndex = 218;
 			this.label1.Text = "NHẬP DỮ LIỆU TỔ SƠN";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -194,9 +192,10 @@ namespace BMS
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cấtToolStripMenuItem});
-			this.menuStrip1.Location = new System.Drawing.Point(571, 2);
+			this.menuStrip1.Location = new System.Drawing.Point(428, 2);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(53, 28);
+			this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+			this.menuStrip1.Size = new System.Drawing.Size(43, 24);
 			this.menuStrip1.TabIndex = 220;
 			this.menuStrip1.Text = "menuStrip1";
 			this.menuStrip1.Visible = false;
@@ -205,7 +204,7 @@ namespace BMS
 			// 
 			this.cấtToolStripMenuItem.Name = "cấtToolStripMenuItem";
 			this.cấtToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F12;
-			this.cấtToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
+			this.cấtToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
 			this.cấtToolStripMenuItem.Text = "Cất";
 			this.cấtToolStripMenuItem.Click += new System.EventHandler(this.cấtToolStripMenuItem_Click);
 			// 
@@ -216,10 +215,9 @@ namespace BMS
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel2.Controls.Add(this.tableLayoutPanel2);
 			this.panel2.Controls.Add(this.tableLayoutPanel1);
-			this.panel2.Location = new System.Drawing.Point(16, 59);
-			this.panel2.Margin = new System.Windows.Forms.Padding(4);
+			this.panel2.Location = new System.Drawing.Point(12, 48);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(804, 384);
+			this.panel2.Size = new System.Drawing.Size(603, 312);
 			this.panel2.TabIndex = 217;
 			// 
 			// tableLayoutPanel2
@@ -230,15 +228,14 @@ namespace BMS
 			this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
 			this.tableLayoutPanel2.ColumnCount = 1;
 			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.tableLayoutPanel2.Controls.Add(this.txbType, 0, 0);
 			this.tableLayoutPanel2.Controls.Add(this.txbCurrentQuantity, 0, 1);
 			this.tableLayoutPanel2.Controls.Add(this.txbPartCode, 0, 2);
 			this.tableLayoutPanel2.Controls.Add(this.txbWorkerCode, 0, 5);
 			this.tableLayoutPanel2.Controls.Add(this.txbOrderCode, 0, 3);
 			this.tableLayoutPanel2.Controls.Add(this.txbQuantity, 0, 4);
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(375, -2);
-			this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(281, -2);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 6;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -247,8 +244,8 @@ namespace BMS
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-			this.tableLayoutPanel2.Size = new System.Drawing.Size(429, 383);
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel2.Size = new System.Drawing.Size(322, 311);
 			this.tableLayoutPanel2.TabIndex = 220;
 			// 
 			// txbType
@@ -257,11 +254,10 @@ namespace BMS
 			this.txbType.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbType.Enabled = false;
 			this.txbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbType.Location = new System.Drawing.Point(7, 7);
-			this.txbType.Margin = new System.Windows.Forms.Padding(4);
+			this.txbType.Location = new System.Drawing.Point(6, 6);
 			this.txbType.Name = "txbType";
 			this.txbType.ReadOnly = true;
-			this.txbType.Size = new System.Drawing.Size(415, 53);
+			this.txbType.Size = new System.Drawing.Size(310, 44);
 			this.txbType.TabIndex = 200;
 			this.txbType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -271,11 +267,10 @@ namespace BMS
 			this.txbCurrentQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbCurrentQuantity.Enabled = false;
 			this.txbCurrentQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbCurrentQuantity.Location = new System.Drawing.Point(7, 70);
-			this.txbCurrentQuantity.Margin = new System.Windows.Forms.Padding(4);
+			this.txbCurrentQuantity.Location = new System.Drawing.Point(6, 57);
 			this.txbCurrentQuantity.Name = "txbCurrentQuantity";
 			this.txbCurrentQuantity.ReadOnly = true;
-			this.txbCurrentQuantity.Size = new System.Drawing.Size(415, 53);
+			this.txbCurrentQuantity.Size = new System.Drawing.Size(310, 44);
 			this.txbCurrentQuantity.TabIndex = 201;
 			this.txbCurrentQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -284,10 +279,9 @@ namespace BMS
 			this.txbPartCode.BackColor = System.Drawing.Color.White;
 			this.txbPartCode.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbPartCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbPartCode.Location = new System.Drawing.Point(7, 133);
-			this.txbPartCode.Margin = new System.Windows.Forms.Padding(4);
+			this.txbPartCode.Location = new System.Drawing.Point(6, 108);
 			this.txbPartCode.Name = "txbPartCode";
-			this.txbPartCode.Size = new System.Drawing.Size(415, 53);
+			this.txbPartCode.Size = new System.Drawing.Size(310, 44);
 			this.txbPartCode.TabIndex = 215;
 			this.txbPartCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbPartCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPartCode_KeyPress);
@@ -296,10 +290,9 @@ namespace BMS
 			// 
 			this.txbWorkerCode.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbWorkerCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbWorkerCode.Location = new System.Drawing.Point(7, 322);
-			this.txbWorkerCode.Margin = new System.Windows.Forms.Padding(4);
+			this.txbWorkerCode.Location = new System.Drawing.Point(6, 261);
 			this.txbWorkerCode.Name = "txbWorkerCode";
-			this.txbWorkerCode.Size = new System.Drawing.Size(415, 53);
+			this.txbWorkerCode.Size = new System.Drawing.Size(310, 44);
 			this.txbWorkerCode.TabIndex = 212;
 			this.txbWorkerCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbWorkerCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbWorkerCode_KeyPress);
@@ -308,10 +301,9 @@ namespace BMS
 			// 
 			this.txbOrderCode.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbOrderCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbOrderCode.Location = new System.Drawing.Point(7, 196);
-			this.txbOrderCode.Margin = new System.Windows.Forms.Padding(4);
+			this.txbOrderCode.Location = new System.Drawing.Point(6, 159);
 			this.txbOrderCode.Name = "txbOrderCode";
-			this.txbOrderCode.Size = new System.Drawing.Size(415, 53);
+			this.txbOrderCode.Size = new System.Drawing.Size(310, 44);
 			this.txbOrderCode.TabIndex = 213;
 			this.txbOrderCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbOrderCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbOrderCode_KeyPress);
@@ -320,15 +312,14 @@ namespace BMS
 			// 
 			this.txbQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbQuantity.Location = new System.Drawing.Point(7, 259);
-			this.txbQuantity.Margin = new System.Windows.Forms.Padding(4);
+			this.txbQuantity.Location = new System.Drawing.Point(6, 210);
 			this.txbQuantity.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
 			this.txbQuantity.Name = "txbQuantity";
-			this.txbQuantity.Size = new System.Drawing.Size(415, 53);
+			this.txbQuantity.Size = new System.Drawing.Size(310, 44);
 			this.txbQuantity.TabIndex = 214;
 			this.txbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -338,7 +329,7 @@ namespace BMS
 			this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
 			this.tableLayoutPanel1.ColumnCount = 1;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.tableLayoutPanel1.Controls.Add(this.label6, 1, 4);
 			this.tableLayoutPanel1.Controls.Add(this.label5, 1, 3);
 			this.tableLayoutPanel1.Controls.Add(this.label4, 1, 2);
@@ -346,7 +337,6 @@ namespace BMS
 			this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
 			this.tableLayoutPanel1.Controls.Add(this.label7, 0, 5);
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, -2);
-			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 6;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -355,8 +345,8 @@ namespace BMS
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(375, 383);
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(281, 311);
 			this.tableLayoutPanel1.TabIndex = 219;
 			// 
 			// label6
@@ -364,10 +354,9 @@ namespace BMS
 			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label6.Location = new System.Drawing.Point(7, 255);
-			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label6.Location = new System.Drawing.Point(6, 207);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(361, 58);
+			this.label6.Size = new System.Drawing.Size(269, 47);
 			this.label6.TabIndex = 222;
 			this.label6.Text = "Số lượng";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -375,10 +364,9 @@ namespace BMS
 			// label5
 			// 
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label5.Location = new System.Drawing.Point(7, 192);
-			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Location = new System.Drawing.Point(6, 156);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(359, 58);
+			this.label5.Size = new System.Drawing.Size(269, 47);
 			this.label5.TabIndex = 221;
 			this.label5.Text = "Order NO";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -388,10 +376,9 @@ namespace BMS
 			this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label4.Location = new System.Drawing.Point(7, 129);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label4.Location = new System.Drawing.Point(6, 105);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(361, 58);
+			this.label4.Size = new System.Drawing.Size(269, 47);
 			this.label4.TabIndex = 220;
 			this.label4.Text = "Mã hàng";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -401,10 +388,9 @@ namespace BMS
 			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label3.Location = new System.Drawing.Point(7, 66);
-			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label3.Location = new System.Drawing.Point(6, 54);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(361, 58);
+			this.label3.Size = new System.Drawing.Size(269, 47);
 			this.label3.TabIndex = 219;
 			this.label3.Text = "Qty đã nhập";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -414,10 +400,9 @@ namespace BMS
 			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label2.Location = new System.Drawing.Point(7, 3);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label2.Location = new System.Drawing.Point(6, 3);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(361, 58);
+			this.label2.Size = new System.Drawing.Size(269, 47);
 			this.label2.TabIndex = 218;
 			this.label2.Text = "Loại hàng";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -427,10 +412,9 @@ namespace BMS
 			this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-			this.label7.Location = new System.Drawing.Point(7, 318);
-			this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label7.Location = new System.Drawing.Point(6, 258);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(361, 62);
+			this.label7.Size = new System.Drawing.Size(269, 50);
 			this.label7.TabIndex = 223;
 			this.label7.Text = "Người KT";
 			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -463,8 +447,7 @@ namespace BMS
 			xyDiagram1.EnableAxisYZooming = true;
 			this.chartControl2.Diagram = xyDiagram1;
 			this.chartControl2.Legend.Visible = false;
-			this.chartControl2.Location = new System.Drawing.Point(16, 451);
-			this.chartControl2.Margin = new System.Windows.Forms.Padding(4);
+			this.chartControl2.Location = new System.Drawing.Point(12, 366);
 			this.chartControl2.Name = "chartControl2";
 			this.chartControl2.Padding.Bottom = 4;
 			this.chartControl2.Padding.Left = 4;
@@ -511,7 +494,7 @@ namespace BMS
 			this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
 			this.chartControl2.SideBySideBarDistanceVariable = 0.1D;
-			this.chartControl2.Size = new System.Drawing.Size(804, 367);
+			this.chartControl2.Size = new System.Drawing.Size(603, 298);
 			this.chartControl2.TabIndex = 219;
 			// 
 			// timer1
@@ -521,16 +504,16 @@ namespace BMS
 			// 
 			// frmImportPart
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Highlight;
-			this.ClientSize = new System.Drawing.Size(836, 833);
+			this.ClientSize = new System.Drawing.Size(627, 609);
 			this.Controls.Add(this.chartControl2);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.mnuMenu);
 			this.MainMenuStrip = this.menuStrip1;
-			this.Margin = new System.Windows.Forms.Padding(5);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "frmImportPart";
 			this.Text = "NHẬP DỮ LIỆU TỔ SƠN";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

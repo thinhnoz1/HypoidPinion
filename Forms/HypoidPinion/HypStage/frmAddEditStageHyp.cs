@@ -56,6 +56,8 @@ namespace BMS
 			txbStageCode.Text = stageModel.StageCode;
 			cbManager.EditValue = stageModel.ManagerID;
 			cDepartment.EditValue = stageModel.DepartmentID;
+			txbStageName.Text = stageModel.StageName;
+			txbDescription.Text = stageModel.Description;
 		}
 
 		bool ValidateForm()
@@ -102,6 +104,8 @@ namespace BMS
 						stageModel.DepartmentID= TextUtils.ToInt(cDepartment.EditValue);
 						stageModel.ManagerCode = cbManager.Text.Trim();
 						stageModel.DepartmentCode = cDepartment.Text.Trim();
+						stageModel.StageName = txbStageName.Text.Trim();
+						stageModel.Description = txbDescription.Text;
 
 						StageBO.Instance.Insert(stageModel);
 						return true;
@@ -113,10 +117,12 @@ namespace BMS
 						stageModel.DepartmentID = TextUtils.ToInt(cDepartment.EditValue);
 						stageModel.ManagerCode = cbManager.Text.Trim();
 						stageModel.DepartmentCode = cDepartment.Text.Trim();
+						stageModel.StageName = txbStageName.Text.Trim();
+						stageModel.Description = txbDescription.Text;
 
 						TextUtils.ExcuteProcedure("spHypUpdateStage",
-									new string[] { "@id", "@stageCode", "@departmentID", "@departmentCode", "@managerID", "@managerCode" },
-									new object[] { stageModel.ID, stageModel.StageCode, stageModel.DepartmentID, stageModel.DepartmentCode, stageModel.ManagerID, stageModel.ManagerCode });
+									new string[] { "@id", "@stageCode", "@departmentID", "@departmentCode", "@managerID", "@managerCode", "@stageName", "@description" },
+									new object[] { stageModel.ID, stageModel.StageCode, stageModel.DepartmentID, stageModel.DepartmentCode, stageModel.ManagerID, stageModel.ManagerCode, stageModel.StageName, stageModel.Description });
 						return true;
 					}
 				}
@@ -143,6 +149,8 @@ namespace BMS
 			if (SaveData())
 			{
 				stageModel = new StageModel();
+				this.Text = "THÊM CÔNG ĐOẠN";
+				_type = cGlobalVariables.Add;
 				LoadDataToForm();
 			}
 		}

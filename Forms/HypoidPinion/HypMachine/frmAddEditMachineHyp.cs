@@ -47,6 +47,8 @@ namespace BMS
 		{
 			txbMachineCode.Text = machineModel.MachineCode;
 			cbStage.EditValue = machineModel.StageID;
+			txbMachineName.Text = machineModel.MachineName;
+			txbDescription.Text = machineModel.Description;
 		}
 
 		bool ValidateForm()
@@ -86,6 +88,8 @@ namespace BMS
 						machineModel.MachineCode = txbMachineCode.Text.Trim();
 						machineModel.StageID = TextUtils.ToInt(cbStage.EditValue);
 						machineModel.StageCode = cbStage.Text.Trim();
+						machineModel.MachineName = txbMachineName.Text.Trim();
+						machineModel.Description = txbDescription.Text;
 
 						MachineBO.Instance.Insert(machineModel);
 						return true;
@@ -95,6 +99,8 @@ namespace BMS
 						machineModel.MachineCode = txbMachineCode.Text.Trim();
 						machineModel.StageID = TextUtils.ToInt(cbStage.EditValue);
 						machineModel.StageCode = cbStage.Text.Trim();
+						machineModel.MachineName = txbMachineName.Text.Trim();
+						machineModel.Description = txbDescription.Text;
 
 						MachineBO.Instance.Update(machineModel);
 						return true;
@@ -126,6 +132,8 @@ namespace BMS
 			if (SaveData())
 			{
 				machineModel = new MachineModel();
+				this.Text = "THÊM MÁY";
+				_type = cGlobalVariables.Add;
 				LoadDataToForm();
 			}
 		}

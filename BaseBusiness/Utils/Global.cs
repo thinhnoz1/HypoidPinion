@@ -19,7 +19,8 @@ namespace BMS
         static bool _IsRoot = false;
 
         //static string _ConnectionString = @"Data Source=DESKTOP-G8A1CQA\SQLEXPRESS;Initial Catalog=ShiStock;Integrated Security=True";
-        static string _ConnectionString = @"Data Source=DESKTOP-G8A1CQA\SQLEXPRESS;Initial Catalog=HypoidPinion;Integrated Security=True";
+        //static string _ConnectionString = @"Data Source=DESKTOP-G8A1CQA\SQLEXPRESS;Initial Catalog=HypoidPinion;Integrated Security=True";
+        static string _ConnectionString = @"Data Source=DESKTOP-G0I3496\SQLEXPRESS;Initial Catalog=HypoidPinion;Integrated Security=True";
         // static string _ConnectionString = "";
 
         static string _AppUserCode;

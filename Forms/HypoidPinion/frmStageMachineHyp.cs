@@ -156,6 +156,17 @@ namespace BMS
 				return;
 			}
 		}
+
+		private void btnShowWorker_Click(object sender, EventArgs e)
+		{
+			prevRow = gvMachine.GetSelectedRows()[0];
+			frmStageWorkerHyp frm = new frmStageWorkerHyp();
+			if (frm.ShowDialog() == DialogResult.OK)
+			{
+				LoadMachine();
+				gvMachine.FocusedRowHandle = prevRow;
+			}
+		}
 		private void gvStage_DoubleClick(object sender, EventArgs e)
 		{
 			btnEditStage_Click(null, null);
@@ -199,5 +210,6 @@ namespace BMS
 		}
 		#endregion
 
+		
 	}
 }

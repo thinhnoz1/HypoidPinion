@@ -20,13 +20,13 @@ namespace BMS
 
 		private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			TextUtils.OpenChildForm(new frmProductListSON(), this);
+			TextUtils.OpenChildForm(new frmAreaDepartHyp(), this);
 		
 		}
 
 		private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			frmMotorPartList frm = new frmMotorPartList();
+			frmStageMachineHyp frm = new frmStageMachineHyp();
 			TextUtils.OpenChildForm(frm, this);
 		
 		}

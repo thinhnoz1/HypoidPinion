@@ -55,6 +55,8 @@ namespace BMS
 			txbDepartmentCode.Text = departmentModel.DepartmentCode;
 			cbManager.EditValue = departmentModel.ManagerID;
 			cArea.EditValue = departmentModel.AreaID;
+			txbDepartmentName.Text = departmentModel.DepartmentName;
+			txbDescription.Text = departmentModel.Description;
 		}
 
 		bool ValidateForm() {
@@ -103,6 +105,8 @@ namespace BMS
 						departmentModel.AreaID = TextUtils.ToInt(cArea.EditValue);
 						departmentModel.ManagerCode = cbManager.Text.Trim();
 						departmentModel.AreaCode = cArea.Text.Trim();
+						departmentModel.DepartmentName = txbDepartmentName.Text.Trim();
+						departmentModel.Description = txbDescription.Text;
 
 						DepartmentBO.Instance.Insert(departmentModel);
 						return true;
@@ -114,10 +118,12 @@ namespace BMS
 						departmentModel.AreaID = TextUtils.ToInt(cArea.EditValue);
 						departmentModel.ManagerCode = cbManager.Text.Trim();
 						departmentModel.AreaCode = cArea.Text.Trim();
+						departmentModel.DepartmentName = txbDepartmentName.Text.Trim();
+						departmentModel.Description = txbDescription.Text;
 
 						TextUtils.ExcuteProcedure("spHypUpdateDepartment",
-									new string[] { "@id", "@departmentCode", "@areaID", "@areaCode", "@managerID", "@managerCode" },
-									new object[] { departmentModel.ID, departmentModel.DepartmentCode, departmentModel.AreaID, departmentModel.AreaCode, departmentModel.ManagerID, departmentModel.ManagerCode });
+									new string[] { "@id", "@departmentCode", "@areaID", "@areaCode", "@managerID", "@managerCode", "@departmentName", "@description" },
+									new object[] { departmentModel.ID, departmentModel.DepartmentCode, departmentModel.AreaID, departmentModel.AreaCode, departmentModel.ManagerID, departmentModel.ManagerCode, departmentModel.DepartmentName, departmentModel.Description });
 						return true;
 					}
 				}
@@ -153,6 +159,8 @@ namespace BMS
 			if (SaveData())
 			{
 				departmentModel = new DepartmentModel();
+				this.Text = "THÊM BỘ PHẬN";
+				_type = cGlobalVariables.Add;
 				LoadDataToForm();
 			}
 		}

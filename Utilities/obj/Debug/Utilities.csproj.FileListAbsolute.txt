@@ -510,3 +510,56 @@ D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Utilities\obj\Debug\Utilities.csproj.
 D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Utilities\obj\Debug\Utilities.csproj.CopyComplete
 D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Utilities\obj\Debug\Utilities.dll
 D:\THINH\PRXJEKT\1. SUMITOMO\Hypoid Pinion\Utilities\obj\Debug\Utilities.pdb
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\Utilities.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\Utilities.pdb
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.Data.v13.2.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.Printing.v13.2.Core.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.Utils.v13.2.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.XtraEditors.v13.2.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.XtraGrid.v13.2.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.XtraPrinting.v13.2.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\itextsharp.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\TPA.Serial Interface.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.Printing.v13.2.Core.xml
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.Data.v13.2.xml
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.Utils.v13.2.xml
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.XtraEditors.v13.2.xml
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.XtraPrinting.v13.2.xml
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\DevExpress.XtraGrid.v13.2.xml
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\de\DevExpress.Printing.v13.2.Core.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\es\DevExpress.Printing.v13.2.Core.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ja\DevExpress.Printing.v13.2.Core.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ru\DevExpress.Printing.v13.2.Core.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\de\DevExpress.Data.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\es\DevExpress.Data.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ja\DevExpress.Data.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ru\DevExpress.Data.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\de\DevExpress.Utils.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\es\DevExpress.Utils.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ja\DevExpress.Utils.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ru\DevExpress.Utils.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\de\DevExpress.XtraEditors.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\es\DevExpress.XtraEditors.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ja\DevExpress.XtraEditors.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ru\DevExpress.XtraEditors.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\de\DevExpress.XtraPrinting.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\es\DevExpress.XtraPrinting.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ja\DevExpress.XtraPrinting.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ru\DevExpress.XtraPrinting.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\de\DevExpress.XtraGrid.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\es\DevExpress.XtraGrid.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ja\DevExpress.XtraGrid.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\bin\Debug\ru\DevExpress.XtraGrid.v13.2.resources.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Forms.frmBase.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\BMS.frmCshLoading.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\BMS.frmGenSelect.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Forms.frmTestBase.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\BMS.ShowProcessBar.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.Properties.Resources.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.csproj.GenerateResource.cache
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.dll
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Utilities\obj\Debug\Utilities.pdb

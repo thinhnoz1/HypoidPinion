@@ -104,6 +104,10 @@
     <Compile Include="BO\EventsLogErrorBO.cs" />
     <Compile Include="BO\FormAndFunctionBO.cs" />
     <Compile Include="BO\FormAndFunctionGroupBO.cs" />
+    <Compile Include="BO\KnifeDetailListBO.cs" />
+    <Compile Include="BO\KnifeDisposedDetailsBO.cs" />
+    <Compile Include="BO\KnifeProcessedListBO.cs" />
+    <Compile Include="BO\KnifeSharpeningDetailsBO.cs" />
     <Compile Include="BO\MachineBO.cs" />
     <Compile Include="BO\ManufacturerBO.cs" />
     <Compile Include="BO\MotorHistoryImExBO.cs" />
@@ -125,6 +129,7 @@
     <Compile Include="BO\SONHistoryImExBO.cs" />
     <Compile Include="BO\SonPlanBO.cs" />
     <Compile Include="BO\StageBO.cs" />
+    <Compile Include="BO\StageWorkerBO.cs" />
     <Compile Include="BO\SupplierBO.cs" />
     <Compile Include="BO\UserGroupBO.cs" />
     <Compile Include="BO\UserGroupLinkBO.cs" />
@@ -153,6 +158,10 @@
     <Compile Include="Facade\EventsLogFacade.cs" />
     <Compile Include="Facade\FormAndFunctionFacade.cs" />
     <Compile Include="Facade\FormAndFunctionGroupFacade.cs" />
+    <Compile Include="Facade\KnifeDetailListFacade.cs" />
+    <Compile Include="Facade\KnifeDisposedDetailsFacade.cs" />
+    <Compile Include="Facade\KnifeProcessedListFacade.cs" />
+    <Compile Include="Facade\KnifeSharpeningDetailsFacade.cs" />
     <Compile Include="Facade\MachineFacade.cs" />
     <Compile Include="Facade\ManufacturerFacade.cs" />
     <Compile Include="Facade\MotorHistoryImExFacade.cs" />
@@ -175,6 +184,7 @@
     <Compile Include="Facade\SONHistoryImExFacade.cs" />
     <Compile Include="Facade\SonPlanFacade.cs" />
     <Compile Include="Facade\StageFacade.cs" />
+    <Compile Include="Facade\StageWorkerFacade.cs" />
     <Compile Include="Facade\SupplierFacade.cs" />
     <Compile Include="Facade\UserGroupFacade.cs" />
     <Compile Include="Facade\UserGroupLinkFacade.cs" />
@@ -202,6 +212,10 @@
     <Compile Include="Model\EventsLogModel.cs" />
     <Compile Include="Model\FormAndFunctionGroupModel.cs" />
     <Compile Include="Model\FormAndFunctionModel.cs" />
+    <Compile Include="Model\KnifeDetailListModel.cs" />
+    <Compile Include="Model\KnifeDisposedDetailsModel.cs" />
+    <Compile Include="Model\KnifeProcessedListModel.cs" />
+    <Compile Include="Model\KnifeSharpeningDetailsModel.cs" />
     <Compile Include="Model\MachineModel.cs" />
     <Compile Include="Model\ManufacturerModel.cs" />
     <Compile Include="Model\MotorHistoryImExModel.cs" />
@@ -227,6 +241,7 @@
     <Compile Include="Model\SONHistoryImExModel.cs" />
     <Compile Include="Model\SonPlanModel.cs" />
     <Compile Include="Model\StageModel.cs" />
+    <Compile Include="Model\StageWorkerModel.cs" />
     <Compile Include="Model\SupplierModel.cs" />
     <Compile Include="Model\UpdateSoftwareModel.cs" />
     <Compile Include="Model\UserGroupLinkModel.cs" />

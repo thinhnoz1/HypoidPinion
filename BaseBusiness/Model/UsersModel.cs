@@ -20,6 +20,7 @@ namespace BMS.Model
 		private string homeAddress;
 		private string resident;
 		private string postalCode;
+		private string departmentCode;
 		private int departmentID;
 		private int status;
 		private string email;
@@ -125,6 +126,12 @@ namespace BMS.Model
 		{
 			get { return postalCode; }
 			set { postalCode = value; }
+		}
+	
+		public string DepartmentCode
+		{
+			get { return departmentCode; }
+			set { departmentCode = value; }
 		}
 	
 		public int DepartmentID
