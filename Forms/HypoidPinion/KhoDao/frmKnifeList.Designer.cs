@@ -41,8 +41,9 @@ namespace BMS
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnDisposeTool = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-			this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+			this.btnSharpenKnife = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+			this.btnRefresh = new System.Windows.Forms.ToolStripButton();
 			this.dtgvKnife = new DevExpress.XtraGrid.GridControl();
 			this.gvKnife = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -58,7 +59,6 @@ namespace BMS
 			this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.cbShowUnavailable = new System.Windows.Forms.CheckBox();
-			this.btnSharpenKnife = new System.Windows.Forms.ToolStripButton();
 			this.toolStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dtgvKnife)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gvKnife)).BeginInit();
@@ -160,7 +160,7 @@ namespace BMS
 			this.btnProcessTool.Tag = "frmProduct_AddProductH";
 			this.btnProcessTool.Text = "Gia công";
 			this.btnProcessTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnProcessTool.Click += new System.EventHandler(this.btnSharpenTool_Click);
+			this.btnProcessTool.Click += new System.EventHandler(this.btnProcessTool_Click);
 			// 
 			// toolStripSeparator5
 			// 
@@ -186,6 +186,25 @@ namespace BMS
 			this.toolStripSeparator3.Name = "toolStripSeparator3";
 			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 40);
 			// 
+			// btnSharpenKnife
+			// 
+			this.btnSharpenKnife.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSharpenKnife.ForeColor = System.Drawing.Color.Black;
+			this.btnSharpenKnife.Image = ((System.Drawing.Image)(resources.GetObject("btnSharpenKnife.Image")));
+			this.btnSharpenKnife.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnSharpenKnife.Name = "btnSharpenKnife";
+			this.btnSharpenKnife.Size = new System.Drawing.Size(69, 41);
+			this.btnSharpenKnife.Tag = "frmProduct_AddProductH";
+			this.btnSharpenKnife.Text = "Mài dao";
+			this.btnSharpenKnife.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnSharpenKnife.Click += new System.EventHandler(this.btnSharpenKnife_Click);
+			// 
+			// toolStripSeparator6
+			// 
+			this.toolStripSeparator6.AutoSize = false;
+			this.toolStripSeparator6.Name = "toolStripSeparator6";
+			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 40);
+			// 
 			// btnRefresh
 			// 
 			this.btnRefresh.AutoSize = false;
@@ -198,12 +217,6 @@ namespace BMS
 			this.btnRefresh.Text = "Làm mới";
 			this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-			// 
-			// toolStripSeparator6
-			// 
-			this.toolStripSeparator6.AutoSize = false;
-			this.toolStripSeparator6.Name = "toolStripSeparator6";
-			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 40);
 			// 
 			// dtgvKnife
 			// 
@@ -457,19 +470,6 @@ namespace BMS
 			this.cbShowUnavailable.Text = "Hiển thị những sản phẩm không khả dụng";
 			this.cbShowUnavailable.UseVisualStyleBackColor = true;
 			this.cbShowUnavailable.CheckedChanged += new System.EventHandler(this.cbShowUnavailable_CheckedChanged);
-			// 
-			// btnSharpenKnife
-			// 
-			this.btnSharpenKnife.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSharpenKnife.ForeColor = System.Drawing.Color.Black;
-			this.btnSharpenKnife.Image = ((System.Drawing.Image)(resources.GetObject("btnSharpenKnife.Image")));
-			this.btnSharpenKnife.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.btnSharpenKnife.Name = "btnSharpenKnife";
-			this.btnSharpenKnife.Size = new System.Drawing.Size(69, 41);
-			this.btnSharpenKnife.Tag = "frmProduct_AddProductH";
-			this.btnSharpenKnife.Text = "Mài dao";
-			this.btnSharpenKnife.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnSharpenKnife.Click += new System.EventHandler(this.btnSharpenKnife_Click);
 			// 
 			// frmKnifeList
 			// 

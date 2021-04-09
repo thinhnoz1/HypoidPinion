@@ -103,7 +103,14 @@ namespace BMS
 			{
 				if (MessageBox.Show("Mã dao này không thể tiếp tục sử dụng! \n Bạn có muốn hủy mã dao này?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
 				{
-					// Huy dao
+					frmKnifeDisposed frm = new frmKnifeDisposed();
+					frm.knifeID = currentModel.ID;
+					if (frm.ShowDialog() == DialogResult.OK)
+					{
+						knifeProcessedList = new KnifeProcessedListModel();
+						ClearFormData();
+						LoadData();
+					}
 				}
 				return false;
 
@@ -118,7 +125,9 @@ namespace BMS
 					frm.knifeID = TextUtils.ToInt(cKnifeList.EditValue);
 					if (frm.ShowDialog() == DialogResult.OK)
 					{
-						
+						knifeProcessedList = new KnifeProcessedListModel();
+						ClearFormData();
+						LoadData();
 					}
 				}
 				return false;

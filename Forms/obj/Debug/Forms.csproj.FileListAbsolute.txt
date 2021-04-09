@@ -1748,3 +1748,4 @@ D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmAddE
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\Forms.HypoidPinion.Test.test.resources
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeProcessedList.resources
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeSharpen.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeDisposed.resources

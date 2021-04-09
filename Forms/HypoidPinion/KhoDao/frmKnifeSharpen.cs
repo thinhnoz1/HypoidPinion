@@ -78,12 +78,24 @@ namespace BMS
 				return false;
 			}
 
-			KnifeDetailListModel currentModel = (KnifeDetailListModel)KnifeDetailListBO.Instance.FindByPK(TextUtils.ToInt64(cKnifeList.EditValue));
-			if (currentModel.CurrentATC == currentModel.ATC)
+			DataRowView selectData = (DataRowView)cKnifeList.GetSelectedDataRow();
+			int std = TextUtils.ToInt(selectData.Row.ItemArray[2]);
+			int atc = TextUtils.ToInt(selectData.Row.ItemArray[3]);
+			int currentSTD = TextUtils.ToInt(selectData.Row.ItemArray[4]);
+			int currentATC = TextUtils.ToInt(selectData.Row.ItemArray[5]);
+			if (currentATC == atc)
 			{
 				if (MessageBox.Show("Mã dao này không thể tiếp tục sử dụng! \n Bạn có muốn hủy mã dao này?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
 				{
 					// Huy dao
+					frmKnifeDisposed frm = new frmKnifeDisposed();
+					frm.knifeID = TextUtils.ToInt(cKnifeList.EditValue);
+					if (frm.ShowDialog() == DialogResult.OK)
+					{
+						knifeSharpeningModel = new KnifeSharpeningDetailsModel();
+						ClearFormData();
+						LoadData();
+					}
 				}
 				return false;
 
@@ -135,6 +147,7 @@ namespace BMS
 
 		#endregion
 
+		#region Events
 		private void cKnifeList_Leave(object sender, EventArgs e)
 		{
 			if (!string.IsNullOrEmpty(cKnifeList.Text))
@@ -258,5 +271,16 @@ namespace BMS
 				LoadData();
 			}
 		}
+
+		private void catVaThemOiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			btnSaveNew_Click(null, null);
+		}
+
+		private void cấtToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			btnSaveNew_Click(null, null);
+		}
+		#endregion
 	}
 }
