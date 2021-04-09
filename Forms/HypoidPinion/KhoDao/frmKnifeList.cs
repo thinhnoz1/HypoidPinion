@@ -122,17 +122,40 @@ namespace BMS
 		}
 		private void btnSharpenTool_Click(object sender, EventArgs e)
 		{
-			frmKnifeSharpenList frm = new frmKnifeSharpenList();
-			frm.ShowDialog();
-			
+			int id = TextUtils.ToInt(gvKnife.GetFocusedRowCellValue(colID));
+			if (id == 0) return;
+			prevRow = gvKnife.GetSelectedRows()[0];
+			frmKnifeProcessedList frm = new frmKnifeProcessedList();
+			frm.knifeID = id;
+			if (frm.ShowDialog() == DialogResult.OK)
+			{
+				cbShowUnavailable_CheckedChanged(null, null);
+				gvKnife.FocusedRowHandle = prevRow;
+
+			}
+
 		}
 
 		private void btnDisposeTool_Click(object sender, EventArgs e)
 		{
 
 		}
+
 		#endregion
 
+		private void btnSharpenKnife_Click(object sender, EventArgs e)
+		{
+			int id = TextUtils.ToInt(gvKnife.GetFocusedRowCellValue(colID));
+			if (id == 0) return;
+			prevRow = gvKnife.GetSelectedRows()[0];
+			frmKnifeSharpen frm = new frmKnifeSharpen();
+			frm.knifeID = id;
+			if (frm.ShowDialog() == DialogResult.OK)
+			{
+				cbShowUnavailable_CheckedChanged(null, null);
+				gvKnife.FocusedRowHandle = prevRow;
 
+			}
+		}
 	}
 }

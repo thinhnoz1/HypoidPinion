@@ -9,8 +9,6 @@ namespace BMS.Model
 		private string knifeCode;
 		private int workerID;
 		private DateTime? dateSharpen;
-		private int currentSTD;
-		private int currentATC;
 		public int ID
 		{
 			get { return iD; }
@@ -39,18 +37,6 @@ namespace BMS.Model
 		{
 			get { return dateSharpen; }
 			set { dateSharpen = value; }
-		}
-	
-		public int CurrentSTD
-		{
-			get { return currentSTD; }
-			set { currentSTD = value; }
-		}
-	
-		public int CurrentATC
-		{
-			get { return currentATC; }
-			set { currentATC = value; }
 		}
 	
 	}

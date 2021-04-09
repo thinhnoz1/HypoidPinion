@@ -1,7 +1,7 @@
 <Tables>
 
 	<Table>
-		<name>KnifeProcessedList</name>
+		<name>KnifeSharpeningDetails</name>
 		<column>
 			<name>iD</name>
 			<dataType>int</dataType>
@@ -43,54 +43,14 @@
 			<number>3</number>
 		</column>
 		<column>
-			<name>dateProcess</name>
+			<name>dateSharpen</name>
 			<dataType>datetime</dataType>
 			<isPK>false</isPK>
 			<isFK>false</isFK>
 			<isUnique>false</isUnique>
 			<tableRelate></tableRelate>
-			<alias>Date Process</alias>
+			<alias>Date Sharpen</alias>
 			<number>4</number>
-		</column>
-		<column>
-			<name>productCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Product Code</alias>
-			<number>5</number>
-		</column>
-		<column>
-			<name>machineID</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Machine</alias>
-			<number>6</number>
-		</column>
-		<column>
-			<name>machineCode</name>
-			<dataType>varchar</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Machine Code</alias>
-			<number>7</number>
-		</column>
-		<column>
-			<name>quantity</name>
-			<dataType>int</dataType>
-			<isPK>false</isPK>
-			<isFK>false</isFK>
-			<isUnique>false</isUnique>
-			<tableRelate></tableRelate>
-			<alias>Quantity</alias>
-			<number>8</number>
 		</column>
 	</Table>
 

@@ -1,7 +1,7 @@
 ﻿
 namespace BMS
 {
-	partial class frmKnifeSharpenList
+	partial class frmKnifeProcessedList
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,9 +30,9 @@ namespace BMS
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKnifeSharpenList));
-			this.dtgvKnifeSharpen = new DevExpress.XtraGrid.GridControl();
-			this.gvKnifeSharpen = new DevExpress.XtraGrid.Views.Grid.GridView();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKnifeProcessedList));
+			this.dtgvKnifeProcessedList = new DevExpress.XtraGrid.GridControl();
+			this.gvKnifeProcessedList = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colKnifeCode = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colSTT = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -42,6 +42,7 @@ namespace BMS
 			this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
@@ -64,8 +65,9 @@ namespace BMS
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.mnuMenu = new System.Windows.Forms.ToolStrip();
 			this.btnSaveNew = new System.Windows.Forms.ToolStripButton();
-			((System.ComponentModel.ISupportInitialize)(this.dtgvKnifeSharpen)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.gvKnifeSharpen)).BeginInit();
+			this.colKnifeID = new DevExpress.XtraGrid.Columns.GridColumn();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvKnifeProcessedList)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvKnifeProcessedList)).BeginInit();
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cWorker.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txbQuantity)).BeginInit();
@@ -75,25 +77,25 @@ namespace BMS
 			this.mnuMenu.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// dtgvKnifeSharpen
+			// dtgvKnifeProcessedList
 			// 
-			this.dtgvKnifeSharpen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.dtgvKnifeProcessedList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.dtgvKnifeSharpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dtgvKnifeSharpen.Location = new System.Drawing.Point(0, 185);
-			this.dtgvKnifeSharpen.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
-			this.dtgvKnifeSharpen.MainView = this.gvKnifeSharpen;
-			this.dtgvKnifeSharpen.Name = "dtgvKnifeSharpen";
-			this.dtgvKnifeSharpen.Size = new System.Drawing.Size(884, 318);
-			this.dtgvKnifeSharpen.TabIndex = 42;
-			this.dtgvKnifeSharpen.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvKnifeSharpen});
+			this.dtgvKnifeProcessedList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtgvKnifeProcessedList.Location = new System.Drawing.Point(0, 185);
+			this.dtgvKnifeProcessedList.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+			this.dtgvKnifeProcessedList.MainView = this.gvKnifeProcessedList;
+			this.dtgvKnifeProcessedList.Name = "dtgvKnifeProcessedList";
+			this.dtgvKnifeProcessedList.Size = new System.Drawing.Size(884, 318);
+			this.dtgvKnifeProcessedList.TabIndex = 42;
+			this.dtgvKnifeProcessedList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvKnifeProcessedList});
 			// 
-			// gvKnifeSharpen
+			// gvKnifeProcessedList
 			// 
-			this.gvKnifeSharpen.ColumnPanelRowHeight = 40;
-			this.gvKnifeSharpen.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+			this.gvKnifeProcessedList.ColumnPanelRowHeight = 40;
+			this.gvKnifeProcessedList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID,
             this.colKnifeCode,
             this.colSTT,
@@ -102,21 +104,24 @@ namespace BMS
             this.gridColumn6,
             this.gridColumn2,
             this.gridColumn1,
-            this.gridColumn4});
-			this.gvKnifeSharpen.GridControl = this.dtgvKnifeSharpen;
-			this.gvKnifeSharpen.Name = "gvKnifeSharpen";
-			this.gvKnifeSharpen.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
-			this.gvKnifeSharpen.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
-			this.gvKnifeSharpen.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
-			this.gvKnifeSharpen.OptionsBehavior.AllowIncrementalSearch = true;
-			this.gvKnifeSharpen.OptionsBehavior.Editable = false;
-			this.gvKnifeSharpen.OptionsCustomization.AllowColumnMoving = false;
-			this.gvKnifeSharpen.OptionsCustomization.AllowQuickHideColumns = false;
-			this.gvKnifeSharpen.OptionsFind.AlwaysVisible = true;
-			this.gvKnifeSharpen.OptionsFind.ShowCloseButton = false;
-			this.gvKnifeSharpen.OptionsView.ShowGroupPanel = false;
-			this.gvKnifeSharpen.RowHeight = 25;
-			this.gvKnifeSharpen.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll;
+            this.gridColumn4,
+            this.gridColumn3,
+            this.colKnifeID});
+			this.gvKnifeProcessedList.GridControl = this.dtgvKnifeProcessedList;
+			this.gvKnifeProcessedList.Name = "gvKnifeProcessedList";
+			this.gvKnifeProcessedList.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvKnifeProcessedList.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+			this.gvKnifeProcessedList.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
+			this.gvKnifeProcessedList.OptionsBehavior.AllowIncrementalSearch = true;
+			this.gvKnifeProcessedList.OptionsBehavior.Editable = false;
+			this.gvKnifeProcessedList.OptionsCustomization.AllowColumnMoving = false;
+			this.gvKnifeProcessedList.OptionsCustomization.AllowQuickHideColumns = false;
+			this.gvKnifeProcessedList.OptionsFind.AlwaysVisible = true;
+			this.gvKnifeProcessedList.OptionsFind.ShowCloseButton = false;
+			this.gvKnifeProcessedList.OptionsView.ShowGroupPanel = false;
+			this.gvKnifeProcessedList.RowHeight = 25;
+			this.gvKnifeProcessedList.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll;
+			this.gvKnifeProcessedList.DoubleClick += new System.EventHandler(this.gvKnifeProcessedList_DoubleClick);
 			// 
 			// colID
 			// 
@@ -147,7 +152,7 @@ namespace BMS
 			this.colKnifeCode.OptionsColumn.AllowEdit = false;
 			this.colKnifeCode.Visible = true;
 			this.colKnifeCode.VisibleIndex = 0;
-			this.colKnifeCode.Width = 157;
+			this.colKnifeCode.Width = 144;
 			// 
 			// colSTT
 			// 
@@ -186,12 +191,12 @@ namespace BMS
 			this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
 			this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.gridColumn5.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-			this.gridColumn5.Caption = "NGƯỜI MÀI";
+			this.gridColumn5.Caption = "NGƯỜI GIA CÔNG";
 			this.gridColumn5.FieldName = "UserCode";
 			this.gridColumn5.Name = "gridColumn5";
 			this.gridColumn5.Visible = true;
 			this.gridColumn5.VisibleIndex = 1;
-			this.gridColumn5.Width = 167;
+			this.gridColumn5.Width = 153;
 			// 
 			// gridColumn6
 			// 
@@ -210,7 +215,7 @@ namespace BMS
 			this.gridColumn6.Name = "gridColumn6";
 			this.gridColumn6.Visible = true;
 			this.gridColumn6.VisibleIndex = 2;
-			this.gridColumn6.Width = 136;
+			this.gridColumn6.Width = 125;
 			// 
 			// gridColumn2
 			// 
@@ -224,12 +229,12 @@ namespace BMS
 			this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
 			this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.gridColumn2.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-			this.gridColumn2.Caption = "NGÀY MÀI";
-			this.gridColumn2.FieldName = "DateSharpen";
+			this.gridColumn2.Caption = "NGÀY GIA CÔNG";
+			this.gridColumn2.FieldName = "DateProcess";
 			this.gridColumn2.Name = "gridColumn2";
 			this.gridColumn2.Visible = true;
 			this.gridColumn2.VisibleIndex = 3;
-			this.gridColumn2.Width = 157;
+			this.gridColumn2.Width = 144;
 			// 
 			// gridColumn1
 			// 
@@ -245,12 +250,12 @@ namespace BMS
 			this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.gridColumn1.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
 			this.gridColumn1.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-			this.gridColumn1.Caption = "STD CÒN LẠI";
-			this.gridColumn1.FieldName = "CurrentSTD";
+			this.gridColumn1.Caption = "SỐ LƯỢNG";
+			this.gridColumn1.FieldName = "Quantity";
 			this.gridColumn1.Name = "gridColumn1";
 			this.gridColumn1.Visible = true;
 			this.gridColumn1.VisibleIndex = 4;
-			this.gridColumn1.Width = 120;
+			this.gridColumn1.Width = 97;
 			// 
 			// gridColumn4
 			// 
@@ -266,12 +271,31 @@ namespace BMS
 			this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.gridColumn4.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
 			this.gridColumn4.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-			this.gridColumn4.Caption = "ATC CÒN LẠI";
-			this.gridColumn4.FieldName = "CurrentATC";
+			this.gridColumn4.Caption = "MÃ MÁY";
+			this.gridColumn4.FieldName = "MachineCode";
 			this.gridColumn4.Name = "gridColumn4";
 			this.gridColumn4.Visible = true;
 			this.gridColumn4.VisibleIndex = 5;
-			this.gridColumn4.Width = 129;
+			this.gridColumn4.Width = 126;
+			// 
+			// gridColumn3
+			// 
+			this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn3.AppearanceCell.Options.UseFont = true;
+			this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn3.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn3.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn3.Caption = "MÃ SẢN PHẨM";
+			this.gridColumn3.FieldName = "ProductCode";
+			this.gridColumn3.Name = "gridColumn3";
+			this.gridColumn3.Visible = true;
+			this.gridColumn3.VisibleIndex = 6;
+			this.gridColumn3.Width = 77;
 			// 
 			// tableLayoutPanel1
 			// 
@@ -362,7 +386,7 @@ namespace BMS
 			this.txbTime.Name = "txbTime";
 			this.txbTime.ReadOnly = true;
 			this.txbTime.Size = new System.Drawing.Size(176, 43);
-			this.txbTime.TabIndex = 223;
+			this.txbTime.TabIndex = 400;
 			this.txbTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// label4
@@ -459,7 +483,7 @@ namespace BMS
 			this.cWorker.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
 			this.cWorker.Properties.UseCtrlScroll = true;
 			this.cWorker.Size = new System.Drawing.Size(174, 44);
-			this.cWorker.TabIndex = 234;
+			this.cWorker.TabIndex = 237;
 			this.cWorker.EditValueChanged += new System.EventHandler(this.cWorker_EditValueChanged);
 			this.cWorker.Leave += new System.EventHandler(this.cWorker_Leave);
 			// 
@@ -477,7 +501,7 @@ namespace BMS
             0});
 			this.txbQuantity.Name = "txbQuantity";
 			this.txbQuantity.Size = new System.Drawing.Size(174, 43);
-			this.txbQuantity.TabIndex = 236;
+			this.txbQuantity.TabIndex = 239;
 			this.txbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbQuantity.Leave += new System.EventHandler(this.txbQuantity_Leave);
 			// 
@@ -517,7 +541,7 @@ namespace BMS
 			this.txbProductCode.Margin = new System.Windows.Forms.Padding(0);
 			this.txbProductCode.Name = "txbProductCode";
 			this.txbProductCode.Size = new System.Drawing.Size(174, 43);
-			this.txbProductCode.TabIndex = 232;
+			this.txbProductCode.TabIndex = 236;
 			this.txbProductCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbProductCode.Leave += new System.EventHandler(this.txbProductCode_Leave);
 			// 
@@ -531,7 +555,7 @@ namespace BMS
 			this.txbDepartmentCode.Name = "txbDepartmentCode";
 			this.txbDepartmentCode.ReadOnly = true;
 			this.txbDepartmentCode.Size = new System.Drawing.Size(176, 43);
-			this.txbDepartmentCode.TabIndex = 233;
+			this.txbDepartmentCode.TabIndex = 401;
 			this.txbDepartmentCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbDepartmentCode.TextChanged += new System.EventHandler(this.txbDepartmentCode_TextChanged);
 			// 
@@ -559,7 +583,7 @@ namespace BMS
 			this.cMachine.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
 			this.cMachine.Properties.UseCtrlScroll = true;
 			this.cMachine.Size = new System.Drawing.Size(174, 44);
-			this.cMachine.TabIndex = 237;
+			this.cMachine.TabIndex = 238;
 			this.cMachine.Leave += new System.EventHandler(this.cMachine_Leave);
 			// 
 			// menuStrip1
@@ -629,22 +653,28 @@ namespace BMS
 			this.btnSaveNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btnSaveNew.Click += new System.EventHandler(this.btnSaveNew_Click);
 			// 
-			// frmKnifeSharpenList
+			// colKnifeID
+			// 
+			this.colKnifeID.Caption = "gridColumn7";
+			this.colKnifeID.FieldName = "KnifeID";
+			this.colKnifeID.Name = "colKnifeID";
+			// 
+			// frmKnifeProcessedList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(884, 504);
 			this.Controls.Add(this.mnuMenu);
-			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.tableLayoutPanel1);
-			this.Controls.Add(this.dtgvKnifeSharpen);
-			this.Name = "frmKnifeSharpenList";
-			this.Text = "QUẢN LÝ DAO MÀI";
+			this.Controls.Add(this.dtgvKnifeProcessedList);
+			this.Controls.Add(this.menuStrip1);
+			this.Name = "frmKnifeProcessedList";
+			this.Text = "QUẢN LÝ GIA CÔNG DAO";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKnifeSharpenList_FormClosing);
 			this.Load += new System.EventHandler(this.frmKnifeSharpenList_Load);
-			((System.ComponentModel.ISupportInitialize)(this.dtgvKnifeSharpen)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.gvKnifeSharpen)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgvKnifeProcessedList)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvKnifeProcessedList)).EndInit();
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cWorker.Properties)).EndInit();
@@ -661,8 +691,8 @@ namespace BMS
 		}
 
 		#endregion
-		private DevExpress.XtraGrid.GridControl dtgvKnifeSharpen;
-		private DevExpress.XtraGrid.Views.Grid.GridView gvKnifeSharpen;
+		private DevExpress.XtraGrid.GridControl dtgvKnifeProcessedList;
+		private DevExpress.XtraGrid.Views.Grid.GridView gvKnifeProcessedList;
 		private DevExpress.XtraGrid.Columns.GridColumn colID;
 		private DevExpress.XtraGrid.Columns.GridColumn colKnifeCode;
 		private DevExpress.XtraGrid.Columns.GridColumn colSTT;
@@ -694,5 +724,7 @@ namespace BMS
 		private System.Windows.Forms.ToolStrip mnuMenu;
 		private System.Windows.Forms.ToolStripButton btnSaveNew;
 		private DevExpress.XtraEditors.LookUpEdit cMachine;
+		private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+		private DevExpress.XtraGrid.Columns.GridColumn colKnifeID;
 	}
 }

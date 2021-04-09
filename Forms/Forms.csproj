@@ -267,11 +267,23 @@
     <Compile Include="HypoidPinion\KhoDao\frmKnifeList.Designer.cs">
       <DependentUpon>frmKnifeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="HypoidPinion\KhoDao\frmKnifeSharpenList.cs">
+    <Compile Include="HypoidPinion\KhoDao\frmKnifeProcessedList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HypoidPinion\KhoDao\frmKnifeSharpenList.Designer.cs">
-      <DependentUpon>frmKnifeSharpenList.cs</DependentUpon>
+    <Compile Include="HypoidPinion\KhoDao\frmKnifeProcessedList.Designer.cs">
+      <DependentUpon>frmKnifeProcessedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\KhoDao\frmKnifeSharpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\KhoDao\frmKnifeSharpen.Designer.cs">
+      <DependentUpon>frmKnifeSharpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HypoidPinion\Test\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\Test\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="KhoSon\frmAddEditHistory.cs">
       <SubType>Form</SubType>
@@ -443,8 +455,14 @@
     <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeList.resx">
       <DependentUpon>frmKnifeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeSharpenList.resx">
-      <DependentUpon>frmKnifeSharpenList.cs</DependentUpon>
+    <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeProcessedList.resx">
+      <DependentUpon>frmKnifeProcessedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeSharpen.resx">
+      <DependentUpon>frmKnifeSharpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\Test\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhoSon\frmAddEditHistory.resx">
       <DependentUpon>frmAddEditHistory.cs</DependentUpon>

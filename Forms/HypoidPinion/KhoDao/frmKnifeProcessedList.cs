@@ -13,17 +13,16 @@ using BMS.Model;
 
 namespace BMS
 {
-	public partial class frmKnifeSharpenList : _Forms
+	public partial class frmKnifeProcessedList : _Forms
 	{
 		#region Variables
-		//public KnifeDetailListModel knifeDetailListModel = new KnifeDetailListModel();
 		private KnifeProcessedListModel knifeProcessedList = new KnifeProcessedListModel();
 		public int knifeID = 0;
 		int prevRow;
 		#endregion
 
 		#region Methods
-		public frmKnifeSharpenList()
+		public frmKnifeProcessedList()
 		{
 			InitializeComponent();
 		}
@@ -56,9 +55,9 @@ namespace BMS
 
 		void LoadData()
 		{
-			string sql = "SELECT ksd.*, (kdl.STD - ksd.CurrentSTD) AS RemainSTD, (kdl.ATC - ksd.CurrentATC) AS RemainATC, u.UserCode, u.DepartmentCode FROM dbo.KnifeSharpeningDetails AS ksd, dbo.KnifeDetailList AS kdl, dbo.Users AS u WHERE ksd.KnifeID = kdl.ID AND kdl.Status = 1 AND	ksd.WorkerID = u.ID";
+			string sql = "SELECT kdl.*, u.UserCode, u.DepartmentCode FROM dbo.KnifeProcessedList AS kdl, dbo.Users AS u WHERE kdl.WorkerID = u.ID";
 			DataTable arr = TextUtils.Select(sql);
-			dtgvKnifeSharpen.DataSource = arr;
+			dtgvKnifeProcessedList.DataSource = arr;
 		}
 
 		void LoadDataToForm()
@@ -69,15 +68,17 @@ namespace BMS
 		void ClearFormData() {
 			txbProductCode.Text = "";
 			txbQuantity.Value = 0;
+			txbProductCode_Leave(null, null);
+			txbQuantity_Leave(null, null);
 		}
 
 		bool ValidateForm()
 		{
-			if (cKnifeList.EditValue == null)
+			/*if (cKnifeList.EditValue == null)
 			{
 				MessageBox.Show("Vui lòng nhập mã dao!", TextUtils.Caption, MessageBoxButtons.OK, MessageBoxIcon.Stop);
 				return false;
-			}
+			}*/
 
 			if (txbQuantity.Value == 0)
 			{
@@ -96,6 +97,33 @@ namespace BMS
 				MessageBox.Show("Vui lòng chọn loại dao!", TextUtils.Caption, MessageBoxButtons.OK, MessageBoxIcon.Stop);
 				return false;
 			}
+
+			KnifeDetailListModel currentModel = (KnifeDetailListModel)KnifeDetailListBO.Instance.FindByPK(TextUtils.ToInt64(cKnifeList.EditValue));
+			if (currentModel.CurrentATC == currentModel.ATC)
+			{
+				if (MessageBox.Show("Mã dao này không thể tiếp tục sử dụng! \n Bạn có muốn hủy mã dao này?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+				{
+					// Huy dao
+				}
+				return false;
+
+			}
+
+			if (currentModel.CurrentSTD == currentModel.STD)
+			{
+				if (MessageBox.Show("Mã dao này cần được mài trước khi sử dụng! \n Bạn có muốn mài mã dao này ngay bây giờ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+				{
+					// Mai dao
+					frmKnifeSharpen frm = new frmKnifeSharpen();
+					frm.knifeID = TextUtils.ToInt(cKnifeList.EditValue);
+					if (frm.ShowDialog() == DialogResult.OK)
+					{
+						
+					}
+				}
+				return false;
+
+			}
 			return true;
 		}
 
@@ -108,19 +136,19 @@ namespace BMS
 					knifeProcessedList.KnifeCode = cKnifeList.Text.Trim();
 					knifeProcessedList.KnifeID = TextUtils.ToInt(cKnifeList.EditValue);
 					knifeProcessedList.WorkerID = TextUtils.ToInt(cWorker.EditValue);
-					knifeProcessedList.DateProcess = DateTime.Now;
 					knifeProcessedList.ProductCode = txbProductCode.Text.Trim();
 					knifeProcessedList.MachineID = TextUtils.ToInt(cMachine.EditValue);
 					knifeProcessedList.MachineCode = cMachine.Text.Trim();
 					knifeProcessedList.Quantity = TextUtils.ToInt(txbQuantity.Value);
 
-					string sql = "SELECT TOP 1 * FROM dbo.KnifeSharpeningDetails WHERE KnifeID = {0} ORDER BY DateSharpen DESC";
-					DataTable arr = TextUtils.Select(sql);
-					KnifeProcessedListBO.Instance.Insert(knifeProcessedList);
-						return true;
+					TextUtils.ExcuteProcedure("spKnifeAddProcess",
+									new string[] { "@knifeID", "@knifeCode", "@workerID", "@productCode", "@machineID", "@machineCode", "@quantity" },
+									new object[] { knifeProcessedList.KnifeID, knifeProcessedList.KnifeCode, knifeProcessedList.WorkerID, knifeProcessedList.ProductCode, knifeProcessedList.MachineID, knifeProcessedList.MachineCode, knifeProcessedList.Quantity });
+					return true;
 				}
 				catch (Exception ex)
 				{
+					MessageBox.Show("Có lỗi trong quá trình xử lý!", TextUtils.Caption, MessageBoxButtons.OK, MessageBoxIcon.Stop);
 					return false;
 				}
 			}
@@ -135,6 +163,7 @@ namespace BMS
 			LoadData();
 			if (knifeID != 0) {
 				LoadDataToForm();
+				cKnifeList_Leave(null, null);
 			}
 		}
 
@@ -147,10 +176,6 @@ namespace BMS
 		{
 			btnSaveNew_Click(null, null);
 		}
-
-		#endregion
-
-	
 
 		private void timer1_Tick(object sender, EventArgs e)
 		{
@@ -178,6 +203,7 @@ namespace BMS
 			{
 				knifeProcessedList = new KnifeProcessedListModel();
 				ClearFormData();
+				LoadData();
 			}
 		}
 
@@ -230,7 +256,7 @@ namespace BMS
 
 		private void txbQuantity_Leave(object sender, EventArgs e)
 		{
-			if (!string.IsNullOrEmpty(txbQuantity.Text))
+			if (!string.Equals(txbQuantity.Text, "0"))
 			{
 				txbQuantity.BackColor = Color.White;
 			}
@@ -251,5 +277,14 @@ namespace BMS
 				txbDepartmentCode.BackColor = Color.FromArgb(255, 153, 255);
 			}
 		}
+
+		private void gvKnifeProcessedList_DoubleClick(object sender, EventArgs e)
+		{
+			knifeID = TextUtils.ToInt(gvKnifeProcessedList.GetFocusedRowCellValue(colKnifeID));
+			if (knifeID == 0) return;
+			LoadDataToForm();
+		}
+		#endregion
+
 	}
 }

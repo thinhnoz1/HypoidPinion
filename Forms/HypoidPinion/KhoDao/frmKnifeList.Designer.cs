@@ -37,7 +37,7 @@ namespace BMS
 			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnDelKnife = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.btnSharpenTool = new System.Windows.Forms.ToolStripButton();
+			this.btnProcessTool = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.btnDisposeTool = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -55,9 +55,10 @@ namespace BMS
 			this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.cbShowUnavailable = new System.Windows.Forms.CheckBox();
+			this.btnSharpenKnife = new System.Windows.Forms.ToolStripButton();
 			this.toolStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dtgvKnife)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gvKnife)).BeginInit();
@@ -77,12 +78,13 @@ namespace BMS
             this.toolStripSeparator7,
             this.btnDelKnife,
             this.toolStripSeparator2,
-            this.btnSharpenTool,
+            this.btnProcessTool,
             this.toolStripSeparator5,
             this.btnDisposeTool,
             this.toolStripSeparator3,
-            this.btnRefresh,
-            this.toolStripSeparator6});
+            this.btnSharpenKnife,
+            this.toolStripSeparator6,
+            this.btnRefresh});
 			this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
@@ -147,18 +149,18 @@ namespace BMS
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
 			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
 			// 
-			// btnSharpenTool
+			// btnProcessTool
 			// 
-			this.btnSharpenTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSharpenTool.ForeColor = System.Drawing.Color.Black;
-			this.btnSharpenTool.Image = ((System.Drawing.Image)(resources.GetObject("btnSharpenTool.Image")));
-			this.btnSharpenTool.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.btnSharpenTool.Name = "btnSharpenTool";
-			this.btnSharpenTool.Size = new System.Drawing.Size(100, 41);
-			this.btnSharpenTool.Tag = "frmProduct_AddProductH";
-			this.btnSharpenTool.Text = "Mài dụng cụ";
-			this.btnSharpenTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.btnSharpenTool.Click += new System.EventHandler(this.btnSharpenTool_Click);
+			this.btnProcessTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnProcessTool.ForeColor = System.Drawing.Color.Black;
+			this.btnProcessTool.Image = ((System.Drawing.Image)(resources.GetObject("btnProcessTool.Image")));
+			this.btnProcessTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnProcessTool.Name = "btnProcessTool";
+			this.btnProcessTool.Size = new System.Drawing.Size(77, 41);
+			this.btnProcessTool.Tag = "frmProduct_AddProductH";
+			this.btnProcessTool.Text = "Gia công";
+			this.btnProcessTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnProcessTool.Click += new System.EventHandler(this.btnSharpenTool_Click);
 			// 
 			// toolStripSeparator5
 			// 
@@ -420,12 +422,6 @@ namespace BMS
 			this.gridColumn5.VisibleIndex = 3;
 			this.gridColumn5.Width = 150;
 			// 
-			// colDepartmentID
-			// 
-			this.colDepartmentID.Caption = "gridColumn6";
-			this.colDepartmentID.FieldName = "DepartmentID";
-			this.colDepartmentID.Name = "colDepartmentID";
-			// 
 			// gridColumn6
 			// 
 			this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
@@ -445,6 +441,12 @@ namespace BMS
 			this.gridColumn6.VisibleIndex = 4;
 			this.gridColumn6.Width = 86;
 			// 
+			// colDepartmentID
+			// 
+			this.colDepartmentID.Caption = "gridColumn6";
+			this.colDepartmentID.FieldName = "DepartmentID";
+			this.colDepartmentID.Name = "colDepartmentID";
+			// 
 			// cbShowUnavailable
 			// 
 			this.cbShowUnavailable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -455,6 +457,19 @@ namespace BMS
 			this.cbShowUnavailable.Text = "Hiển thị những sản phẩm không khả dụng";
 			this.cbShowUnavailable.UseVisualStyleBackColor = true;
 			this.cbShowUnavailable.CheckedChanged += new System.EventHandler(this.cbShowUnavailable_CheckedChanged);
+			// 
+			// btnSharpenKnife
+			// 
+			this.btnSharpenKnife.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSharpenKnife.ForeColor = System.Drawing.Color.Black;
+			this.btnSharpenKnife.Image = ((System.Drawing.Image)(resources.GetObject("btnSharpenKnife.Image")));
+			this.btnSharpenKnife.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnSharpenKnife.Name = "btnSharpenKnife";
+			this.btnSharpenKnife.Size = new System.Drawing.Size(69, 41);
+			this.btnSharpenKnife.Tag = "frmProduct_AddProductH";
+			this.btnSharpenKnife.Text = "Mài dao";
+			this.btnSharpenKnife.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnSharpenKnife.Click += new System.EventHandler(this.btnSharpenKnife_Click);
 			// 
 			// frmKnifeList
 			// 
@@ -485,7 +500,7 @@ namespace BMS
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
 		private System.Windows.Forms.ToolStripButton btnDelKnife;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-		private System.Windows.Forms.ToolStripButton btnSharpenTool;
+		private System.Windows.Forms.ToolStripButton btnProcessTool;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
 		private System.Windows.Forms.ToolStripButton btnDisposeTool;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
@@ -506,5 +521,6 @@ namespace BMS
 		private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
 		private DevExpress.XtraGrid.Columns.GridColumn colDepartmentID;
 		private System.Windows.Forms.CheckBox cbShowUnavailable;
+		private System.Windows.Forms.ToolStripButton btnSharpenKnife;
 	}
 }

@@ -1745,4 +1745,6 @@ D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmAddE
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmStageWorkerHyp.resources
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeList.resources
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmAddEditKnife.resources
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeSharpenList.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\Forms.HypoidPinion.Test.test.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeProcessedList.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeSharpen.resources
