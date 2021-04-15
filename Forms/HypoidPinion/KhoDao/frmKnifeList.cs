@@ -73,7 +73,7 @@ namespace BMS
 
 			try
 			{
-				if (MessageBox.Show(String.Format("Bạn có chắc muốn xóa công đoạn [{0}] không?", str), TextUtils.Caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+				if (MessageBox.Show(String.Format("Bạn có chắc muốn xóa dao [{0}] không?", str), TextUtils.Caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 				{
 					if (KnifeSharpeningDetailsBO.Instance.CheckExist("KnifeID", strID))
 					{

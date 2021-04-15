@@ -273,6 +273,12 @@
     <Compile Include="HypoidPinion\KhoDao\frmKnifeList.Designer.cs">
       <DependentUpon>frmKnifeList.cs</DependentUpon>
     </Compile>
+    <Compile Include="HypoidPinion\KhoDao\frmKnifeProcessedChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HypoidPinion\KhoDao\frmKnifeProcessedChart.Designer.cs">
+      <DependentUpon>frmKnifeProcessedChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="HypoidPinion\KhoDao\frmKnifeProcessedList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -463,6 +469,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeList.resx">
       <DependentUpon>frmKnifeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeProcessedChart.resx">
+      <DependentUpon>frmKnifeProcessedChart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeProcessedList.resx">
       <DependentUpon>frmKnifeProcessedList.cs</DependentUpon>

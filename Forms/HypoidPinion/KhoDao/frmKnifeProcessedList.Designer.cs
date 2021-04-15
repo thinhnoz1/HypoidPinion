@@ -46,30 +46,31 @@ namespace BMS
 			this.colKnifeID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
 			this.cWorker = new DevExpress.XtraEditors.LookUpEdit();
-			this.txbQuantity = new System.Windows.Forms.NumericUpDown();
-			this.cKnifeList = new DevExpress.XtraEditors.LookUpEdit();
-			this.txbProductCode = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
 			this.txbDepartmentCode = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.txbQuantity = new System.Windows.Forms.NumericUpDown();
+			this.label6 = new System.Windows.Forms.Label();
 			this.cMachine = new DevExpress.XtraEditors.LookUpEdit();
+			this.label5 = new System.Windows.Forms.Label();
+			this.txbProductCode = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.cKnifeList = new DevExpress.XtraEditors.LookUpEdit();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.cấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.catVaThemOiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.mnuMenu = new System.Windows.Forms.ToolStrip();
 			this.btnSaveNew = new System.Windows.Forms.ToolStripButton();
+			this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dtgvKnifeProcessedList)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gvKnifeProcessedList)).BeginInit();
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cWorker.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txbQuantity)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.cKnifeList.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cMachine.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.cKnifeList.Properties)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.mnuMenu.SuspendLayout();
 			this.SuspendLayout();
@@ -103,6 +104,7 @@ namespace BMS
             this.gridColumn1,
             this.gridColumn4,
             this.gridColumn3,
+            this.gridColumn7,
             this.colKnifeID});
 			this.gvKnifeProcessedList.GridControl = this.dtgvKnifeProcessedList;
 			this.gvKnifeProcessedList.Name = "gvKnifeProcessedList";
@@ -149,7 +151,7 @@ namespace BMS
 			this.colKnifeCode.OptionsColumn.AllowEdit = false;
 			this.colKnifeCode.Visible = true;
 			this.colKnifeCode.VisibleIndex = 0;
-			this.colKnifeCode.Width = 144;
+			this.colKnifeCode.Width = 120;
 			// 
 			// colSTT
 			// 
@@ -192,8 +194,8 @@ namespace BMS
 			this.gridColumn5.FieldName = "UserCode";
 			this.gridColumn5.Name = "gridColumn5";
 			this.gridColumn5.Visible = true;
-			this.gridColumn5.VisibleIndex = 1;
-			this.gridColumn5.Width = 153;
+			this.gridColumn5.VisibleIndex = 2;
+			this.gridColumn5.Width = 132;
 			// 
 			// gridColumn6
 			// 
@@ -211,8 +213,8 @@ namespace BMS
 			this.gridColumn6.FieldName = "DepartmentCode";
 			this.gridColumn6.Name = "gridColumn6";
 			this.gridColumn6.Visible = true;
-			this.gridColumn6.VisibleIndex = 2;
-			this.gridColumn6.Width = 125;
+			this.gridColumn6.VisibleIndex = 3;
+			this.gridColumn6.Width = 136;
 			// 
 			// gridColumn2
 			// 
@@ -230,8 +232,8 @@ namespace BMS
 			this.gridColumn2.FieldName = "DateProcess";
 			this.gridColumn2.Name = "gridColumn2";
 			this.gridColumn2.Visible = true;
-			this.gridColumn2.VisibleIndex = 3;
-			this.gridColumn2.Width = 144;
+			this.gridColumn2.VisibleIndex = 7;
+			this.gridColumn2.Width = 153;
 			// 
 			// gridColumn1
 			// 
@@ -251,8 +253,8 @@ namespace BMS
 			this.gridColumn1.FieldName = "Quantity";
 			this.gridColumn1.Name = "gridColumn1";
 			this.gridColumn1.Visible = true;
-			this.gridColumn1.VisibleIndex = 4;
-			this.gridColumn1.Width = 97;
+			this.gridColumn1.VisibleIndex = 6;
+			this.gridColumn1.Width = 87;
 			// 
 			// gridColumn4
 			// 
@@ -272,8 +274,8 @@ namespace BMS
 			this.gridColumn4.FieldName = "MachineCode";
 			this.gridColumn4.Name = "gridColumn4";
 			this.gridColumn4.Visible = true;
-			this.gridColumn4.VisibleIndex = 5;
-			this.gridColumn4.Width = 126;
+			this.gridColumn4.VisibleIndex = 4;
+			this.gridColumn4.Width = 123;
 			// 
 			// gridColumn3
 			// 
@@ -291,8 +293,8 @@ namespace BMS
 			this.gridColumn3.FieldName = "ProductCode";
 			this.gridColumn3.Name = "gridColumn3";
 			this.gridColumn3.Visible = true;
-			this.gridColumn3.VisibleIndex = 6;
-			this.gridColumn3.Width = 77;
+			this.gridColumn3.VisibleIndex = 5;
+			this.gridColumn3.Width = 115;
 			// 
 			// colKnifeID
 			// 
@@ -342,80 +344,10 @@ namespace BMS
 			this.label1.Location = new System.Drawing.Point(2, 2);
 			this.label1.Margin = new System.Windows.Forms.Padding(0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(218, 43);
+			this.label1.Size = new System.Drawing.Size(218, 44);
 			this.label1.TabIndex = 220;
 			this.label1.Text = "NGƯỜI GIA CÔNG";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label4
-			// 
-			this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
-			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(2, 47);
-			this.label4.Margin = new System.Windows.Forms.Padding(0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(218, 43);
-			this.label4.TabIndex = 224;
-			this.label4.Text = "MÃ DAO";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label5
-			// 
-			this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
-			this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(222, 47);
-			this.label5.Margin = new System.Windows.Forms.Padding(0);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(218, 43);
-			this.label5.TabIndex = 225;
-			this.label5.Text = "MÃ HÀNG";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label6
-			// 
-			this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
-			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(442, 47);
-			this.label6.Margin = new System.Windows.Forms.Padding(0);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(218, 43);
-			this.label6.TabIndex = 226;
-			this.label6.Text = "MÁY GIA CÔNG";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label7
-			// 
-			this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
-			this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-			this.label7.ForeColor = System.Drawing.Color.Black;
-			this.label7.Location = new System.Drawing.Point(662, 47);
-			this.label7.Margin = new System.Windows.Forms.Padding(0);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(220, 43);
-			this.label7.TabIndex = 227;
-			this.label7.Text = "SỐ LƯỢNG";
-			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label8
-			// 
-			this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
-			this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-			this.label8.ForeColor = System.Drawing.Color.Black;
-			this.label8.Location = new System.Drawing.Point(442, 2);
-			this.label8.Margin = new System.Windows.Forms.Padding(0);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(218, 43);
-			this.label8.TabIndex = 228;
-			this.label8.Text = "BỘ PHẬN";
-			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// cWorker
 			// 
@@ -437,6 +369,13 @@ namespace BMS
 			this.cWorker.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
 			this.cWorker.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.cWorker.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "Name42", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("UserCode", "Nhân viên"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FullName", "Name44", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("BirthOfDate", "Name45", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("DepartmentID", "Name46", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("DepartmentCode", "Bộ phận")});
 			this.cWorker.Properties.NullText = "";
 			this.cWorker.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
 			this.cWorker.Properties.UseCtrlScroll = true;
@@ -445,63 +384,19 @@ namespace BMS
 			this.cWorker.EditValueChanged += new System.EventHandler(this.cWorker_EditValueChanged);
 			this.cWorker.Leave += new System.EventHandler(this.cWorker_Leave);
 			// 
-			// txbQuantity
+			// label8
 			// 
-			this.txbQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-			this.txbQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txbQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbQuantity.Location = new System.Drawing.Point(662, 92);
-			this.txbQuantity.Margin = new System.Windows.Forms.Padding(0);
-			this.txbQuantity.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-			this.txbQuantity.Name = "txbQuantity";
-			this.txbQuantity.Size = new System.Drawing.Size(220, 43);
-			this.txbQuantity.TabIndex = 239;
-			this.txbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.txbQuantity.Leave += new System.EventHandler(this.txbQuantity_Leave);
-			// 
-			// cKnifeList
-			// 
-			this.cKnifeList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.cKnifeList.Location = new System.Drawing.Point(2, 92);
-			this.cKnifeList.Margin = new System.Windows.Forms.Padding(0);
-			this.cKnifeList.Name = "cKnifeList";
-			this.cKnifeList.Properties.AllowDropDownWhenReadOnly = DevExpress.Utils.DefaultBoolean.True;
-			this.cKnifeList.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-			this.cKnifeList.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cKnifeList.Properties.Appearance.Options.UseBackColor = true;
-			this.cKnifeList.Properties.Appearance.Options.UseFont = true;
-			this.cKnifeList.Properties.Appearance.Options.UseTextOptions = true;
-			this.cKnifeList.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.cKnifeList.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cKnifeList.Properties.AppearanceDropDown.Options.UseFont = true;
-			this.cKnifeList.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cKnifeList.Properties.AppearanceDropDownHeader.Options.UseFont = true;
-			this.cKnifeList.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-			this.cKnifeList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-			this.cKnifeList.Properties.NullText = "";
-			this.cKnifeList.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-			this.cKnifeList.Properties.UseCtrlScroll = true;
-			this.cKnifeList.Size = new System.Drawing.Size(218, 44);
-			this.cKnifeList.TabIndex = 235;
-			this.cKnifeList.Leave += new System.EventHandler(this.cKnifeList_Leave);
-			// 
-			// txbProductCode
-			// 
-			this.txbProductCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-			this.txbProductCode.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txbProductCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbProductCode.Location = new System.Drawing.Point(222, 92);
-			this.txbProductCode.Margin = new System.Windows.Forms.Padding(0);
-			this.txbProductCode.Name = "txbProductCode";
-			this.txbProductCode.Size = new System.Drawing.Size(218, 43);
-			this.txbProductCode.TabIndex = 236;
-			this.txbProductCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.txbProductCode.Leave += new System.EventHandler(this.txbProductCode_Leave);
+			this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
+			this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+			this.label8.ForeColor = System.Drawing.Color.Black;
+			this.label8.Location = new System.Drawing.Point(442, 2);
+			this.label8.Margin = new System.Windows.Forms.Padding(0);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(218, 44);
+			this.label8.TabIndex = 228;
+			this.label8.Text = "BỘ PHẬN";
+			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// txbDepartmentCode
 			// 
@@ -517,10 +412,56 @@ namespace BMS
 			this.txbDepartmentCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbDepartmentCode.TextChanged += new System.EventHandler(this.txbDepartmentCode_TextChanged);
 			// 
+			// label7
+			// 
+			this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
+			this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+			this.label7.ForeColor = System.Drawing.Color.Black;
+			this.label7.Location = new System.Drawing.Point(662, 48);
+			this.label7.Margin = new System.Windows.Forms.Padding(0);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(220, 44);
+			this.label7.TabIndex = 227;
+			this.label7.Text = "SỐ LƯỢNG";
+			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// txbQuantity
+			// 
+			this.txbQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+			this.txbQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txbQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txbQuantity.Location = new System.Drawing.Point(662, 94);
+			this.txbQuantity.Margin = new System.Windows.Forms.Padding(0);
+			this.txbQuantity.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+			this.txbQuantity.Name = "txbQuantity";
+			this.txbQuantity.Size = new System.Drawing.Size(220, 43);
+			this.txbQuantity.TabIndex = 239;
+			this.txbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txbQuantity.Leave += new System.EventHandler(this.txbQuantity_Leave);
+			// 
+			// label6
+			// 
+			this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
+			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(442, 48);
+			this.label6.Margin = new System.Windows.Forms.Padding(0);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(218, 44);
+			this.label6.TabIndex = 226;
+			this.label6.Text = "MÁY GIA CÔNG";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
 			// cMachine
 			// 
 			this.cMachine.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.cMachine.Location = new System.Drawing.Point(442, 92);
+			this.cMachine.Location = new System.Drawing.Point(442, 94);
 			this.cMachine.Margin = new System.Windows.Forms.Padding(0);
 			this.cMachine.Name = "cMachine";
 			this.cMachine.Properties.AllowDropDownWhenReadOnly = DevExpress.Utils.DefaultBoolean.True;
@@ -537,12 +478,92 @@ namespace BMS
 			this.cMachine.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
 			this.cMachine.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.cMachine.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "Name60", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MachineCode", "Mã máy"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MachineName", "Tên máy"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StageCode", "Mã công đoạn")});
 			this.cMachine.Properties.NullText = "";
 			this.cMachine.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
 			this.cMachine.Properties.UseCtrlScroll = true;
 			this.cMachine.Size = new System.Drawing.Size(218, 44);
 			this.cMachine.TabIndex = 238;
 			this.cMachine.Leave += new System.EventHandler(this.cMachine_Leave);
+			// 
+			// label5
+			// 
+			this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
+			this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+			this.label5.ForeColor = System.Drawing.Color.Black;
+			this.label5.Location = new System.Drawing.Point(222, 48);
+			this.label5.Margin = new System.Windows.Forms.Padding(0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(218, 44);
+			this.label5.TabIndex = 225;
+			this.label5.Text = "MÃ HÀNG";
+			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// txbProductCode
+			// 
+			this.txbProductCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+			this.txbProductCode.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txbProductCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txbProductCode.Location = new System.Drawing.Point(222, 94);
+			this.txbProductCode.Margin = new System.Windows.Forms.Padding(0);
+			this.txbProductCode.Name = "txbProductCode";
+			this.txbProductCode.Size = new System.Drawing.Size(218, 43);
+			this.txbProductCode.TabIndex = 236;
+			this.txbProductCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txbProductCode.Leave += new System.EventHandler(this.txbProductCode_Leave);
+			// 
+			// label4
+			// 
+			this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
+			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+			this.label4.ForeColor = System.Drawing.Color.Black;
+			this.label4.Location = new System.Drawing.Point(2, 48);
+			this.label4.Margin = new System.Windows.Forms.Padding(0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(218, 44);
+			this.label4.TabIndex = 224;
+			this.label4.Text = "MÃ DAO";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// cKnifeList
+			// 
+			this.cKnifeList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.cKnifeList.Location = new System.Drawing.Point(2, 94);
+			this.cKnifeList.Margin = new System.Windows.Forms.Padding(0);
+			this.cKnifeList.Name = "cKnifeList";
+			this.cKnifeList.Properties.AllowDropDownWhenReadOnly = DevExpress.Utils.DefaultBoolean.True;
+			this.cKnifeList.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+			this.cKnifeList.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cKnifeList.Properties.Appearance.Options.UseBackColor = true;
+			this.cKnifeList.Properties.Appearance.Options.UseFont = true;
+			this.cKnifeList.Properties.Appearance.Options.UseTextOptions = true;
+			this.cKnifeList.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.cKnifeList.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cKnifeList.Properties.AppearanceDropDown.Options.UseFont = true;
+			this.cKnifeList.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cKnifeList.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+			this.cKnifeList.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+			this.cKnifeList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.cKnifeList.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "Name54", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KnifeCode", "Mã dao"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("STD", "STD"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ATC", "ATC"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CurrentSTD", "", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CurrentATC", "Name59", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default)});
+			this.cKnifeList.Properties.NullText = "";
+			this.cKnifeList.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+			this.cKnifeList.Properties.UseCtrlScroll = true;
+			this.cKnifeList.Size = new System.Drawing.Size(218, 44);
+			this.cKnifeList.TabIndex = 235;
+			this.cKnifeList.Leave += new System.EventHandler(this.cKnifeList_Leave);
 			// 
 			// menuStrip1
 			// 
@@ -579,7 +600,6 @@ namespace BMS
 			// 
 			this.timer1.Enabled = true;
 			this.timer1.Interval = 700;
-			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// mnuMenu
 			// 
@@ -611,6 +631,25 @@ namespace BMS
 			this.btnSaveNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btnSaveNew.Click += new System.EventHandler(this.btnSaveNew_Click);
 			// 
+			// gridColumn7
+			// 
+			this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn7.AppearanceCell.Options.UseFont = true;
+			this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn7.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn7.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn7.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.gridColumn7.Caption = "TÌNH TRẠNG";
+			this.gridColumn7.FieldName = "Type";
+			this.gridColumn7.Name = "gridColumn7";
+			this.gridColumn7.Visible = true;
+			this.gridColumn7.VisibleIndex = 1;
+			// 
 			// frmKnifeProcessedList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -631,8 +670,8 @@ namespace BMS
 			this.tableLayoutPanel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cWorker.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txbQuantity)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.cKnifeList.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.cMachine.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.cKnifeList.Properties)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.mnuMenu.ResumeLayout(false);
@@ -675,5 +714,6 @@ namespace BMS
 		private DevExpress.XtraEditors.LookUpEdit cMachine;
 		private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
 		private DevExpress.XtraGrid.Columns.GridColumn colKnifeID;
+		private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
 	}
 }

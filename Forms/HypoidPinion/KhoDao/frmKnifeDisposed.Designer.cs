@@ -29,7 +29,6 @@ namespace BMS
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKnifeDisposed));
 			this.mnuMenu = new System.Windows.Forms.ToolStrip();
 			this.btnSaveNew = new System.Windows.Forms.ToolStripButton();
@@ -53,7 +52,6 @@ namespace BMS
 			this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colKnifeID = new DevExpress.XtraGrid.Columns.GridColumn();
-			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.mnuMenu.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
@@ -155,10 +153,10 @@ namespace BMS
 			this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
 			this.label8.ForeColor = System.Drawing.Color.Black;
-			this.label8.Location = new System.Drawing.Point(588, 2);
+			this.label8.Location = new System.Drawing.Point(590, 2);
 			this.label8.Margin = new System.Windows.Forms.Padding(0);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(294, 45);
+			this.label8.Size = new System.Drawing.Size(292, 45);
 			this.label8.TabIndex = 228;
 			this.label8.Text = "BỘ PHẬN";
 			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,11 +166,11 @@ namespace BMS
 			this.txbDepartmentCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
 			this.txbDepartmentCode.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.txbDepartmentCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbDepartmentCode.Location = new System.Drawing.Point(588, 49);
+			this.txbDepartmentCode.Location = new System.Drawing.Point(590, 49);
 			this.txbDepartmentCode.Margin = new System.Windows.Forms.Padding(0);
 			this.txbDepartmentCode.Name = "txbDepartmentCode";
 			this.txbDepartmentCode.ReadOnly = true;
-			this.txbDepartmentCode.Size = new System.Drawing.Size(294, 43);
+			this.txbDepartmentCode.Size = new System.Drawing.Size(292, 43);
 			this.txbDepartmentCode.TabIndex = 239;
 			this.txbDepartmentCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbDepartmentCode.TextChanged += new System.EventHandler(this.txbDepartmentCode_TextChanged);
@@ -183,10 +181,10 @@ namespace BMS
 			this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(295, 2);
+			this.label1.Location = new System.Drawing.Point(296, 2);
 			this.label1.Margin = new System.Windows.Forms.Padding(0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(291, 45);
+			this.label1.Size = new System.Drawing.Size(292, 45);
 			this.label1.TabIndex = 220;
 			this.label1.Text = "NGƯỜI HỦY";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -194,7 +192,7 @@ namespace BMS
 			// cWorker
 			// 
 			this.cWorker.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.cWorker.Location = new System.Drawing.Point(295, 49);
+			this.cWorker.Location = new System.Drawing.Point(296, 49);
 			this.cWorker.Margin = new System.Windows.Forms.Padding(0);
 			this.cWorker.Name = "cWorker";
 			this.cWorker.Properties.AllowDropDownWhenReadOnly = DevExpress.Utils.DefaultBoolean.True;
@@ -211,10 +209,17 @@ namespace BMS
 			this.cWorker.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
 			this.cWorker.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.cWorker.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "Name18", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("UserCode", "Mã nhân viên"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FullName", "Name20", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("BirthOfDate", "Name21", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("DepartmentID", "Name22", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("DepartmentCode", "Bộ phận")});
 			this.cWorker.Properties.NullText = "";
 			this.cWorker.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
 			this.cWorker.Properties.UseCtrlScroll = true;
-			this.cWorker.Size = new System.Drawing.Size(291, 44);
+			this.cWorker.Size = new System.Drawing.Size(292, 44);
 			this.cWorker.TabIndex = 236;
 			this.cWorker.EditValueChanged += new System.EventHandler(this.cWorker_EditValueChanged);
 			this.cWorker.Leave += new System.EventHandler(this.cWorker_Leave);
@@ -228,7 +233,7 @@ namespace BMS
 			this.label4.Location = new System.Drawing.Point(2, 2);
 			this.label4.Margin = new System.Windows.Forms.Padding(0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(291, 45);
+			this.label4.Size = new System.Drawing.Size(292, 45);
 			this.label4.TabIndex = 224;
 			this.label4.Text = "MÃ DAO";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,10 +258,17 @@ namespace BMS
 			this.cKnifeList.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
 			this.cKnifeList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.cKnifeList.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "Name6", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KnifeCode", "Mã dao"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("STD", "STD"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ATC", "ATC"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CurrentSTD", "Name10", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CurrentATC", "Name11", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default)});
 			this.cKnifeList.Properties.NullText = "";
 			this.cKnifeList.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
 			this.cKnifeList.Properties.UseCtrlScroll = true;
-			this.cKnifeList.Size = new System.Drawing.Size(291, 44);
+			this.cKnifeList.Size = new System.Drawing.Size(292, 44);
 			this.cKnifeList.TabIndex = 235;
 			this.cKnifeList.Leave += new System.EventHandler(this.cKnifeList_Leave);
 			// 
@@ -422,12 +434,6 @@ namespace BMS
 			this.colKnifeID.FieldName = "KnifeID";
 			this.colKnifeID.Name = "colKnifeID";
 			// 
-			// timer1
-			// 
-			this.timer1.Enabled = true;
-			this.timer1.Interval = 700;
-			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-			// 
 			// frmKnifeDisposed
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,6 +486,5 @@ namespace BMS
 		private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
 		private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
 		private DevExpress.XtraGrid.Columns.GridColumn colKnifeID;
-		private System.Windows.Forms.Timer timer1;
 	}
 }

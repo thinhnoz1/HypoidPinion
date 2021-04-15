@@ -45,7 +45,8 @@ namespace BMS
 
 		void LoadData()
 		{
-			string sql = "SELECT kdl.*, u.UserCode, u.DepartmentCode FROM dbo.KnifeSharpeningDetails AS kdl, dbo.Users AS u WHERE kdl.WorkerID = u.ID";
+			string sql = "SELECT kdl.*, u.UserCode, u.DepartmentCode, Type = (CASE k.Status WHEN 1 THEN N'Còn sử dụng' WHEN 0 THEN N'Đã hủy' END) FROM dbo.KnifeSharpeningDetails AS kdl, dbo.Users AS u, dbo.KnifeDetailList AS k WHERE kdl.WorkerID = u.ID AND kdl.KnifeID = k.ID";
+			//string sql = "SELECT kdl.*, u.UserCode, u.DepartmentCode FROM dbo.KnifeSharpeningDetails AS kdl, dbo.Users AS u WHERE kdl.WorkerID = u.ID";
 			DataTable arr = TextUtils.Select(sql);
 			dtgvKnifeSharpen.DataSource = arr;
 		}

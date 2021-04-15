@@ -120,10 +120,7 @@ namespace BMS
 		#endregion
 
 		#region Events
-		private void timer1_Tick(object sender, EventArgs e)
-		{
-			txbTime.Text = string.Format("{0} {1}", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString());
-		}
+	
 
 		private void frmKnifeDisposed_Load(object sender, EventArgs e)
 		{

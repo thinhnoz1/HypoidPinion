@@ -1749,3 +1749,4 @@ D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\Forms.Hypoi
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeProcessedList.resources
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeSharpen.resources
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeDisposed.resources
+D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\Forms\obj\Debug\BMS.frmKnifeProcessedChart.resources

@@ -55,7 +55,7 @@ namespace BMS
 
 		void LoadData()
 		{
-			string sql = "SELECT kdl.*, u.UserCode, u.DepartmentCode FROM dbo.KnifeProcessedList AS kdl, dbo.Users AS u WHERE kdl.WorkerID = u.ID";
+			string sql = "SELECT kdl.*, u.UserCode, u.DepartmentCode, Status = (CASE k.Status WHEN 1 THEN N'Còn sử dụng' WHEN 0 THEN N'Đã hủy' END) FROM dbo.KnifeProcessedList AS kdl, dbo.Users AS u, dbo.KnifeDetailList AS k WHERE kdl.WorkerID = u.ID AND kdl.KnifeID = k.ID";
 			DataTable arr = TextUtils.Select(sql);
 			dtgvKnifeProcessedList.DataSource = arr;
 		}
@@ -186,11 +186,11 @@ namespace BMS
 			btnSaveNew_Click(null, null);
 		}
 
-		private void timer1_Tick(object sender, EventArgs e)
+	/*	private void timer1_Tick(object sender, EventArgs e)
 		{
 			txbTime.Text = string.Format("{0} {1}", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString());
 		}
-
+*/
 		private void cWorker_EditValueChanged(object sender, EventArgs e)
 		{
 			if (!string.IsNullOrEmpty(cWorker.Text))
