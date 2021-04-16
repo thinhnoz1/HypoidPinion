@@ -37,7 +37,7 @@ namespace BMS
 
             //Application.Run(new frmImportExcelPart());
             //Application.Run(new frmStageWorkerHyp());
-            Application.Run(new frmKnifeProcessedChart());
+            Application.Run(new frmKnifeList());
             //Application.Run(new frmProductListSON());
 
             //Application.Run(new ProductCheckHistory());

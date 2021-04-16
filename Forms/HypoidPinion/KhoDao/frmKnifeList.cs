@@ -164,8 +164,13 @@ namespace BMS
 
 			}
 		}
-		#endregion
+		private void btnProcessChart_Click(object sender, EventArgs e)
+		{
+			frmKnifeProcessedChart frm = new frmKnifeProcessedChart();
+			frm.ShowDialog();
+		}
 
+		#endregion
 
 	}
 }

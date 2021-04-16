@@ -59,6 +59,8 @@ namespace BMS
 			this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colDepartmentID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.cbShowUnavailable = new System.Windows.Forms.CheckBox();
+			this.btnProcessChart = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dtgvKnife)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gvKnife)).BeginInit();
@@ -84,7 +86,9 @@ namespace BMS
             this.toolStripSeparator3,
             this.btnSharpenKnife,
             this.toolStripSeparator6,
-            this.btnRefresh});
+            this.btnRefresh,
+            this.toolStripSeparator4,
+            this.btnProcessChart});
 			this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
@@ -463,13 +467,32 @@ namespace BMS
 			// cbShowUnavailable
 			// 
 			this.cbShowUnavailable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.cbShowUnavailable.Location = new System.Drawing.Point(743, 8);
+			this.cbShowUnavailable.Location = new System.Drawing.Point(746, 7);
 			this.cbShowUnavailable.Name = "cbShowUnavailable";
 			this.cbShowUnavailable.Size = new System.Drawing.Size(138, 30);
 			this.cbShowUnavailable.TabIndex = 0;
 			this.cbShowUnavailable.Text = "Hiển thị những sản phẩm không khả dụng";
 			this.cbShowUnavailable.UseVisualStyleBackColor = true;
 			this.cbShowUnavailable.CheckedChanged += new System.EventHandler(this.cbShowUnavailable_CheckedChanged);
+			// 
+			// btnProcessChart
+			// 
+			this.btnProcessChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnProcessChart.ForeColor = System.Drawing.Color.Black;
+			this.btnProcessChart.Image = ((System.Drawing.Image)(resources.GetObject("btnProcessChart.Image")));
+			this.btnProcessChart.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.btnProcessChart.Name = "btnProcessChart";
+			this.btnProcessChart.Size = new System.Drawing.Size(67, 41);
+			this.btnProcessChart.Tag = "frmProduct_AddProductH";
+			this.btnProcessChart.Text = "Biểu đồ";
+			this.btnProcessChart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btnProcessChart.Click += new System.EventHandler(this.btnProcessChart_Click);
+			// 
+			// toolStripSeparator4
+			// 
+			this.toolStripSeparator4.AutoSize = false;
+			this.toolStripSeparator4.Name = "toolStripSeparator4";
+			this.toolStripSeparator4.Size = new System.Drawing.Size(6, 40);
 			// 
 			// frmKnifeList
 			// 
@@ -522,5 +545,7 @@ namespace BMS
 		private DevExpress.XtraGrid.Columns.GridColumn colDepartmentID;
 		private System.Windows.Forms.CheckBox cbShowUnavailable;
 		private System.Windows.Forms.ToolStripButton btnSharpenKnife;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+		private System.Windows.Forms.ToolStripButton btnProcessChart;
 	}
 }
