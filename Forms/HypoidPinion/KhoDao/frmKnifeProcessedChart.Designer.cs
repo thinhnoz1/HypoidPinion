@@ -30,218 +30,219 @@ namespace BMS
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-			DevExpress.XtraCharts.SecondaryAxisY secondaryAxisY1 = new DevExpress.XtraCharts.SecondaryAxisY();
-			DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel1 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-			DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
+			DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
+			DevExpress.XtraCharts.SecondaryAxisY secondaryAxisY5 = new DevExpress.XtraCharts.SecondaryAxisY();
+			DevExpress.XtraCharts.Series series13 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel5 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
+			DevExpress.XtraCharts.SeriesPoint seriesPoint161 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint162 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint163 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint164 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint(5D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint165 = new DevExpress.XtraCharts.SeriesPoint(5D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint(6D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint166 = new DevExpress.XtraCharts.SeriesPoint(6D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint(7D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint167 = new DevExpress.XtraCharts.SeriesPoint(7D, new object[] {
             ((object)(222D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint(8D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint168 = new DevExpress.XtraCharts.SeriesPoint(8D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint9 = new DevExpress.XtraCharts.SeriesPoint(9D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint169 = new DevExpress.XtraCharts.SeriesPoint(9D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint10 = new DevExpress.XtraCharts.SeriesPoint(10D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint170 = new DevExpress.XtraCharts.SeriesPoint(10D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint11 = new DevExpress.XtraCharts.SeriesPoint(11D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint171 = new DevExpress.XtraCharts.SeriesPoint(11D, new object[] {
             ((object)(444D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint12 = new DevExpress.XtraCharts.SeriesPoint(12D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint172 = new DevExpress.XtraCharts.SeriesPoint(12D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint13 = new DevExpress.XtraCharts.SeriesPoint(13D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint173 = new DevExpress.XtraCharts.SeriesPoint(13D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint14 = new DevExpress.XtraCharts.SeriesPoint(14D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint174 = new DevExpress.XtraCharts.SeriesPoint(14D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint15 = new DevExpress.XtraCharts.SeriesPoint(15D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint175 = new DevExpress.XtraCharts.SeriesPoint(15D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint16 = new DevExpress.XtraCharts.SeriesPoint(16D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint176 = new DevExpress.XtraCharts.SeriesPoint(16D, new object[] {
             ((object)(54D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint17 = new DevExpress.XtraCharts.SeriesPoint(17D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint177 = new DevExpress.XtraCharts.SeriesPoint(17D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint18 = new DevExpress.XtraCharts.SeriesPoint(18D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint178 = new DevExpress.XtraCharts.SeriesPoint(18D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint19 = new DevExpress.XtraCharts.SeriesPoint(19D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint179 = new DevExpress.XtraCharts.SeriesPoint(19D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint20 = new DevExpress.XtraCharts.SeriesPoint(20D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint180 = new DevExpress.XtraCharts.SeriesPoint(20D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint21 = new DevExpress.XtraCharts.SeriesPoint(21D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint181 = new DevExpress.XtraCharts.SeriesPoint(21D, new object[] {
             ((object)(212D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint22 = new DevExpress.XtraCharts.SeriesPoint(22D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint182 = new DevExpress.XtraCharts.SeriesPoint(22D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint23 = new DevExpress.XtraCharts.SeriesPoint(23D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint183 = new DevExpress.XtraCharts.SeriesPoint(23D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint24 = new DevExpress.XtraCharts.SeriesPoint(24D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint184 = new DevExpress.XtraCharts.SeriesPoint(24D, new object[] {
             ((object)(111D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint25 = new DevExpress.XtraCharts.SeriesPoint(25D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint185 = new DevExpress.XtraCharts.SeriesPoint(25D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint26 = new DevExpress.XtraCharts.SeriesPoint(26D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint186 = new DevExpress.XtraCharts.SeriesPoint(26D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint27 = new DevExpress.XtraCharts.SeriesPoint(27D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint187 = new DevExpress.XtraCharts.SeriesPoint(27D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint28 = new DevExpress.XtraCharts.SeriesPoint(28D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint188 = new DevExpress.XtraCharts.SeriesPoint(28D, new object[] {
             ((object)(333D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint29 = new DevExpress.XtraCharts.SeriesPoint(29D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint189 = new DevExpress.XtraCharts.SeriesPoint(29D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint30 = new DevExpress.XtraCharts.SeriesPoint(30D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint190 = new DevExpress.XtraCharts.SeriesPoint(30D, new object[] {
             ((object)(0D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint31 = new DevExpress.XtraCharts.SeriesPoint(31D, new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint191 = new DevExpress.XtraCharts.SeriesPoint(31D, new object[] {
             ((object)(222D))});
-			DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel1 = new DevExpress.XtraCharts.PointSeriesLabel();
-			DevExpress.XtraCharts.SeriesPoint seriesPoint32 = new DevExpress.XtraCharts.SeriesPoint("1", new object[] {
+			DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView5 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+			DevExpress.XtraCharts.Series series14 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel9 = new DevExpress.XtraCharts.PointSeriesLabel();
+			DevExpress.XtraCharts.SeriesPoint seriesPoint192 = new DevExpress.XtraCharts.SeriesPoint("1", new object[] {
             ((object)(22D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint33 = new DevExpress.XtraCharts.SeriesPoint("2", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint193 = new DevExpress.XtraCharts.SeriesPoint("2", new object[] {
             ((object)(33D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint34 = new DevExpress.XtraCharts.SeriesPoint("3", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint194 = new DevExpress.XtraCharts.SeriesPoint("3", new object[] {
             ((object)(44D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint35 = new DevExpress.XtraCharts.SeriesPoint("4", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint195 = new DevExpress.XtraCharts.SeriesPoint("4", new object[] {
             ((object)(55D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint36 = new DevExpress.XtraCharts.SeriesPoint("5", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint196 = new DevExpress.XtraCharts.SeriesPoint("5", new object[] {
             ((object)(66D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint37 = new DevExpress.XtraCharts.SeriesPoint("6", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint197 = new DevExpress.XtraCharts.SeriesPoint("6", new object[] {
             ((object)(77D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint38 = new DevExpress.XtraCharts.SeriesPoint("7", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint198 = new DevExpress.XtraCharts.SeriesPoint("7", new object[] {
             ((object)(88D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint39 = new DevExpress.XtraCharts.SeriesPoint("8", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint199 = new DevExpress.XtraCharts.SeriesPoint("8", new object[] {
             ((object)(99D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint40 = new DevExpress.XtraCharts.SeriesPoint("9", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint200 = new DevExpress.XtraCharts.SeriesPoint("9", new object[] {
             ((object)(111D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint41 = new DevExpress.XtraCharts.SeriesPoint("10", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint201 = new DevExpress.XtraCharts.SeriesPoint("10", new object[] {
             ((object)(222D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint42 = new DevExpress.XtraCharts.SeriesPoint("11", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint202 = new DevExpress.XtraCharts.SeriesPoint("11", new object[] {
             ((object)(333D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint43 = new DevExpress.XtraCharts.SeriesPoint("12", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint203 = new DevExpress.XtraCharts.SeriesPoint("12", new object[] {
             ((object)(444D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint44 = new DevExpress.XtraCharts.SeriesPoint("13", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint204 = new DevExpress.XtraCharts.SeriesPoint("13", new object[] {
             ((object)(122D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint45 = new DevExpress.XtraCharts.SeriesPoint("14", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint205 = new DevExpress.XtraCharts.SeriesPoint("14", new object[] {
             ((object)(133D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint46 = new DevExpress.XtraCharts.SeriesPoint("15", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint206 = new DevExpress.XtraCharts.SeriesPoint("15", new object[] {
             ((object)(144D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint47 = new DevExpress.XtraCharts.SeriesPoint("16", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint207 = new DevExpress.XtraCharts.SeriesPoint("16", new object[] {
             ((object)(211D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint48 = new DevExpress.XtraCharts.SeriesPoint("17", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint208 = new DevExpress.XtraCharts.SeriesPoint("17", new object[] {
             ((object)(233D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint49 = new DevExpress.XtraCharts.SeriesPoint("18", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint209 = new DevExpress.XtraCharts.SeriesPoint("18", new object[] {
             ((object)(244D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint50 = new DevExpress.XtraCharts.SeriesPoint("19", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint210 = new DevExpress.XtraCharts.SeriesPoint("19", new object[] {
             ((object)(255D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint51 = new DevExpress.XtraCharts.SeriesPoint("20", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint211 = new DevExpress.XtraCharts.SeriesPoint("20", new object[] {
             ((object)(266D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint52 = new DevExpress.XtraCharts.SeriesPoint("21", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint212 = new DevExpress.XtraCharts.SeriesPoint("21", new object[] {
             ((object)(277D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint53 = new DevExpress.XtraCharts.SeriesPoint("22", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint213 = new DevExpress.XtraCharts.SeriesPoint("22", new object[] {
             ((object)(288D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint54 = new DevExpress.XtraCharts.SeriesPoint("23", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint214 = new DevExpress.XtraCharts.SeriesPoint("23", new object[] {
             ((object)(299D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint55 = new DevExpress.XtraCharts.SeriesPoint("24", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint215 = new DevExpress.XtraCharts.SeriesPoint("24", new object[] {
             ((object)(311D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint56 = new DevExpress.XtraCharts.SeriesPoint("25", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint216 = new DevExpress.XtraCharts.SeriesPoint("25", new object[] {
             ((object)(322D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint57 = new DevExpress.XtraCharts.SeriesPoint("26", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint217 = new DevExpress.XtraCharts.SeriesPoint("26", new object[] {
             ((object)(344D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint58 = new DevExpress.XtraCharts.SeriesPoint("27", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint218 = new DevExpress.XtraCharts.SeriesPoint("27", new object[] {
             ((object)(355D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint59 = new DevExpress.XtraCharts.SeriesPoint("28", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint219 = new DevExpress.XtraCharts.SeriesPoint("28", new object[] {
             ((object)(366D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint60 = new DevExpress.XtraCharts.SeriesPoint("29", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint220 = new DevExpress.XtraCharts.SeriesPoint("29", new object[] {
             ((object)(377D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint61 = new DevExpress.XtraCharts.SeriesPoint("30", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint221 = new DevExpress.XtraCharts.SeriesPoint("30", new object[] {
             ((object)(388D))});
-			DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
-			DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel2 = new DevExpress.XtraCharts.PointSeriesLabel();
-			DevExpress.XtraCharts.SeriesPoint seriesPoint62 = new DevExpress.XtraCharts.SeriesPoint("1", new object[] {
+			DevExpress.XtraCharts.LineSeriesView lineSeriesView9 = new DevExpress.XtraCharts.LineSeriesView();
+			DevExpress.XtraCharts.Series series15 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel10 = new DevExpress.XtraCharts.PointSeriesLabel();
+			DevExpress.XtraCharts.SeriesPoint seriesPoint222 = new DevExpress.XtraCharts.SeriesPoint("1", new object[] {
             ((object)(0.05D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint63 = new DevExpress.XtraCharts.SeriesPoint("2", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint223 = new DevExpress.XtraCharts.SeriesPoint("2", new object[] {
             ((object)(0.1D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint64 = new DevExpress.XtraCharts.SeriesPoint("3", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint224 = new DevExpress.XtraCharts.SeriesPoint("3", new object[] {
             ((object)(0.2D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint65 = new DevExpress.XtraCharts.SeriesPoint("4", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint225 = new DevExpress.XtraCharts.SeriesPoint("4", new object[] {
             ((object)(0.3D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint66 = new DevExpress.XtraCharts.SeriesPoint("5", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint226 = new DevExpress.XtraCharts.SeriesPoint("5", new object[] {
             ((object)(0.4D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint67 = new DevExpress.XtraCharts.SeriesPoint("6", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint227 = new DevExpress.XtraCharts.SeriesPoint("6", new object[] {
             ((object)(0.5D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint68 = new DevExpress.XtraCharts.SeriesPoint("7", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint228 = new DevExpress.XtraCharts.SeriesPoint("7", new object[] {
             ((object)(0.6D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint69 = new DevExpress.XtraCharts.SeriesPoint("8", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint229 = new DevExpress.XtraCharts.SeriesPoint("8", new object[] {
             ((object)(0.7D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint70 = new DevExpress.XtraCharts.SeriesPoint("9", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint230 = new DevExpress.XtraCharts.SeriesPoint("9", new object[] {
             ((object)(0.8D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint71 = new DevExpress.XtraCharts.SeriesPoint("10", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint231 = new DevExpress.XtraCharts.SeriesPoint("10", new object[] {
             ((object)(0.85D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint72 = new DevExpress.XtraCharts.SeriesPoint("11", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint232 = new DevExpress.XtraCharts.SeriesPoint("11", new object[] {
             ((object)(0.4D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint73 = new DevExpress.XtraCharts.SeriesPoint("12", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint233 = new DevExpress.XtraCharts.SeriesPoint("12", new object[] {
             ((object)(0.3D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint74 = new DevExpress.XtraCharts.SeriesPoint("13", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint234 = new DevExpress.XtraCharts.SeriesPoint("13", new object[] {
             ((object)(0.2D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint75 = new DevExpress.XtraCharts.SeriesPoint("14", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint235 = new DevExpress.XtraCharts.SeriesPoint("14", new object[] {
             ((object)(0.5D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint76 = new DevExpress.XtraCharts.SeriesPoint("15", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint236 = new DevExpress.XtraCharts.SeriesPoint("15", new object[] {
             ((object)(0.6D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint77 = new DevExpress.XtraCharts.SeriesPoint("16", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint237 = new DevExpress.XtraCharts.SeriesPoint("16", new object[] {
             ((object)(0.7D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint78 = new DevExpress.XtraCharts.SeriesPoint("17", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint238 = new DevExpress.XtraCharts.SeriesPoint("17", new object[] {
             ((object)(0.8D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint79 = new DevExpress.XtraCharts.SeriesPoint("18", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint239 = new DevExpress.XtraCharts.SeriesPoint("18", new object[] {
             ((object)(0.2D))});
-			DevExpress.XtraCharts.SeriesPoint seriesPoint80 = new DevExpress.XtraCharts.SeriesPoint("19", new object[] {
+			DevExpress.XtraCharts.SeriesPoint seriesPoint240 = new DevExpress.XtraCharts.SeriesPoint("19", new object[] {
             ((object)(0.1D))});
-			DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
-			DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-			DevExpress.XtraCharts.SecondaryAxisY secondaryAxisY2 = new DevExpress.XtraCharts.SecondaryAxisY();
-			DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel2 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
-			DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-			DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel3 = new DevExpress.XtraCharts.PointSeriesLabel();
-			DevExpress.XtraCharts.LineSeriesView lineSeriesView3 = new DevExpress.XtraCharts.LineSeriesView();
-			DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel4 = new DevExpress.XtraCharts.PointSeriesLabel();
-			DevExpress.XtraCharts.LineSeriesView lineSeriesView4 = new DevExpress.XtraCharts.LineSeriesView();
+			DevExpress.XtraCharts.LineSeriesView lineSeriesView10 = new DevExpress.XtraCharts.LineSeriesView();
+			DevExpress.XtraCharts.XYDiagram xyDiagram6 = new DevExpress.XtraCharts.XYDiagram();
+			DevExpress.XtraCharts.SecondaryAxisY secondaryAxisY6 = new DevExpress.XtraCharts.SecondaryAxisY();
+			DevExpress.XtraCharts.Series series16 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel6 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
+			DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView6 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+			DevExpress.XtraCharts.Series series17 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel11 = new DevExpress.XtraCharts.PointSeriesLabel();
+			DevExpress.XtraCharts.LineSeriesView lineSeriesView11 = new DevExpress.XtraCharts.LineSeriesView();
+			DevExpress.XtraCharts.Series series18 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel12 = new DevExpress.XtraCharts.PointSeriesLabel();
+			DevExpress.XtraCharts.LineSeriesView lineSeriesView12 = new DevExpress.XtraCharts.LineSeriesView();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
 			this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
 			((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(secondaryAxisY5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series13)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series14)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel9)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series15)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel10)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(secondaryAxisY2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(secondaryAxisY6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series16)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series17)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel11)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView11)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series18)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel12)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView12)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// timer1
 			// 
-			this.timer1.Interval = 30000;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// chartControl2
@@ -250,37 +251,37 @@ namespace BMS
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.chartControl2.AppearanceNameSerializable = "Chameleon";
-			xyDiagram1.AxisX.Title.Font = new System.Drawing.Font("Tahoma", 10F);
-			xyDiagram1.AxisX.Title.Text = "Ngày/Tháng";
-			xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-			xyDiagram1.AxisX.VisualRange.Auto = false;
-			xyDiagram1.AxisX.VisualRange.AutoSideMargins = true;
-			xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "31";
-			xyDiagram1.AxisX.VisualRange.MinValueSerializable = "0";
-			xyDiagram1.AxisX.WholeRange.Auto = false;
-			xyDiagram1.AxisX.WholeRange.AutoSideMargins = true;
-			xyDiagram1.AxisX.WholeRange.MaxValueSerializable = "31";
-			xyDiagram1.AxisX.WholeRange.MinValueSerializable = "0";
-			xyDiagram1.AxisY.Title.Font = new System.Drawing.Font("Tahoma", 10F);
-			xyDiagram1.AxisY.Title.Text = "Số lượng hàng gia công";
-			xyDiagram1.AxisY.Title.Visible = true;
-			xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-			xyDiagram1.DefaultPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			xyDiagram1.DefaultPane.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
-			xyDiagram1.Margins.Bottom = 13;
-			xyDiagram1.Margins.Left = 13;
-			xyDiagram1.Margins.Right = 13;
-			xyDiagram1.Margins.Top = 13;
-			xyDiagram1.PaneDistance = 18;
-			secondaryAxisY1.AxisID = 0;
-			secondaryAxisY1.Name = "Secondary AxisY 1";
-			secondaryAxisY1.Title.Font = new System.Drawing.Font("Tahoma", 10F);
-			secondaryAxisY1.Title.Text = "Số lần mài dao";
-			secondaryAxisY1.Title.Visible = true;
-			secondaryAxisY1.VisibleInPanesSerializable = "-1";
-			xyDiagram1.SecondaryAxesY.AddRange(new DevExpress.XtraCharts.SecondaryAxisY[] {
-            secondaryAxisY1});
-			this.chartControl2.Diagram = xyDiagram1;
+			xyDiagram5.AxisX.Title.Font = new System.Drawing.Font("Tahoma", 10F);
+			xyDiagram5.AxisX.Title.Text = "Ngày/Tháng";
+			xyDiagram5.AxisX.VisibleInPanesSerializable = "-1";
+			xyDiagram5.AxisX.VisualRange.Auto = false;
+			xyDiagram5.AxisX.VisualRange.AutoSideMargins = true;
+			xyDiagram5.AxisX.VisualRange.MaxValueSerializable = "31";
+			xyDiagram5.AxisX.VisualRange.MinValueSerializable = "0";
+			xyDiagram5.AxisX.WholeRange.Auto = false;
+			xyDiagram5.AxisX.WholeRange.AutoSideMargins = true;
+			xyDiagram5.AxisX.WholeRange.MaxValueSerializable = "31";
+			xyDiagram5.AxisX.WholeRange.MinValueSerializable = "0";
+			xyDiagram5.AxisY.Title.Font = new System.Drawing.Font("Tahoma", 10F);
+			xyDiagram5.AxisY.Title.Text = "Số lượng hàng gia công";
+			xyDiagram5.AxisY.Title.Visible = true;
+			xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
+			xyDiagram5.DefaultPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			xyDiagram5.DefaultPane.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
+			xyDiagram5.Margins.Bottom = 13;
+			xyDiagram5.Margins.Left = 13;
+			xyDiagram5.Margins.Right = 13;
+			xyDiagram5.Margins.Top = 13;
+			xyDiagram5.PaneDistance = 18;
+			secondaryAxisY5.AxisID = 0;
+			secondaryAxisY5.Name = "Secondary AxisY 1";
+			secondaryAxisY5.Title.Font = new System.Drawing.Font("Tahoma", 10F);
+			secondaryAxisY5.Title.Text = "Số lần mài dao";
+			secondaryAxisY5.Title.Visible = true;
+			secondaryAxisY5.VisibleInPanesSerializable = "-1";
+			xyDiagram5.SecondaryAxesY.AddRange(new DevExpress.XtraCharts.SecondaryAxisY[] {
+            secondaryAxisY5});
+			this.chartControl2.Diagram = xyDiagram5;
 			this.chartControl2.EmptyChartText.Text = "Không tải được dữ liêu\r\n";
 			this.chartControl2.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
 			this.chartControl2.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
@@ -304,137 +305,139 @@ namespace BMS
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.Red, System.Drawing.Color.Red)}));
 			this.chartControl2.RuntimeHitTesting = true;
 			this.chartControl2.RuntimeSeriesSelectionMode = DevExpress.XtraCharts.SeriesSelectionMode.Point;
-			series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
-			sideBySideBarSeriesLabel1.Antialiasing = true;
-			sideBySideBarSeriesLabel1.LineVisible = false;
-			series1.Label = sideBySideBarSeriesLabel1;
-			series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series1.Name = "Số sản phẩm gia công sau mài";
-			series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint1,
-            seriesPoint2,
-            seriesPoint3,
-            seriesPoint4,
-            seriesPoint5,
-            seriesPoint6,
-            seriesPoint7,
-            seriesPoint8,
-            seriesPoint9,
-            seriesPoint10,
-            seriesPoint11,
-            seriesPoint12,
-            seriesPoint13,
-            seriesPoint14,
-            seriesPoint15,
-            seriesPoint16,
-            seriesPoint17,
-            seriesPoint18,
-            seriesPoint19,
-            seriesPoint20,
-            seriesPoint21,
-            seriesPoint22,
-            seriesPoint23,
-            seriesPoint24,
-            seriesPoint25,
-            seriesPoint26,
-            seriesPoint27,
-            seriesPoint28,
-            seriesPoint29,
-            seriesPoint30,
-            seriesPoint31});
-			pointSeriesLabel1.Angle = 90;
-			pointSeriesLabel1.Antialiasing = true;
-			pointSeriesLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			pointSeriesLabel1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			pointSeriesLabel1.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
-			pointSeriesLabel1.LineStyle.Thickness = 2;
-			pointSeriesLabel1.LineVisible = false;
-			pointSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
-			series2.Label = pointSeriesLabel1;
-			series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series2.Name = "Số lần mài";
-			series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint32,
-            seriesPoint33,
-            seriesPoint34,
-            seriesPoint35,
-            seriesPoint36,
-            seriesPoint37,
-            seriesPoint38,
-            seriesPoint39,
-            seriesPoint40,
-            seriesPoint41,
-            seriesPoint42,
-            seriesPoint43,
-            seriesPoint44,
-            seriesPoint45,
-            seriesPoint46,
-            seriesPoint47,
-            seriesPoint48,
-            seriesPoint49,
-            seriesPoint50,
-            seriesPoint51,
-            seriesPoint52,
-            seriesPoint53,
-            seriesPoint54,
-            seriesPoint55,
-            seriesPoint56,
-            seriesPoint57,
-            seriesPoint58,
-            seriesPoint59,
-            seriesPoint60,
-            seriesPoint61});
-			lineSeriesView1.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView1.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView1.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
-			lineSeriesView1.LineMarkerOptions.Size = 7;
-			lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series2.View = lineSeriesView1;
-			pointSeriesLabel2.Angle = 90;
-			pointSeriesLabel2.Antialiasing = true;
-			pointSeriesLabel2.LineLength = 5;
-			pointSeriesLabel2.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
-			pointSeriesLabel2.LineVisible = false;
-			pointSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
-			series3.Label = pointSeriesLabel2;
-			series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series3.Name = "STD sau mài";
-			series3.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint62,
-            seriesPoint63,
-            seriesPoint64,
-            seriesPoint65,
-            seriesPoint66,
-            seriesPoint67,
-            seriesPoint68,
-            seriesPoint69,
-            seriesPoint70,
-            seriesPoint71,
-            seriesPoint72,
-            seriesPoint73,
-            seriesPoint74,
-            seriesPoint75,
-            seriesPoint76,
-            seriesPoint77,
-            seriesPoint78,
-            seriesPoint79,
-            seriesPoint80});
-			lineSeriesView2.AxisYName = "Secondary AxisY 1";
-			lineSeriesView2.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView2.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView2.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
-			lineSeriesView2.LineMarkerOptions.Size = 7;
-			lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series3.View = lineSeriesView2;
+			series13.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
+			sideBySideBarSeriesLabel5.Antialiasing = true;
+			sideBySideBarSeriesLabel5.LineVisible = false;
+			series13.Label = sideBySideBarSeriesLabel5;
+			series13.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series13.Name = "Số sản phẩm gia công sau mài";
+			series13.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint161,
+            seriesPoint162,
+            seriesPoint163,
+            seriesPoint164,
+            seriesPoint165,
+            seriesPoint166,
+            seriesPoint167,
+            seriesPoint168,
+            seriesPoint169,
+            seriesPoint170,
+            seriesPoint171,
+            seriesPoint172,
+            seriesPoint173,
+            seriesPoint174,
+            seriesPoint175,
+            seriesPoint176,
+            seriesPoint177,
+            seriesPoint178,
+            seriesPoint179,
+            seriesPoint180,
+            seriesPoint181,
+            seriesPoint182,
+            seriesPoint183,
+            seriesPoint184,
+            seriesPoint185,
+            seriesPoint186,
+            seriesPoint187,
+            seriesPoint188,
+            seriesPoint189,
+            seriesPoint190,
+            seriesPoint191});
+			sideBySideBarSeriesView5.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
+			series13.View = sideBySideBarSeriesView5;
+			pointSeriesLabel9.Angle = 90;
+			pointSeriesLabel9.Antialiasing = true;
+			pointSeriesLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			pointSeriesLabel9.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			pointSeriesLabel9.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
+			pointSeriesLabel9.LineStyle.Thickness = 2;
+			pointSeriesLabel9.LineVisible = false;
+			pointSeriesLabel9.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
+			series14.Label = pointSeriesLabel9;
+			series14.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series14.Name = "Số lần mài";
+			series14.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint192,
+            seriesPoint193,
+            seriesPoint194,
+            seriesPoint195,
+            seriesPoint196,
+            seriesPoint197,
+            seriesPoint198,
+            seriesPoint199,
+            seriesPoint200,
+            seriesPoint201,
+            seriesPoint202,
+            seriesPoint203,
+            seriesPoint204,
+            seriesPoint205,
+            seriesPoint206,
+            seriesPoint207,
+            seriesPoint208,
+            seriesPoint209,
+            seriesPoint210,
+            seriesPoint211,
+            seriesPoint212,
+            seriesPoint213,
+            seriesPoint214,
+            seriesPoint215,
+            seriesPoint216,
+            seriesPoint217,
+            seriesPoint218,
+            seriesPoint219,
+            seriesPoint220,
+            seriesPoint221});
+			lineSeriesView9.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView9.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView9.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+			lineSeriesView9.LineMarkerOptions.Size = 7;
+			lineSeriesView9.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series14.View = lineSeriesView9;
+			pointSeriesLabel10.Angle = 90;
+			pointSeriesLabel10.Antialiasing = true;
+			pointSeriesLabel10.LineLength = 5;
+			pointSeriesLabel10.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
+			pointSeriesLabel10.LineVisible = false;
+			pointSeriesLabel10.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
+			series15.Label = pointSeriesLabel10;
+			series15.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series15.Name = "STD sau mài";
+			series15.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint222,
+            seriesPoint223,
+            seriesPoint224,
+            seriesPoint225,
+            seriesPoint226,
+            seriesPoint227,
+            seriesPoint228,
+            seriesPoint229,
+            seriesPoint230,
+            seriesPoint231,
+            seriesPoint232,
+            seriesPoint233,
+            seriesPoint234,
+            seriesPoint235,
+            seriesPoint236,
+            seriesPoint237,
+            seriesPoint238,
+            seriesPoint239,
+            seriesPoint240});
+			lineSeriesView10.AxisYName = "Secondary AxisY 1";
+			lineSeriesView10.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView10.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView10.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+			lineSeriesView10.LineMarkerOptions.Size = 7;
+			lineSeriesView10.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series15.View = lineSeriesView10;
 			this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2,
-        series3};
+        series13,
+        series14,
+        series15};
 			this.chartControl2.SideBySideBarDistanceVariable = 0.1D;
 			this.chartControl2.Size = new System.Drawing.Size(788, 326);
 			this.chartControl2.TabIndex = 220;
+			this.chartControl2.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.chartControl2_CustomDrawSeriesPoint);
 			this.chartControl2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chartControl2_MouseClick);
-			this.chartControl2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.chartControl2_MouseDoubleClick);
 			// 
 			// chartControl1
 			// 
@@ -443,39 +446,39 @@ namespace BMS
 			this.chartControl1.AppearanceNameSerializable = "Chameleon";
 			this.chartControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.chartControl1.BorderOptions.Visible = false;
-			xyDiagram2.AxisX.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			xyDiagram2.AxisX.Label.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			xyDiagram2.AxisX.Title.Font = new System.Drawing.Font("Tahoma", 10F);
-			xyDiagram2.AxisX.Title.Text = "Ngày/Tháng";
-			xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-			xyDiagram2.AxisX.WholeRange.AutoSideMargins = true;
-			xyDiagram2.AxisY.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			xyDiagram2.AxisY.Label.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			xyDiagram2.AxisY.Title.Font = new System.Drawing.Font("Tahoma", 10F);
-			xyDiagram2.AxisY.Title.Text = "";
-			xyDiagram2.AxisY.Title.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			xyDiagram2.AxisY.Title.Visible = true;
-			xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-			xyDiagram2.DefaultPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			xyDiagram2.DefaultPane.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			xyDiagram2.DefaultPane.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
-			xyDiagram2.Margins.Bottom = 13;
-			xyDiagram2.Margins.Left = 13;
-			xyDiagram2.Margins.Right = 13;
-			xyDiagram2.Margins.Top = 13;
-			xyDiagram2.PaneDistance = 18;
-			secondaryAxisY2.AxisID = 0;
-			secondaryAxisY2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			secondaryAxisY2.Label.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			secondaryAxisY2.Name = "Secondary AxisY 1";
-			secondaryAxisY2.Title.Font = new System.Drawing.Font("Tahoma", 10F);
-			secondaryAxisY2.Title.Text = "";
-			secondaryAxisY2.Title.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			secondaryAxisY2.Title.Visible = true;
-			secondaryAxisY2.VisibleInPanesSerializable = "-1";
-			xyDiagram2.SecondaryAxesY.AddRange(new DevExpress.XtraCharts.SecondaryAxisY[] {
-            secondaryAxisY2});
-			this.chartControl1.Diagram = xyDiagram2;
+			xyDiagram6.AxisX.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			xyDiagram6.AxisX.Label.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			xyDiagram6.AxisX.Title.Font = new System.Drawing.Font("Tahoma", 10F);
+			xyDiagram6.AxisX.Title.Text = "Ngày/Tháng";
+			xyDiagram6.AxisX.VisibleInPanesSerializable = "-1";
+			xyDiagram6.AxisX.WholeRange.AutoSideMargins = true;
+			xyDiagram6.AxisY.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			xyDiagram6.AxisY.Label.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			xyDiagram6.AxisY.Title.Font = new System.Drawing.Font("Tahoma", 10F);
+			xyDiagram6.AxisY.Title.Text = "";
+			xyDiagram6.AxisY.Title.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			xyDiagram6.AxisY.Title.Visible = true;
+			xyDiagram6.AxisY.VisibleInPanesSerializable = "-1";
+			xyDiagram6.DefaultPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			xyDiagram6.DefaultPane.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			xyDiagram6.DefaultPane.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
+			xyDiagram6.Margins.Bottom = 13;
+			xyDiagram6.Margins.Left = 13;
+			xyDiagram6.Margins.Right = 13;
+			xyDiagram6.Margins.Top = 13;
+			xyDiagram6.PaneDistance = 18;
+			secondaryAxisY6.AxisID = 0;
+			secondaryAxisY6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			secondaryAxisY6.Label.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			secondaryAxisY6.Name = "Secondary AxisY 1";
+			secondaryAxisY6.Title.Font = new System.Drawing.Font("Tahoma", 10F);
+			secondaryAxisY6.Title.Text = "";
+			secondaryAxisY6.Title.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			secondaryAxisY6.Title.Visible = true;
+			secondaryAxisY6.VisibleInPanesSerializable = "-1";
+			xyDiagram6.SecondaryAxesY.AddRange(new DevExpress.XtraCharts.SecondaryAxisY[] {
+            secondaryAxisY6});
+			this.chartControl1.Diagram = xyDiagram6;
 			this.chartControl1.EmptyChartText.Text = "Không tải được dữ liêu\r\n";
 			this.chartControl1.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
 			this.chartControl1.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
@@ -499,54 +502,54 @@ namespace BMS
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.Red, System.Drawing.Color.Red)}));
 			this.chartControl1.RuntimeHitTesting = true;
 			this.chartControl1.RuntimeSeriesSelectionMode = DevExpress.XtraCharts.SeriesSelectionMode.Point;
-			series4.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
-			sideBySideBarSeriesLabel2.Antialiasing = true;
-			sideBySideBarSeriesLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			sideBySideBarSeriesLabel2.LineVisible = false;
-			series4.Label = sideBySideBarSeriesLabel2;
-			series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series4.Name = "Số sản phẩm gia công sau mài";
-			sideBySideBarSeriesView1.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
-			series4.View = sideBySideBarSeriesView1;
-			pointSeriesLabel3.Angle = 90;
-			pointSeriesLabel3.Antialiasing = true;
-			pointSeriesLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			pointSeriesLabel3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			pointSeriesLabel3.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
-			pointSeriesLabel3.LineStyle.Thickness = 2;
-			pointSeriesLabel3.LineVisible = false;
-			pointSeriesLabel3.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
-			series5.Label = pointSeriesLabel3;
-			series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series5.Name = "Total";
-			lineSeriesView3.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView3.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView3.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
-			lineSeriesView3.LineMarkerOptions.Size = 7;
-			lineSeriesView3.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series5.View = lineSeriesView3;
-			pointSeriesLabel4.Angle = 90;
-			pointSeriesLabel4.Antialiasing = true;
-			pointSeriesLabel4.LineLength = 5;
-			pointSeriesLabel4.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
-			pointSeriesLabel4.LineVisible = false;
-			pointSeriesLabel4.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
-			series6.Label = pointSeriesLabel4;
-			series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series6.Name = "STD ";
-			series6.ShowInLegend = false;
-			lineSeriesView4.AxisYName = "Secondary AxisY 1";
-			lineSeriesView4.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView4.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			lineSeriesView4.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
-			lineSeriesView4.LineMarkerOptions.Size = 7;
-			lineSeriesView4.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-			series6.View = lineSeriesView4;
-			series6.Visible = false;
+			series16.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
+			sideBySideBarSeriesLabel6.Antialiasing = true;
+			sideBySideBarSeriesLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			sideBySideBarSeriesLabel6.LineVisible = false;
+			series16.Label = sideBySideBarSeriesLabel6;
+			series16.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series16.Name = "Số sản phẩm gia công sau mài";
+			sideBySideBarSeriesView6.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
+			series16.View = sideBySideBarSeriesView6;
+			pointSeriesLabel11.Angle = 90;
+			pointSeriesLabel11.Antialiasing = true;
+			pointSeriesLabel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			pointSeriesLabel11.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			pointSeriesLabel11.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
+			pointSeriesLabel11.LineStyle.Thickness = 2;
+			pointSeriesLabel11.LineVisible = false;
+			pointSeriesLabel11.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
+			series17.Label = pointSeriesLabel11;
+			series17.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series17.Name = "Total";
+			lineSeriesView11.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView11.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView11.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+			lineSeriesView11.LineMarkerOptions.Size = 7;
+			lineSeriesView11.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series17.View = lineSeriesView11;
+			pointSeriesLabel12.Angle = 90;
+			pointSeriesLabel12.Antialiasing = true;
+			pointSeriesLabel12.LineLength = 5;
+			pointSeriesLabel12.LineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dot;
+			pointSeriesLabel12.LineVisible = false;
+			pointSeriesLabel12.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
+			series18.Label = pointSeriesLabel12;
+			series18.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series18.Name = "STD ";
+			series18.ShowInLegend = false;
+			lineSeriesView12.AxisYName = "Secondary AxisY 1";
+			lineSeriesView12.LineMarkerOptions.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView12.LineMarkerOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			lineSeriesView12.LineMarkerOptions.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Hatch;
+			lineSeriesView12.LineMarkerOptions.Size = 7;
+			lineSeriesView12.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
+			series18.View = lineSeriesView12;
+			series18.Visible = false;
 			this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4,
-        series5,
-        series6};
+        series16,
+        series17,
+        series18};
 			this.chartControl1.SideBySideBarDistanceVariable = 0.1D;
 			this.chartControl1.Size = new System.Drawing.Size(788, 337);
 			this.chartControl1.TabIndex = 221;
@@ -561,28 +564,29 @@ namespace BMS
 			this.Name = "frmKnifeProcessedChart";
 			this.Text = "BIỂU ĐỒ GIA CÔNG";
 			this.Load += new System.EventHandler(this.frmKnifeProcessedChart_Load);
-			((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(secondaryAxisY5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series13)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel9)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series14)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel10)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series15)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(secondaryAxisY2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(secondaryAxisY6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series16)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel11)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView11)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series17)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(pointSeriesLabel12)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(lineSeriesView12)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series18)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
 			this.ResumeLayout(false);
 

@@ -15,7 +15,12 @@ namespace BMS
 {
 	public partial class frmKnifeProcessedChart : _Forms
 	{
-		private string knifeCode;
+		private string _knifeCode;
+		/// <summary>
+		/// Lưu giá trị cột được chọn
+		/// </summary>
+		private string _columnName = "";
+
 
 		public frmKnifeProcessedChart()
 		{
@@ -26,32 +31,33 @@ namespace BMS
 		void LoadDataToChartProduct()
 		{
 
-			DataTable dt = TextUtils.LoadDataFromSP("spGetChartProductData", "A", new string[] { "@numberOfProduct" }, new object[] { 0 });
-			DataTable dt1 = TextUtils.Select("SELECT KnifeCode, ATC FROM KnifeDetailList WHERE Status = 1");
-			DataTable dt2 = TextUtils.Select("SELECT KnifeCode, STD FROM KnifeDetailList WHERE Status = 1");
+			DataSet dt = TextUtils.GetListDataFromSP("spGetChartProductData", "A", new string[] { "@numberOfProduct" }, new object[] { 0 });
+			//	DataTable dt1 = TextUtils.Select("SELECT KnifeCode, ATC, STD FROM KnifeDetailList WHERE Status = 1");
+			//DataTable dt2 = TextUtils.Select("SELECT KnifeCode, STD FROM KnifeDetailList WHERE Status = 1");
+
+			if (dt.Tables.Count < 2) return;
 
 
 			//  Chong' timer khi refresh se chay tren 1 luong rieng biet nen se gay loi Index of out bound
-			chartControl2.Invoke((MethodInvoker)delegate
-			{
-				chartControl2.Series[0].DataSource = dt;
-				chartControl2.Series[0].ArgumentScaleType = ScaleType.Auto;
-				chartControl2.Series[0].ArgumentDataMember = "KnifeCode";
-				chartControl2.Series[0].ValueScaleType = ScaleType.Numerical;
-				chartControl2.Series[0].ValueDataMembers.AddRange(new string[] { "Quantity" });
 
-				chartControl2.Series[1].DataSource = dt2;
-				chartControl2.Series[1].ArgumentScaleType = ScaleType.Auto;
-				chartControl2.Series[1].ArgumentDataMember = "KnifeCode";
-				chartControl2.Series[1].ValueScaleType = ScaleType.Numerical;
-				chartControl2.Series[1].ValueDataMembers.AddRange(new string[] { "STD" });
+			chartControl2.Series[0].DataSource = dt.Tables[0];
+			chartControl2.Series[0].ArgumentScaleType = ScaleType.Auto;
+			chartControl2.Series[0].ArgumentDataMember = "KnifeCode";
+			chartControl2.Series[0].ValueScaleType = ScaleType.Numerical;
+			chartControl2.Series[0].ValueDataMembers.AddRange(new string[] { "Quantity" });
 
-				chartControl2.Series[2].DataSource = dt1;
-				chartControl2.Series[2].ArgumentScaleType = ScaleType.Auto;
-				chartControl2.Series[2].ArgumentDataMember = "KnifeCode";
-				chartControl2.Series[2].ValueScaleType = ScaleType.Numerical;
-				chartControl2.Series[2].ValueDataMembers.AddRange(new string[] { "ATC" });
-			});
+			chartControl2.Series[1].DataSource = dt.Tables[1];
+			chartControl2.Series[1].ArgumentScaleType = ScaleType.Auto;
+			chartControl2.Series[1].ArgumentDataMember = "KnifeCode";
+			chartControl2.Series[1].ValueScaleType = ScaleType.Numerical;
+			chartControl2.Series[1].ValueDataMembers.AddRange(new string[] { "STD" });
+
+			chartControl2.Series[2].DataSource = dt.Tables[1];
+			chartControl2.Series[2].ArgumentScaleType = ScaleType.Auto;
+			chartControl2.Series[2].ArgumentDataMember = "KnifeCode";
+			chartControl2.Series[2].ValueScaleType = ScaleType.Numerical;
+			chartControl2.Series[2].ValueDataMembers.AddRange(new string[] { "ATC" });
+
 
 		}
 
@@ -89,15 +95,10 @@ namespace BMS
 
 		private void timer1_Tick(object sender, EventArgs e)
 		{
-			timer1.Enabled = false;
+			//timer1.Enabled = false;
 			LoadDataToChartProduct();
-			//label1.Invoke((MethodInvoker)delegate {
-			//     var rnd = new Random();
-			//     label1.Text = rnd.Next().ToString();
-			//     timer1.Enabled = true;
-			// });
-
-			timer1.Enabled = true;
+			
+			//timer1.Enabled = true;
 		}
 
 		private void frmKnifeProcessedChart_Load(object sender, EventArgs e)
@@ -116,10 +117,10 @@ namespace BMS
 
 				if (hitInfo.SeriesPoint != null)
 				{
-					knifeCode = hitInfo.SeriesPoint.Argument;
-					LoadDataToChartTime(knifeCode);
+					_knifeCode = hitInfo.SeriesPoint.Argument;
+					LoadDataToChartTime(_knifeCode);
 					// double quantity = hitInfo.SeriesPoint.Values[0];
-					//Arr = KnifeDetailListBO.Instance.FindByAttribute("KnifeCode", knifeCode);
+					//Arr = KnifeDetailListBO.Instance.FindByAttribute("KnifeCode", _knifeCode);
 				}
 			}
 			catch
@@ -137,14 +138,30 @@ namespace BMS
 
 				if (hitInfo.SeriesPoint != null)
 				{
-					knifeCode = hitInfo.SeriesPoint.Argument;
-					LoadDataToChartTime(knifeCode);
+					//hitInfo.HitObject = Color.White;
+
+					_knifeCode = hitInfo.SeriesPoint.Argument;
+					_columnName = _knifeCode;
+					LoadDataToChartTime(_knifeCode);
+					//chartControl2_CustomDrawSeriesPoint
 					// double quantity = hitInfo.SeriesPoint.Values[0];
-					//Arr = KnifeDetailListBO.Instance.FindByAttribute("KnifeCode", knifeCode);
+					//Arr = KnifeDetailListBO.Instance.FindByAttribute("KnifeCode", _knifeCode);
 				}
 			}
 			catch
 			{
+			}
+		}
+
+		// Event này sẽ được chạy khi mỗi series point tương ứng với cột được load
+		private void chartControl2_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e)
+		{
+			if (!string.IsNullOrEmpty(_columnName)) { 
+				if (string.Equals(e.SeriesPoint.Argument, _columnName))
+				{
+					e.SeriesDrawOptions.Color = Color.Red;
+					//e.SeriesDrawOptions.ActualColor2 = Color.Red;
+				}
 			}
 		}
 	}
