@@ -174,6 +174,7 @@ namespace BMS
 			this.txbDepartmentCode.TabIndex = 239;
 			this.txbDepartmentCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.txbDepartmentCode.TextChanged += new System.EventHandler(this.txbDepartmentCode_TextChanged);
+			this.txbDepartmentCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDepartmentCode_KeyPress);
 			// 
 			// label1
 			// 
@@ -222,6 +223,7 @@ namespace BMS
 			this.cWorker.Size = new System.Drawing.Size(292, 44);
 			this.cWorker.TabIndex = 236;
 			this.cWorker.EditValueChanged += new System.EventHandler(this.cWorker_EditValueChanged);
+			this.cWorker.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cWorker_KeyPress);
 			this.cWorker.Leave += new System.EventHandler(this.cWorker_Leave);
 			// 
 			// label4
@@ -270,6 +272,7 @@ namespace BMS
 			this.cKnifeList.Properties.UseCtrlScroll = true;
 			this.cKnifeList.Size = new System.Drawing.Size(292, 44);
 			this.cKnifeList.TabIndex = 235;
+			this.cKnifeList.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cKnifeList_KeyPress);
 			this.cKnifeList.Leave += new System.EventHandler(this.cKnifeList_Leave);
 			// 
 			// dtgvKnifeDispose

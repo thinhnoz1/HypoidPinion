@@ -174,6 +174,7 @@ namespace BMS
 				LoadDataToForm();
 				cKnifeList_Leave(null, null);
 			}
+			cKnifeList.Focus();
 		}
 
 		private void cấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -295,5 +296,29 @@ namespace BMS
 		}
 		#endregion
 
+		private void cKnifeList_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			cWorker.Focus();
+		}
+
+		private void cWorker_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			txbProductCode.Focus();
+		}
+
+		private void txbProductCode_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			cMachine.Focus();
+		}
+
+		private void cMachine_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			txbQuantity.Focus();
+		}
+
+		private void txbQuantity_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			cKnifeList.Focus();
+		}
 	}
 }

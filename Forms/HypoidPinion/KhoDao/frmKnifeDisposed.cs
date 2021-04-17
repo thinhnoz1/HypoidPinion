@@ -208,10 +208,30 @@ namespace BMS
 			if (knifeID == 0) return;
 			LoadDataToForm();
 		}
+
+		private void cKnifeList_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				cWorker.Focus();
+			}
+		}
+
+		private void cWorker_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				cKnifeList.Focus();
+			}
+		}
+
+		private void txbDepartmentCode_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			//cKnifeList.Focus();
+		}
+
 		#endregion
 
-		
 
-		
 	}
 }

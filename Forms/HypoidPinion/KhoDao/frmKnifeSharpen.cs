@@ -283,5 +283,15 @@ namespace BMS
 			btnSaveNew_Click(null, null);
 		}
 		#endregion
+
+		private void cKnifeList_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			cWorker.Focus();
+		}
+
+		private void cWorker_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			cKnifeList.Focus();
+		}
 	}
 }

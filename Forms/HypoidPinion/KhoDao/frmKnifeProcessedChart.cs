@@ -59,30 +59,37 @@ namespace BMS
 		void RefreshDummySeries() {
 			DataTable dt = new DataTable();
 			chartControl2.Series[3].DataSource = dt;
-			dt = null;
 		}
+
 		private async void GetDetailToChart(DataTable dt)
 		{
-			Task task = Task.Factory.StartNew(() =>
+			try
 			{
-				for (int i = 0; i < dt.Rows.Count; i++)
+				Task task = Task.Factory.StartNew(() =>
 				{
-					Thread.Sleep(1000);
-					if (_exitFlag == 2) return;
-					_exitFlag = 1;
-
-					_columnName = TextUtils.ToString(dt.Rows[i]["KnifeCode"]);
-					chartControl1.Invoke((MethodInvoker)delegate
+					for (int i = 0; i < dt.Rows.Count; i++)
 					{
-						LoadDataToChartTime(_columnName);
-						RefreshDummySeries();
-					});
-					_exitFlag = 0;
+						Thread.Sleep(1000);
+						if (_exitFlag == 2) return;
+						_exitFlag = 1;
+
+						_columnName = TextUtils.ToString(dt.Rows[i]["KnifeCode"]);
+						chartControl1.Invoke((MethodInvoker)delegate
+						{
+							LoadDataToChartTime(_columnName);
+							RefreshDummySeries();
+						});
+						_exitFlag = 0;
+					}
 				}
-			}
 			);
-			await task;
-			_refreshFlag = 0;
+				await task;
+				_refreshFlag = 0;
+			}
+			catch {
+				return;
+			}
+			
 		}
 
 		void LoadDataToChartTime(string knifeCode)
@@ -135,8 +142,6 @@ namespace BMS
 				{
 					_knifeCode = hitInfo.SeriesPoint.Argument;
 					LoadDataToChartTime(_knifeCode);
-					// double quantity = hitInfo.SeriesPoint.Values[0];
-					//Arr = KnifeDetailListBO.Instance.FindByAttribute("KnifeCode", knifeCode);
 				}
 			}
 			catch

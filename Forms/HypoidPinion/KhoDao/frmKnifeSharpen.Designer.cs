@@ -57,12 +57,12 @@ namespace BMS
 			this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colKnifeID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.cấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.catVaThemOiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.mnuMenu.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cKnifeList.Properties)).BeginInit();
@@ -182,6 +182,7 @@ namespace BMS
 			this.cKnifeList.Size = new System.Drawing.Size(218, 44);
 			this.cKnifeList.TabIndex = 235;
 			this.cKnifeList.EditValueChanged += new System.EventHandler(this.cKnifeList_EditValueChanged);
+			this.cKnifeList.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cKnifeList_KeyPress);
 			this.cKnifeList.Leave += new System.EventHandler(this.cKnifeList_Leave);
 			// 
 			// label3
@@ -272,6 +273,7 @@ namespace BMS
 			this.cWorker.Size = new System.Drawing.Size(218, 44);
 			this.cWorker.TabIndex = 236;
 			this.cWorker.EditValueChanged += new System.EventHandler(this.cWorker_EditValueChanged);
+			this.cWorker.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cWorker_KeyPress);
 			this.cWorker.Leave += new System.EventHandler(this.cWorker_Leave);
 			// 
 			// txbSTD
@@ -541,6 +543,26 @@ namespace BMS
 			this.gridColumn4.Name = "gridColumn4";
 			this.gridColumn4.Width = 129;
 			// 
+			// gridColumn3
+			// 
+			this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn3.AppearanceCell.Options.UseFont = true;
+			this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn3.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn3.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn3.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.gridColumn3.Caption = "TÌNH TRẠNG";
+			this.gridColumn3.FieldName = "Status";
+			this.gridColumn3.Name = "gridColumn3";
+			this.gridColumn3.Visible = true;
+			this.gridColumn3.VisibleIndex = 4;
+			this.gridColumn3.Width = 137;
+			// 
 			// colKnifeID
 			// 
 			this.colKnifeID.Caption = "gridColumn3";
@@ -583,26 +605,6 @@ namespace BMS
 			this.timer1.Enabled = true;
 			this.timer1.Interval = 700;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-			// 
-			// gridColumn3
-			// 
-			this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
-			this.gridColumn3.AppearanceCell.Options.UseFont = true;
-			this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
-			this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-			this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.gridColumn3.AppearanceHeader.Options.UseFont = true;
-			this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
-			this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.gridColumn3.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-			this.gridColumn3.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-			this.gridColumn3.Caption = "TÌNH TRẠNG";
-			this.gridColumn3.FieldName = "Status";
-			this.gridColumn3.Name = "gridColumn3";
-			this.gridColumn3.Visible = true;
-			this.gridColumn3.VisibleIndex = 4;
-			this.gridColumn3.Width = 137;
 			// 
 			// frmKnifeSharpen
 			// 

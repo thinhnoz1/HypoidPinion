@@ -43,6 +43,7 @@ namespace BMS
 			this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+			this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.colKnifeID = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.label1 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@ namespace BMS
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.mnuMenu = new System.Windows.Forms.ToolStrip();
 			this.btnSaveNew = new System.Windows.Forms.ToolStripButton();
-			this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dtgvKnifeProcessedList)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gvKnifeProcessedList)).BeginInit();
 			this.tableLayoutPanel1.SuspendLayout();
@@ -296,6 +296,25 @@ namespace BMS
 			this.gridColumn3.VisibleIndex = 5;
 			this.gridColumn3.Width = 115;
 			// 
+			// gridColumn7
+			// 
+			this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.gridColumn7.AppearanceCell.Options.UseFont = true;
+			this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+			this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn7.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.gridColumn7.AppearanceHeader.Options.UseFont = true;
+			this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
+			this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.gridColumn7.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+			this.gridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.gridColumn7.Caption = "TÌNH TRẠNG";
+			this.gridColumn7.FieldName = "Type";
+			this.gridColumn7.Name = "gridColumn7";
+			this.gridColumn7.Visible = true;
+			this.gridColumn7.VisibleIndex = 1;
+			// 
 			// colKnifeID
 			// 
 			this.colKnifeID.Caption = "gridColumn7";
@@ -382,6 +401,7 @@ namespace BMS
 			this.cWorker.Size = new System.Drawing.Size(218, 44);
 			this.cWorker.TabIndex = 237;
 			this.cWorker.EditValueChanged += new System.EventHandler(this.cWorker_EditValueChanged);
+			this.cWorker.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cWorker_KeyPress);
 			this.cWorker.Leave += new System.EventHandler(this.cWorker_Leave);
 			// 
 			// label8
@@ -442,6 +462,7 @@ namespace BMS
 			this.txbQuantity.Size = new System.Drawing.Size(220, 43);
 			this.txbQuantity.TabIndex = 239;
 			this.txbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txbQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbQuantity_KeyPress);
 			this.txbQuantity.Leave += new System.EventHandler(this.txbQuantity_Leave);
 			// 
 			// label6
@@ -488,6 +509,7 @@ namespace BMS
 			this.cMachine.Properties.UseCtrlScroll = true;
 			this.cMachine.Size = new System.Drawing.Size(218, 44);
 			this.cMachine.TabIndex = 238;
+			this.cMachine.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cMachine_KeyPress);
 			this.cMachine.Leave += new System.EventHandler(this.cMachine_Leave);
 			// 
 			// label5
@@ -515,6 +537,7 @@ namespace BMS
 			this.txbProductCode.Size = new System.Drawing.Size(218, 43);
 			this.txbProductCode.TabIndex = 236;
 			this.txbProductCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txbProductCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbProductCode_KeyPress);
 			this.txbProductCode.Leave += new System.EventHandler(this.txbProductCode_Leave);
 			// 
 			// label4
@@ -563,6 +586,7 @@ namespace BMS
 			this.cKnifeList.Properties.UseCtrlScroll = true;
 			this.cKnifeList.Size = new System.Drawing.Size(218, 44);
 			this.cKnifeList.TabIndex = 235;
+			this.cKnifeList.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cKnifeList_KeyPress);
 			this.cKnifeList.Leave += new System.EventHandler(this.cKnifeList_Leave);
 			// 
 			// menuStrip1
@@ -630,25 +654,6 @@ namespace BMS
 			this.btnSaveNew.Text = "Cất && Thêm mới";
 			this.btnSaveNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btnSaveNew.Click += new System.EventHandler(this.btnSaveNew_Click);
-			// 
-			// gridColumn7
-			// 
-			this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 11F);
-			this.gridColumn7.AppearanceCell.Options.UseFont = true;
-			this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
-			this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.gridColumn7.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-			this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.gridColumn7.AppearanceHeader.Options.UseFont = true;
-			this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
-			this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.gridColumn7.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-			this.gridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-			this.gridColumn7.Caption = "TÌNH TRẠNG";
-			this.gridColumn7.FieldName = "Type";
-			this.gridColumn7.Name = "gridColumn7";
-			this.gridColumn7.Visible = true;
-			this.gridColumn7.VisibleIndex = 1;
 			// 
 			// frmKnifeProcessedList
 			// 
