@@ -1118,8 +1118,6 @@ D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.Xt
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraTreeList.v13.2.dll
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\Forms.dll
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\NotificationWindow.dll
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\ExcelDataReader.dll
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\ExcelDataReader.DataSet.dll
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraCharts.v13.2.UI.dll
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraCharts.v13.2.dll
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\Vila.Core.dll
@@ -1148,10 +1146,6 @@ D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.Xt
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraNavBar.v13.2.xml
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraPrinting.v13.2.xml
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraTreeList.v13.2.xml
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\ExcelDataReader.pdb
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\ExcelDataReader.xml
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\ExcelDataReader.DataSet.pdb
-D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\ExcelDataReader.DataSet.xml
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraCharts.v13.2.UI.xml
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\DevExpress.XtraCharts.v13.2.xml
 D:\RTC\Project\1.Sumitomo\Hypoid Pinion\HypoidPinion\BMS\bin\Debug\Utilities.pdb

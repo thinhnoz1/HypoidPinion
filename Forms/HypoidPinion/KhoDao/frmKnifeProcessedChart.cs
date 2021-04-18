@@ -16,11 +16,14 @@ namespace BMS
 {
 	public partial class frmKnifeProcessedChart : _Forms
 	{
+		#region Variables
 		private string _knifeCode;
 		private int _refreshFlag = 0;
 		private string _columnName = "";
 		private int _exitFlag = 1;
+		#endregion
 
+		#region Methods
 		public frmKnifeProcessedChart()
 		{
 			InitializeComponent();
@@ -56,7 +59,8 @@ namespace BMS
 
 		}
 
-		void RefreshDummySeries() {
+		void RefreshDummySeries()
+		{
 			DataTable dt = new DataTable();
 			chartControl2.Series[3].DataSource = dt;
 		}
@@ -86,10 +90,11 @@ namespace BMS
 				await task;
 				_refreshFlag = 0;
 			}
-			catch {
+			catch
+			{
 				return;
 			}
-			
+
 		}
 
 		void LoadDataToChartTime(string knifeCode)
@@ -115,6 +120,9 @@ namespace BMS
 			chartControl1.Series[1].ValueDataMembers.AddRange(new string[] { "Quantity" });
 			//});
 		}
+		#endregion
+
+		#region Events
 		private void timer1_Tick(object sender, EventArgs e)
 		{
 			if (_refreshFlag == 0)
@@ -129,49 +137,7 @@ namespace BMS
 			//LoadDataToChartProduct();
 			timer1.Enabled = true;
 			// Thuoc tinh RuntimeHitTesting can phai duoc bat thi bieu do khi click vao moi co the cho ra du lieu!!!
-			chartControl2.RuntimeHitTesting = true;
-		}
-
-		private void chartControl2_MouseDoubleClick(object sender, MouseEventArgs e)
-		{
-			try
-			{
-				ChartHitInfo hitInfo = chartControl2.CalcHitInfo(e.Location);
-
-				if (hitInfo.SeriesPoint != null)
-				{
-					_knifeCode = hitInfo.SeriesPoint.Argument;
-					LoadDataToChartTime(_knifeCode);
-				}
-			}
-			catch
-			{
-			}
-
-
-		}
-
-		private void chartControl2_MouseClick(object sender, MouseEventArgs e)
-		{
-			try
-			{
-				ChartHitInfo hitInfo = chartControl2.CalcHitInfo(e.Location);
-
-				if (hitInfo.SeriesPoint != null)
-				{
-					//hitInfo.HitObject = Color.White;
-
-					_knifeCode = hitInfo.SeriesPoint.Argument;
-					_columnName = _knifeCode;
-					LoadDataToChartTime(_knifeCode);
-					//chartControl2_CustomDrawSeriesPoint
-					// double quantity = hitInfo.SeriesPoint.Values[0];
-					//Arr = KnifeDetailListBO.Instance.FindByAttribute("KnifeCode", _knifeCode);
-				}
-			}
-			catch
-			{
-			}
+			//chartControl2.RuntimeHitTesting = true;
 		}
 
 		private void chartControl2_CustomDrawSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e)
@@ -186,12 +152,12 @@ namespace BMS
 			}
 		}
 
-
-
 		private void frmKnifeProcessedChart_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			_exitFlag = 2;
 			Thread.Sleep(5);
 		}
+		#endregion
+
 	}
 }

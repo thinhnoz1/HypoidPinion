@@ -291,71 +291,11 @@
     <Compile Include="HypoidPinion\KhoDao\frmKnifeSharpen.Designer.cs">
       <DependentUpon>frmKnifeSharpen.cs</DependentUpon>
     </Compile>
-    <Compile Include="HypoidPinion\Test\test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HypoidPinion\Test\test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmAddEditHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmAddEditHistory.Designer.cs">
-      <DependentUpon>frmAddEditHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmAddEditPlan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmAddEditPlan.Designer.cs">
-      <DependentUpon>frmAddEditPlan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmAddEditProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmAddEditProduct.Designer.cs">
-      <DependentUpon>frmAddEditProduct.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmBase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBase.Designer.cs">
       <DependentUpon>frmBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmImportExcelPart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmImportExcelPart.Designer.cs">
-      <DependentUpon>frmImportExcelPart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmSonLoading.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmSonLoading.designer.cs">
-      <DependentUpon>frmSonLoading.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmImportExcel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmImportExcel.Designer.cs">
-      <DependentUpon>frmImportExcel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmImportPart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmImportPart.Designer.cs">
-      <DependentUpon>frmImportPart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmProductListSON.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmProductListSON.Designer.cs">
-      <DependentUpon>frmProductListSON.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoSon\frmSonPlan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmSonPlan.Designer.cs">
-      <DependentUpon>frmSonPlan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTestBase.cs">
       <SubType>Form</SubType>
@@ -364,48 +304,6 @@
       <DependentUpon>frmTestBase.cs</DependentUpon>
     </Compile>
     <Compile Include="FxSerialDeamon.cs" />
-    <Compile Include="KhoSon\frmPartImExHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoSon\frmPartImExHistory.Designer.cs">
-      <DependentUpon>frmPartImExHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoMotor\frmAddEditMotorPart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoMotor\frmAddEditMotorPart.Designer.cs">
-      <DependentUpon>frmAddEditMotorPart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoMotor\frmAddEditPositionList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoMotor\frmAddEditPositionList.Designer.cs">
-      <DependentUpon>frmAddEditPositionList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorHistoryImEx.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorHistoryImEx.Designer.cs">
-      <DependentUpon>frmMotorHistoryImEx.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorImExPart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorImExPart.Designer.cs">
-      <DependentUpon>frmMotorImExPart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorPartDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorPartDetails.Designer.cs">
-      <DependentUpon>frmMotorPartDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorPartList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhoMotor\frmMotorPartList.Designer.cs">
-      <DependentUpon>frmMotorPartList.cs</DependentUpon>
-    </Compile>
     <Compile Include="PLC\CellDataTypes.cs" />
     <Compile Include="PLC\FX\FxAddress.cs" />
     <Compile Include="PLC\FX\FxAddressLayoutInfo.cs" />
@@ -479,63 +377,11 @@
     <EmbeddedResource Include="HypoidPinion\KhoDao\frmKnifeSharpen.resx">
       <DependentUpon>frmKnifeSharpen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HypoidPinion\Test\test.resx">
-      <DependentUpon>test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmAddEditHistory.resx">
-      <DependentUpon>frmAddEditHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmAddEditPlan.resx">
-      <DependentUpon>frmAddEditPlan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmAddEditProduct.resx">
-      <DependentUpon>frmAddEditProduct.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmBase.resx">
       <DependentUpon>frmBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmImportExcelPart.resx">
-      <DependentUpon>frmImportExcelPart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmSonLoading.resx">
-      <DependentUpon>frmSonLoading.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmImportExcel.resx">
-      <DependentUpon>frmImportExcel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmImportPart.resx">
-      <DependentUpon>frmImportPart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmProductListSON.resx">
-      <DependentUpon>frmProductListSON.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmPartImExHistory.resx">
-      <DependentUpon>frmPartImExHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoSon\frmSonPlan.resx">
-      <DependentUpon>frmSonPlan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTestBase.resx">
       <DependentUpon>frmTestBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoMotor\frmAddEditMotorPart.resx">
-      <DependentUpon>frmAddEditMotorPart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoMotor\frmAddEditPositionList.resx">
-      <DependentUpon>frmAddEditPositionList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoMotor\frmMotorHistoryImEx.resx">
-      <DependentUpon>frmMotorHistoryImEx.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoMotor\frmMotorImExPart.resx">
-      <DependentUpon>frmMotorImExPart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoMotor\frmMotorPartDetails.resx">
-      <DependentUpon>frmMotorPartDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhoMotor\frmMotorPartList.resx">
-      <DependentUpon>frmMotorPartList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -307,7 +307,6 @@ namespace BMS
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(54))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(54)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(202)))), ((int)(((byte)(202))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))))),
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.Red, System.Drawing.Color.Red)}));
-			this.chartControl2.RuntimeHitTesting = true;
 			this.chartControl2.RuntimeSeriesSelectionMode = DevExpress.XtraCharts.SeriesSelectionMode.Point;
 			series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
 			sideBySideBarSeriesLabel1.Antialiasing = true;
@@ -570,6 +569,7 @@ namespace BMS
 			this.Controls.Add(this.chartControl2);
 			this.Name = "frmKnifeProcessedChart";
 			this.Text = "BIỂU ĐỒ GIA CÔNG";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKnifeProcessedChart_FormClosing);
 			this.Load += new System.EventHandler(this.frmKnifeProcessedChart_Load);
 			((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).EndInit();
